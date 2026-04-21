@@ -20,7 +20,7 @@ On four datasets (two synthetic, Porto Taxi, GeoLife) with 17 baselines includin
 
 ## Main Results
 
-AUC at 10% contamination (mean over 5–10 seeds). Best in **bold**, second <ins>underlined</ins>.
+AUC at 10% contamination. Best in **bold**, second <ins>underlined</ins>.
 
 | Method | Synthetic | Grid | Porto Taxi | GeoLife | GPU |
 |---|---|---|---|---|---|
@@ -44,10 +44,9 @@ Full tables (including AUPRC, F1, runtime, robustness, ablations) are in the pap
 ## Installation
 
 ```bash
-git clone https://github.com/<your-user>/EWGB-TAD.git
+git clone https://github.com/Limijia/EWGB-TAD.git
 cd EWGB-TAD
-pip install -r requirements.txt
-```
+
 
 Python 3.9+ is recommended. The core package only requires NumPy, SciPy, and scikit-learn.
 PyTorch is only needed if you want to reproduce the deep-learning baselines.
@@ -63,22 +62,20 @@ from ewgb_tad.data_generator import generate_synthetic_trajectories
 from ewgb_tad.feature_extraction_v2 import extract_all_features_v2
 
 # 1. Generate (or load) trajectories
-trajs, labels, _, _ = generate_synthetic_trajectories(
-    n_normal=900, n_anomaly_per_type=25, seed=42
-)
+trajs, labels, _, _ = generate_synthetic_trajectories
 
 # 2. Extract per-view features (spatial / kinematic / entropy / path-deviation)
 spatial, kinematic, entropy, path, _ = extract_all_features_v2(trajs)
-spatial_path = np.hstack([spatial, path])  # combined spatial-path view (16D)
+spatial_path = np.hstack([spatial, path]) 
 
 # 3. Fit the 4-view detector — trajectories are passed in for the PCA-based shape view
-detector = EWGBTAD(min_samples=8, purity_threshold=0.85)
+detector = EWGBTAD
 detector.fit(spatial_path, kinematic, entropy, trajs)
 
 # 4. Score and evaluate
 scores = detector.score(spatial_path, kinematic, entropy, trajs)
 metrics = evaluate_detector(labels, scores, contamination=0.10)
-print(metrics)  # {'AUC': 0.88, 'AUPRC': 0.68, 'F1': 0.63, ...}
+print(metrics)  
 ```
 
 See `experiments/run_synthetic.py` for the full pipeline with multiple seeds, all baselines, and view-level entropy fusion.
@@ -104,70 +101,17 @@ python experiments/run_geolife.py --data-path /path/to/Geolife
 python experiments/run_robustness.py
 
 # Deep-learning baselines (requires GPU)
-python experiments/run_dl_baselines.py         # LSTM-AE, Transformer-AE, DeepSVDD, USAD, TranAD
-python experiments/run_dl_baselines_recent.py  # Anomaly Transformer, DCdetector
+python experiments/run_dl_baselines.py         
+python experiments/run_dl_baselines_recent.py  
 ```
-
-Each script writes a `*.json` results file that `scripts/plot_results.py` can turn into figures.
 
 ---
 
 ## Datasets
 
-The code ships with synthetic data generators (six-route synthetic, grid-network). The two real-world datasets used in the paper are **not** included in this repository; please download them from their original sources:
-
-- **Porto Taxi** — [ECML-PKDD 2015 Challenge](https://archive.ics.uci.edu/dataset/339/taxi+service+trajectory+prediction+challenge+ecml+pkdd+2015) (367 K OD pairs, Porto, Portugal).
-- **GeoLife 1.3** — [Microsoft Research](https://www.microsoft.com/en-us/research/publication/geolife-gps-trajectory-dataset-user-guide/) (182 users, Beijing, 2007–2012).
-
-Data loaders in `ewgb_tad/data_generator_real.py` expect their standard file layouts.
+The code ships with synthetic data generators (six-route synthetic, grid-network). The two real-world datasets used in the paper are **not** included in this repository; please download them from their original sources.
 
 ---
 
-## Project Structure
 
-```
-EWGB-TAD/
-├── ewgb_tad/               # Core package
-│   ├── granular_ball.py        # Adaptive granular-ball construction + entropy scoring
-│   ├── feature_extraction.py   # Spatial / kinematic / entropy features
-│   ├── feature_extraction_v2.py# Path-deviation features (adds shape view)
-│   ├── baselines.py            # Classical tabular detectors (IForest, LOF, KNN, ...)
-│   ├── baselines_v2.py         # Trajectory-aware baselines (DTW-KNN, SegmentOD)
-│   ├── baselines_dl.py         # Deep-learning baselines (PyTorch)
-│   ├── data_generator.py       # Synthetic trajectory generators
-│   └── data_generator_real.py  # Porto Taxi / GeoLife loaders
-├── experiments/            # Reproducibility scripts
-│   ├── run_synthetic.py
-│   ├── run_grid.py
-│   ├── run_porto.py
-│   ├── run_geolife.py
-│   ├── run_robustness.py
-│   ├── run_dl_baselines.py
-│   └── run_dl_baselines_recent.py
-├── scripts/
-│   └── plot_results.py     # Figures from JSON results
-├── requirements.txt
-├── LICENSE                 # MIT
-└── README.md
-```
 
----
-
-## Citation
-
-If you use EWGB-TAD in your research, please cite:
-
-```bibtex
-@article{ewgbtad2026,
-  title   = {EWGB-TAD: An Entropy-Weighted Multi-View Granular-Ball Framework for Trajectory Anomaly Detection},
-  author  = {Author, First and Author, Second},
-  journal = {IEEE Transactions on XXXX},
-  year    = {2026}
-}
-```
-
----
-
-## License
-
-Released under the [MIT License](LICENSE).
