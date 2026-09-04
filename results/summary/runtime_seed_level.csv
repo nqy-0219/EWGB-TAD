@@ -1,0 +1,391 @@
+dataset,method,seed,n_samples,end_to_end_seconds,fit_score_seconds,timing_scope,epochs,pretrain_epochs,parameter_count,peak_gpu_memory_bytes,device
+Synthetic,EWGB-TAD,42,5552,6.965995499995188,,end_to_end_job,,,,,cpu
+Synthetic,EWGB-TAD,123,5552,6.959248400002252,,end_to_end_job,,,,,cpu
+Synthetic,EWGB-TAD,456,5552,5.7981373999937205,,end_to_end_job,,,,,cpu
+Synthetic,EWGB-TAD,789,5552,4.9557967000000644,,end_to_end_job,,,,,cpu
+Synthetic,EWGB-TAD,1024,5552,5.13730289999512,,end_to_end_job,,,,,cpu
+Synthetic,EWGB-TAD,2048,5552,6.606921999991755,,end_to_end_job,,,,,cpu
+Synthetic,EWGB-TAD,3072,5552,4.431275299997651,,end_to_end_job,,,,,cpu
+Synthetic,EWGB-TAD,4096,5552,5.766925900010392,,end_to_end_job,,,,,cpu
+Synthetic,EWGB-TAD,5120,5552,6.002808399993228,,end_to_end_job,,,,,cpu
+Synthetic,EWGB-TAD,6144,5552,6.387420099999872,,end_to_end_job,,,,,cpu
+Synthetic,IForest,42,5552,1.9480787310749292,,end_to_end_job,,,,,cpu
+Synthetic,IForest,123,5552,1.2230372177436948,,end_to_end_job,,,,,cpu
+Synthetic,IForest,456,5552,1.0924097253009677,,end_to_end_job,,,,,cpu
+Synthetic,IForest,789,5552,0.7678916337899864,,end_to_end_job,,,,,cpu
+Synthetic,IForest,1024,5552,1.0843287552706897,,end_to_end_job,,,,,cpu
+Synthetic,IForest,2048,5552,0.7420276207849383,,end_to_end_job,,,,,cpu
+Synthetic,IForest,3072,5552,0.9506502011790872,,end_to_end_job,,,,,cpu
+Synthetic,IForest,4096,5552,0.7689117412082851,,end_to_end_job,,,,,cpu
+Synthetic,IForest,5120,5552,1.0375968981534243,,end_to_end_job,,,,,cpu
+Synthetic,IForest,6144,5552,0.7786570871248841,,end_to_end_job,,,,,cpu
+Synthetic,ECOD,42,5552,0.17853430984541774,,end_to_end_job,,,,,cpu
+Synthetic,ECOD,123,5552,0.21423307713121176,,end_to_end_job,,,,,cpu
+Synthetic,ECOD,456,5552,0.23415229097008705,,end_to_end_job,,,,,cpu
+Synthetic,ECOD,789,5552,0.10681817308068275,,end_to_end_job,,,,,cpu
+Synthetic,ECOD,1024,5552,0.11510068830102682,,end_to_end_job,,,,,cpu
+Synthetic,ECOD,2048,5552,0.1698437910526991,,end_to_end_job,,,,,cpu
+Synthetic,ECOD,3072,5552,0.10964702721685171,,end_to_end_job,,,,,cpu
+Synthetic,ECOD,4096,5552,0.24400468217208982,,end_to_end_job,,,,,cpu
+Synthetic,ECOD,5120,5552,0.1527432668954134,,end_to_end_job,,,,,cpu
+Synthetic,ECOD,6144,5552,0.11711153294891119,,end_to_end_job,,,,,cpu
+Synthetic,iBoost-ODE,42,5552,3.5044473418965936,,end_to_end_job,,,,,cpu
+Synthetic,iBoost-ODE,123,5552,2.859180845785886,,end_to_end_job,,,,,cpu
+Synthetic,iBoost-ODE,456,5552,3.054055903572589,,end_to_end_job,,,,,cpu
+Synthetic,iBoost-ODE,789,5552,3.5497575127519667,,end_to_end_job,,,,,cpu
+Synthetic,iBoost-ODE,1024,5552,3.922773355152458,,end_to_end_job,,,,,cpu
+Synthetic,iBoost-ODE,2048,5552,2.3844961132854223,,end_to_end_job,,,,,cpu
+Synthetic,iBoost-ODE,3072,5552,3.386677068658173,,end_to_end_job,,,,,cpu
+Synthetic,iBoost-ODE,4096,5552,3.355865911114961,,end_to_end_job,,,,,cpu
+Synthetic,iBoost-ODE,5120,5552,3.305011759046465,,end_to_end_job,,,,,cpu
+Synthetic,iBoost-ODE,6144,5552,3.163703623227775,,end_to_end_job,,,,,cpu
+Synthetic,CoMadOut,42,5552,0.5567547320388258,,end_to_end_job,,,,,cpu
+Synthetic,CoMadOut,123,5552,0.347145885694772,,end_to_end_job,,,,,cpu
+Synthetic,CoMadOut,456,5552,0.2967094387859106,,end_to_end_job,,,,,cpu
+Synthetic,CoMadOut,789,5552,0.17365717189386487,,end_to_end_job,,,,,cpu
+Synthetic,CoMadOut,1024,5552,0.37874580919742584,,end_to_end_job,,,,,cpu
+Synthetic,CoMadOut,2048,5552,0.21848088782280684,,end_to_end_job,,,,,cpu
+Synthetic,CoMadOut,3072,5552,0.4208451109007001,,end_to_end_job,,,,,cpu
+Synthetic,CoMadOut,4096,5552,0.2840471533127129,,end_to_end_job,,,,,cpu
+Synthetic,CoMadOut,5120,5552,0.18923265067860484,,end_to_end_job,,,,,cpu
+Synthetic,CoMadOut,6144,5552,0.34149356512352824,,end_to_end_job,,,,,cpu
+Synthetic,Shape-KNN,42,5552,39.9278115183115,,end_to_end_job,,,,,cpu
+Synthetic,Shape-KNN,123,5552,35.05803020624444,,end_to_end_job,,,,,cpu
+Synthetic,Shape-KNN,456,5552,41.62341386359185,,end_to_end_job,,,,,cpu
+Synthetic,Shape-KNN,789,5552,45.10164794418961,,end_to_end_job,,,,,cpu
+Synthetic,Shape-KNN,1024,5552,43.628356497269124,,end_to_end_job,,,,,cpu
+Synthetic,Shape-KNN,2048,5552,47.41142891300842,,end_to_end_job,,,,,cpu
+Synthetic,Shape-KNN,3072,5552,35.56446947203949,,end_to_end_job,,,,,cpu
+Synthetic,Shape-KNN,4096,5552,38.33384809270501,,end_to_end_job,,,,,cpu
+Synthetic,Shape-KNN,5120,5552,39.40068110404536,,end_to_end_job,,,,,cpu
+Synthetic,Shape-KNN,6144,5552,24.00893584312871,,end_to_end_job,,,,,cpu
+Synthetic,SegmentOD,42,5552,1.1995806191116571,,end_to_end_job,,,,,cpu
+Synthetic,SegmentOD,123,5552,0.5860537141561508,,end_to_end_job,,,,,cpu
+Synthetic,SegmentOD,456,5552,0.7540684989653528,,end_to_end_job,,,,,cpu
+Synthetic,SegmentOD,789,5552,0.8481906126253307,,end_to_end_job,,,,,cpu
+Synthetic,SegmentOD,1024,5552,0.8437147978693247,,end_to_end_job,,,,,cpu
+Synthetic,SegmentOD,2048,5552,0.9532574089244008,,end_to_end_job,,,,,cpu
+Synthetic,SegmentOD,3072,5552,0.6854074690490961,,end_to_end_job,,,,,cpu
+Synthetic,SegmentOD,4096,5552,0.6565022771246731,,end_to_end_job,,,,,cpu
+Synthetic,SegmentOD,5120,5552,0.5439548268914223,,end_to_end_job,,,,,cpu
+Synthetic,SegmentOD,6144,5552,0.6437826449982822,,end_to_end_job,,,,,cpu
+Synthetic,TADS,42,5552,9.103292237967253,,end_to_end_job,,,,,cpu
+Synthetic,TADS,123,5552,5.852489747107029,,end_to_end_job,,,,,cpu
+Synthetic,TADS,456,5552,4.760662641376257,,end_to_end_job,,,,,cpu
+Synthetic,TADS,789,5552,5.352114289067686,,end_to_end_job,,,,,cpu
+Synthetic,TADS,1024,5552,5.646952331997454,,end_to_end_job,,,,,cpu
+Synthetic,TADS,2048,5552,7.396550010424107,,end_to_end_job,,,,,cpu
+Synthetic,TADS,3072,5552,4.82317035086453,,end_to_end_job,,,,,cpu
+Synthetic,TADS,4096,5552,4.8250618148595095,,end_to_end_job,,,,,cpu
+Synthetic,TADS,5120,5552,4.7441840074025095,,end_to_end_job,,,,,cpu
+Synthetic,TADS,6144,5552,5.6799566661939025,,end_to_end_job,,,,,cpu
+Synthetic,Profile-TAD,42,5552,1.7774019329808652,,end_to_end_job,,,,,cpu
+Synthetic,Profile-TAD,123,5552,2.65050452016294,,end_to_end_job,,,,,cpu
+Synthetic,Profile-TAD,456,5552,3.1332626813091338,,end_to_end_job,,,,,cpu
+Synthetic,Profile-TAD,789,5552,2.819865444675088,,end_to_end_job,,,,,cpu
+Synthetic,Profile-TAD,1024,5552,1.846657978836447,,end_to_end_job,,,,,cpu
+Synthetic,Profile-TAD,2048,5552,1.7278318558819592,,end_to_end_job,,,,,cpu
+Synthetic,Profile-TAD,3072,5552,1.902254416141659,,end_to_end_job,,,,,cpu
+Synthetic,Profile-TAD,4096,5552,2.659049365669489,,end_to_end_job,,,,,cpu
+Synthetic,Profile-TAD,5120,5552,2.4978653909638524,,end_to_end_job,,,,,cpu
+Synthetic,Profile-TAD,6144,5552,2.634738768916577,,end_to_end_job,,,,,cpu
+Synthetic,LSTM-AE,42,5552,24.423342420719564,24.423342420719564,fit_score_plus_job_io; pure training and scoring are not separated,80,,119506,1295507968,cuda:0
+Synthetic,LSTM-AE,123,5552,24.119527101051062,24.119527101051062,fit_score_plus_job_io; pure training and scoring are not separated,80,,119506,1295507968,cuda:0
+Synthetic,LSTM-AE,456,5552,24.298703622072935,24.298703622072935,fit_score_plus_job_io; pure training and scoring are not separated,79,,119506,1295507968,cuda:0
+Synthetic,LSTM-AE,789,5552,20.943272326141596,20.943272326141596,fit_score_plus_job_io; pure training and scoring are not separated,79,,119506,1295507968,cuda:0
+Synthetic,LSTM-AE,1024,5552,20.32109761610627,20.32109761610627,fit_score_plus_job_io; pure training and scoring are not separated,71,,119506,1295507968,cuda:0
+Synthetic,LSTM-AE,2048,5552,22.30601337272674,22.30601337272674,fit_score_plus_job_io; pure training and scoring are not separated,73,,119506,1295507968,cuda:0
+Synthetic,LSTM-AE,3072,5552,22.54031912982464,22.54031912982464,fit_score_plus_job_io; pure training and scoring are not separated,77,,119506,1295507968,cuda:0
+Synthetic,LSTM-AE,4096,5552,21.713130875024945,21.713130875024945,fit_score_plus_job_io; pure training and scoring are not separated,74,,119506,1295507968,cuda:0
+Synthetic,LSTM-AE,5120,5552,18.611179638188332,18.611179638188332,fit_score_plus_job_io; pure training and scoring are not separated,68,,119506,1295507968,cuda:0
+Synthetic,LSTM-AE,6144,5552,21.112466941121966,21.112466941121966,fit_score_plus_job_io; pure training and scoring are not separated,74,,119506,1295507968,cuda:0
+Synthetic,USAD,42,5552,32.75553788198158,32.75553788198158,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:1
+Synthetic,USAD,123,5552,33.825027155689895,33.825027155689895,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:1
+Synthetic,USAD,456,5552,31.373707613907754,31.373707613907754,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:1
+Synthetic,USAD,789,5552,30.963202673010528,30.963202673010528,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:1
+Synthetic,USAD,1024,5552,31.29214237909764,31.29214237909764,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:1
+Synthetic,USAD,2048,5552,30.69179980829358,30.69179980829358,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:1
+Synthetic,USAD,3072,5552,31.649680853821337,31.649680853821337,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:1
+Synthetic,USAD,4096,5552,31.850738497450948,31.850738497450948,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:1
+Synthetic,USAD,5120,5552,31.62015453679487,31.62015453679487,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:1
+Synthetic,USAD,6144,5552,30.380828589666635,30.380828589666635,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:1
+Synthetic,LM-TAD,42,5552,726.9788738582283,719.2568196221255,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Synthetic,LM-TAD,123,5552,609.9401679448783,602.8906369348988,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Synthetic,LM-TAD,456,5552,674.161600205116,665.2232400891371,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Synthetic,LM-TAD,789,5552,640.9866052228026,634.7707440382801,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Synthetic,LM-TAD,1024,5552,859.6641097511165,850.4751673690043,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Synthetic,LM-TAD,2048,5552,772.1105397739448,763.7665786459111,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Synthetic,LM-TAD,3072,5552,763.1650737030432,754.2196283899248,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Synthetic,LM-TAD,4096,5552,889.8054898260161,880.7014153208584,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Synthetic,LM-TAD,5120,5552,803.1852880050428,800.9961228808388,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Synthetic,LM-TAD,6144,5552,767.5399548388086,764.9204923380166,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Synthetic,MST-OATD,42,5552,35.34606800787151,34.42933382187039,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Synthetic,MST-OATD,123,5552,35.318585771135986,34.69280700571835,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Synthetic,MST-OATD,456,5552,35.98091440927237,35.33552374318242,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Synthetic,MST-OATD,789,5552,35.362936324905604,34.72499496024102,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Synthetic,MST-OATD,1024,5552,35.25790795404464,34.62580374395475,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Synthetic,MST-OATD,2048,5552,34.729735914152116,33.935072641819715,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Synthetic,MST-OATD,3072,5552,35.24570897500962,34.370679383631796,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Synthetic,MST-OATD,4096,5552,35.09011842869222,34.31960800103843,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Synthetic,MST-OATD,5120,5552,35.06772951502353,34.32854525092989,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Synthetic,MST-OATD,6144,5552,34.58537631109357,33.85154938697815,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Grid-Network,EWGB-TAD,42,5552,5.581940399992163,,end_to_end_job,,,,,cpu
+Grid-Network,EWGB-TAD,123,5552,5.707015000007232,,end_to_end_job,,,,,cpu
+Grid-Network,EWGB-TAD,456,5552,5.337804299997515,,end_to_end_job,,,,,cpu
+Grid-Network,EWGB-TAD,789,5552,5.824384599996847,,end_to_end_job,,,,,cpu
+Grid-Network,EWGB-TAD,1024,5552,5.865609000000404,,end_to_end_job,,,,,cpu
+Grid-Network,EWGB-TAD,2048,5552,7.958148700010497,,end_to_end_job,,,,,cpu
+Grid-Network,EWGB-TAD,3072,5552,7.062451999998302,,end_to_end_job,,,,,cpu
+Grid-Network,EWGB-TAD,4096,5552,6.2613535999989836,,end_to_end_job,,,,,cpu
+Grid-Network,EWGB-TAD,5120,5552,6.831100900002639,,end_to_end_job,,,,,cpu
+Grid-Network,EWGB-TAD,6144,5552,6.968147499996121,,end_to_end_job,,,,,cpu
+Grid-Network,IForest,42,5552,1.086484698113054,,end_to_end_job,,,,,cpu
+Grid-Network,IForest,123,5552,0.8039353950880468,,end_to_end_job,,,,,cpu
+Grid-Network,IForest,456,5552,0.8266444951295853,,end_to_end_job,,,,,cpu
+Grid-Network,IForest,789,5552,0.8219760088250041,,end_to_end_job,,,,,cpu
+Grid-Network,IForest,1024,5552,0.8150433851405978,,end_to_end_job,,,,,cpu
+Grid-Network,IForest,2048,5552,0.6390168373472989,,end_to_end_job,,,,,cpu
+Grid-Network,IForest,3072,5552,1.059998129028827,,end_to_end_job,,,,,cpu
+Grid-Network,IForest,4096,5552,0.7046361682005227,,end_to_end_job,,,,,cpu
+Grid-Network,IForest,5120,5552,1.0252678832039237,,end_to_end_job,,,,,cpu
+Grid-Network,IForest,6144,5552,0.8884278871119022,,end_to_end_job,,,,,cpu
+Grid-Network,ECOD,42,5552,0.15897814789786935,,end_to_end_job,,,,,cpu
+Grid-Network,ECOD,123,5552,0.12056213803589344,,end_to_end_job,,,,,cpu
+Grid-Network,ECOD,456,5552,0.17810274427756667,,end_to_end_job,,,,,cpu
+Grid-Network,ECOD,789,5552,0.10774251399561763,,end_to_end_job,,,,,cpu
+Grid-Network,ECOD,1024,5552,0.12723201559856534,,end_to_end_job,,,,,cpu
+Grid-Network,ECOD,2048,5552,0.1074832477606833,,end_to_end_job,,,,,cpu
+Grid-Network,ECOD,3072,5552,0.17965422198176384,,end_to_end_job,,,,,cpu
+Grid-Network,ECOD,4096,5552,0.12894170498475432,,end_to_end_job,,,,,cpu
+Grid-Network,ECOD,5120,5552,0.09775495296344161,,end_to_end_job,,,,,cpu
+Grid-Network,ECOD,6144,5552,0.11820293264463544,,end_to_end_job,,,,,cpu
+Grid-Network,iBoost-ODE,42,5552,4.085540615953505,,end_to_end_job,,,,,cpu
+Grid-Network,iBoost-ODE,123,5552,2.8762746918946505,,end_to_end_job,,,,,cpu
+Grid-Network,iBoost-ODE,456,5552,2.846249822061509,,end_to_end_job,,,,,cpu
+Grid-Network,iBoost-ODE,789,5552,2.8238305561244488,,end_to_end_job,,,,,cpu
+Grid-Network,iBoost-ODE,1024,5552,3.088609913829714,,end_to_end_job,,,,,cpu
+Grid-Network,iBoost-ODE,2048,5552,2.5822004228830338,,end_to_end_job,,,,,cpu
+Grid-Network,iBoost-ODE,3072,5552,2.366652963217348,,end_to_end_job,,,,,cpu
+Grid-Network,iBoost-ODE,4096,5552,3.972702892962843,,end_to_end_job,,,,,cpu
+Grid-Network,iBoost-ODE,5120,5552,3.1579369585961103,,end_to_end_job,,,,,cpu
+Grid-Network,iBoost-ODE,6144,5552,2.4786605979315937,,end_to_end_job,,,,,cpu
+Grid-Network,CoMadOut,42,5552,0.30501166405156255,,end_to_end_job,,,,,cpu
+Grid-Network,CoMadOut,123,5552,0.23777245078235865,,end_to_end_job,,,,,cpu
+Grid-Network,CoMadOut,456,5552,0.28450089879333973,,end_to_end_job,,,,,cpu
+Grid-Network,CoMadOut,789,5552,0.18775751488283277,,end_to_end_job,,,,,cpu
+Grid-Network,CoMadOut,1024,5552,0.2251319861970842,,end_to_end_job,,,,,cpu
+Grid-Network,CoMadOut,2048,5552,0.28369439765810966,,end_to_end_job,,,,,cpu
+Grid-Network,CoMadOut,3072,5552,0.26134165097028017,,end_to_end_job,,,,,cpu
+Grid-Network,CoMadOut,4096,5552,0.22409837413579226,,end_to_end_job,,,,,cpu
+Grid-Network,CoMadOut,5120,5552,0.20267272973433137,,end_to_end_job,,,,,cpu
+Grid-Network,CoMadOut,6144,5552,0.16708858497440815,,end_to_end_job,,,,,cpu
+Grid-Network,Shape-KNN,42,5552,36.21809389209375,,end_to_end_job,,,,,cpu
+Grid-Network,Shape-KNN,123,5552,44.995414797682315,,end_to_end_job,,,,,cpu
+Grid-Network,Shape-KNN,456,5552,34.97899530362338,,end_to_end_job,,,,,cpu
+Grid-Network,Shape-KNN,789,5552,14.317756267730147,,end_to_end_job,,,,,cpu
+Grid-Network,Shape-KNN,1024,5552,23.345898542087525,,end_to_end_job,,,,,cpu
+Grid-Network,Shape-KNN,2048,5552,26.786062660627067,,end_to_end_job,,,,,cpu
+Grid-Network,Shape-KNN,3072,5552,17.53374911285937,,end_to_end_job,,,,,cpu
+Grid-Network,Shape-KNN,4096,5552,26.63171163899824,,end_to_end_job,,,,,cpu
+Grid-Network,Shape-KNN,5120,5552,13.587096901144832,,end_to_end_job,,,,,cpu
+Grid-Network,Shape-KNN,6144,5552,42.18537644762546,,end_to_end_job,,,,,cpu
+Grid-Network,SegmentOD,42,5552,0.6145713021978736,,end_to_end_job,,,,,cpu
+Grid-Network,SegmentOD,123,5552,0.8730840771459043,,end_to_end_job,,,,,cpu
+Grid-Network,SegmentOD,456,5552,0.8589217071421444,,end_to_end_job,,,,,cpu
+Grid-Network,SegmentOD,789,5552,0.8693108470179141,,end_to_end_job,,,,,cpu
+Grid-Network,SegmentOD,1024,5552,0.7319721449166536,,end_to_end_job,,,,,cpu
+Grid-Network,SegmentOD,2048,5552,0.6490191887132823,,end_to_end_job,,,,,cpu
+Grid-Network,SegmentOD,3072,5552,0.5725566311739385,,end_to_end_job,,,,,cpu
+Grid-Network,SegmentOD,4096,5552,0.49596473993733525,,end_to_end_job,,,,,cpu
+Grid-Network,SegmentOD,5120,5552,0.7051943452097476,,end_to_end_job,,,,,cpu
+Grid-Network,SegmentOD,6144,5552,0.8710741060785949,,end_to_end_job,,,,,cpu
+Grid-Network,TADS,42,5552,5.9563873102888465,,end_to_end_job,,,,,cpu
+Grid-Network,TADS,123,5552,4.238607167266309,,end_to_end_job,,,,,cpu
+Grid-Network,TADS,456,5552,5.037599740084261,,end_to_end_job,,,,,cpu
+Grid-Network,TADS,789,5552,4.804442383814603,,end_to_end_job,,,,,cpu
+Grid-Network,TADS,1024,5552,5.305236374028027,,end_to_end_job,,,,,cpu
+Grid-Network,TADS,2048,5552,4.5726436991244555,,end_to_end_job,,,,,cpu
+Grid-Network,TADS,3072,5552,4.147260576952249,,end_to_end_job,,,,,cpu
+Grid-Network,TADS,4096,5552,5.178628433961421,,end_to_end_job,,,,,cpu
+Grid-Network,TADS,5120,5552,4.1556438729166985,,end_to_end_job,,,,,cpu
+Grid-Network,TADS,6144,5552,4.458520913030952,,end_to_end_job,,,,,cpu
+Grid-Network,Profile-TAD,42,5552,2.48350315913558,,end_to_end_job,,,,,cpu
+Grid-Network,Profile-TAD,123,5552,1.585246419068426,,end_to_end_job,,,,,cpu
+Grid-Network,Profile-TAD,456,5552,2.475087643135339,,end_to_end_job,,,,,cpu
+Grid-Network,Profile-TAD,789,5552,1.7388873849995434,,end_to_end_job,,,,,cpu
+Grid-Network,Profile-TAD,1024,5552,1.716104760300368,,end_to_end_job,,,,,cpu
+Grid-Network,Profile-TAD,2048,5552,2.1122102201916277,,end_to_end_job,,,,,cpu
+Grid-Network,Profile-TAD,3072,5552,2.2992300409823656,,end_to_end_job,,,,,cpu
+Grid-Network,Profile-TAD,4096,5552,2.164761846885085,,end_to_end_job,,,,,cpu
+Grid-Network,Profile-TAD,5120,5552,2.307658734731376,,end_to_end_job,,,,,cpu
+Grid-Network,Profile-TAD,6144,5552,2.3344986769370735,,end_to_end_job,,,,,cpu
+Grid-Network,LSTM-AE,42,5552,14.901368553750217,14.901368553750217,fit_score_plus_job_io; pure training and scoring are not separated,54,,208290,0,cuda:2
+Grid-Network,LSTM-AE,123,5552,12.425952621269971,12.425952621269971,fit_score_plus_job_io; pure training and scoring are not separated,44,,208290,0,cuda:2
+Grid-Network,LSTM-AE,456,5552,11.998386384919286,11.998386384919286,fit_score_plus_job_io; pure training and scoring are not separated,45,,208290,0,cuda:2
+Grid-Network,LSTM-AE,789,5552,8.758292497135699,8.758292497135699,fit_score_plus_job_io; pure training and scoring are not separated,28,,208290,0,cuda:2
+Grid-Network,LSTM-AE,1024,5552,18.494489938020706,18.494489938020706,fit_score_plus_job_io; pure training and scoring are not separated,67,,208290,0,cuda:2
+Grid-Network,LSTM-AE,2048,5552,12.162527911830693,12.162527911830693,fit_score_plus_job_io; pure training and scoring are not separated,39,,208290,0,cuda:2
+Grid-Network,LSTM-AE,3072,5552,11.994333697948605,11.994333697948605,fit_score_plus_job_io; pure training and scoring are not separated,45,,208290,0,cuda:2
+Grid-Network,LSTM-AE,4096,5552,13.68790425406769,13.68790425406769,fit_score_plus_job_io; pure training and scoring are not separated,56,,208290,0,cuda:2
+Grid-Network,LSTM-AE,5120,5552,15.415630460716784,15.415630460716784,fit_score_plus_job_io; pure training and scoring are not separated,53,,208290,0,cuda:2
+Grid-Network,LSTM-AE,6144,5552,12.940377270337194,12.940377270337194,fit_score_plus_job_io; pure training and scoring are not separated,46,,208290,0,cuda:2
+Grid-Network,USAD,42,5552,31.832860651426017,31.832860651426017,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:3
+Grid-Network,USAD,123,5552,31.747713605407625,31.747713605407625,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:3
+Grid-Network,USAD,456,5552,32.152743857353926,32.152743857353926,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:3
+Grid-Network,USAD,789,5552,31.597684055101126,31.597684055101126,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:3
+Grid-Network,USAD,1024,5552,29.83541127713397,29.83541127713397,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:3
+Grid-Network,USAD,2048,5552,30.27938750386238,30.27938750386238,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:3
+Grid-Network,USAD,3072,5552,28.96899181511253,28.96899181511253,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:3
+Grid-Network,USAD,4096,5552,29.325210012029856,29.325210012029856,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:3
+Grid-Network,USAD,5120,5552,30.638707648031414,30.638707648031414,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:3
+Grid-Network,USAD,6144,5552,31.64351741457358,31.64351741457358,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:3
+Grid-Network,LM-TAD,42,5552,856.4590054261498,854.0379073480144,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Grid-Network,LM-TAD,123,5552,829.9280490870588,827.4735631169751,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Grid-Network,LM-TAD,456,5552,758.282732241787,755.6571510271169,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Grid-Network,LM-TAD,789,5552,761.8859179709107,759.3323528007604,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Grid-Network,LM-TAD,1024,5552,810.5995144229382,808.2375534819439,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Grid-Network,LM-TAD,2048,5552,798.7869936358184,796.6254381947219,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Grid-Network,LM-TAD,3072,5552,777.9271573028527,775.4164124648087,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Grid-Network,LM-TAD,4096,5552,671.6543399370275,669.059161612764,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Grid-Network,LM-TAD,5120,5552,827.0265655419789,824.4778536511585,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Grid-Network,LM-TAD,6144,5552,874.4746319968253,871.9764117319137,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Grid-Network,MST-OATD,42,5552,35.31759615102783,34.6823211829178,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Grid-Network,MST-OATD,123,5552,35.165816497057676,34.42747894814238,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Grid-Network,MST-OATD,456,5552,36.02089507924393,35.35805310215801,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Grid-Network,MST-OATD,789,5552,34.653922006022185,33.77369316201657,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Grid-Network,MST-OATD,1024,5552,35.03276612376794,34.20368627924472,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Grid-Network,MST-OATD,2048,5552,34.953454456757754,34.186956390272826,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Grid-Network,MST-OATD,3072,5552,34.85042270924896,34.20368864061311,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Grid-Network,MST-OATD,4096,5552,35.48996995994821,34.64042810117826,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Grid-Network,MST-OATD,5120,5552,35.02714975690469,34.39457036415115,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Grid-Network,MST-OATD,6144,5552,34.100624999031425,33.33048311714083,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Porto-derived,EWGB-TAD,42,5552,4.299912000002223,,end_to_end_job,,,,,cpu
+Porto-derived,EWGB-TAD,123,5552,6.752103399994667,,end_to_end_job,,,,,cpu
+Porto-derived,EWGB-TAD,456,5552,6.173141499995836,,end_to_end_job,,,,,cpu
+Porto-derived,EWGB-TAD,789,5552,6.047725500000524,,end_to_end_job,,,,,cpu
+Porto-derived,EWGB-TAD,1024,5552,5.352097700000741,,end_to_end_job,,,,,cpu
+Porto-derived,IForest,42,5552,1.240644589997828,,end_to_end_job,,,,,cpu
+Porto-derived,IForest,123,5552,0.7364556309767067,,end_to_end_job,,,,,cpu
+Porto-derived,IForest,456,5552,0.88684665504843,,end_to_end_job,,,,,cpu
+Porto-derived,IForest,789,5552,1.0309856939129531,,end_to_end_job,,,,,cpu
+Porto-derived,IForest,1024,5552,1.0891337469220161,,end_to_end_job,,,,,cpu
+Porto-derived,ECOD,42,5552,0.12773768696933985,,end_to_end_job,,,,,cpu
+Porto-derived,ECOD,123,5552,0.1741388589143753,,end_to_end_job,,,,,cpu
+Porto-derived,ECOD,456,5552,0.1154161817394197,,end_to_end_job,,,,,cpu
+Porto-derived,ECOD,789,5552,0.14981262385845184,,end_to_end_job,,,,,cpu
+Porto-derived,ECOD,1024,5552,0.1427417602390051,,end_to_end_job,,,,,cpu
+Porto-derived,iBoost-ODE,42,5552,2.486427617724985,,end_to_end_job,,,,,cpu
+Porto-derived,iBoost-ODE,123,5552,2.6636381722055376,,end_to_end_job,,,,,cpu
+Porto-derived,iBoost-ODE,456,5552,2.9071063636802137,,end_to_end_job,,,,,cpu
+Porto-derived,iBoost-ODE,789,5552,3.662690734025091,,end_to_end_job,,,,,cpu
+Porto-derived,iBoost-ODE,1024,5552,3.2594166700728238,,end_to_end_job,,,,,cpu
+Porto-derived,CoMadOut,42,5552,0.3509344970807433,,end_to_end_job,,,,,cpu
+Porto-derived,CoMadOut,123,5552,0.3122169259004295,,end_to_end_job,,,,,cpu
+Porto-derived,CoMadOut,456,5552,0.46180851804092526,,end_to_end_job,,,,,cpu
+Porto-derived,CoMadOut,789,5552,0.22673890506848693,,end_to_end_job,,,,,cpu
+Porto-derived,CoMadOut,1024,5552,0.2499274597503245,,end_to_end_job,,,,,cpu
+Porto-derived,Shape-KNN,42,5552,14.589389672968537,,end_to_end_job,,,,,cpu
+Porto-derived,Shape-KNN,123,5552,42.23759347386658,,end_to_end_job,,,,,cpu
+Porto-derived,Shape-KNN,456,5552,16.914537334814668,,end_to_end_job,,,,,cpu
+Porto-derived,Shape-KNN,789,5552,36.476776777766645,,end_to_end_job,,,,,cpu
+Porto-derived,Shape-KNN,1024,5552,40.43022632505745,,end_to_end_job,,,,,cpu
+Porto-derived,SegmentOD,42,5552,0.7797460556030273,,end_to_end_job,,,,,cpu
+Porto-derived,SegmentOD,123,5552,0.8952028448693454,,end_to_end_job,,,,,cpu
+Porto-derived,SegmentOD,456,5552,0.7404027003794909,,end_to_end_job,,,,,cpu
+Porto-derived,SegmentOD,789,5552,0.7515852013602853,,end_to_end_job,,,,,cpu
+Porto-derived,SegmentOD,1024,5552,0.6278342371806502,,end_to_end_job,,,,,cpu
+Porto-derived,TADS,42,5552,5.051277284044772,,end_to_end_job,,,,,cpu
+Porto-derived,TADS,123,5552,3.59637349518016,,end_to_end_job,,,,,cpu
+Porto-derived,TADS,456,5552,5.346145648974925,,end_to_end_job,,,,,cpu
+Porto-derived,TADS,789,5552,5.014025365933776,,end_to_end_job,,,,,cpu
+Porto-derived,TADS,1024,5552,3.4493789402768016,,end_to_end_job,,,,,cpu
+Porto-derived,Profile-TAD,42,5552,2.8171117547899485,,end_to_end_job,,,,,cpu
+Porto-derived,Profile-TAD,123,5552,1.630117631983012,,end_to_end_job,,,,,cpu
+Porto-derived,Profile-TAD,456,5552,2.401909471023828,,end_to_end_job,,,,,cpu
+Porto-derived,Profile-TAD,789,5552,2.350082214921713,,end_to_end_job,,,,,cpu
+Porto-derived,Profile-TAD,1024,5552,2.5272476109676063,,end_to_end_job,,,,,cpu
+Porto-derived,LSTM-AE,42,5552,17.588595149107277,17.588595149107277,fit_score_plus_job_io; pure training and scoring are not separated,62,,52946,0,cuda:4
+Porto-derived,LSTM-AE,123,5552,11.783797485753894,11.783797485753894,fit_score_plus_job_io; pure training and scoring are not separated,42,,52946,0,cuda:4
+Porto-derived,LSTM-AE,456,5552,14.431253696791828,14.431253696791828,fit_score_plus_job_io; pure training and scoring are not separated,55,,52946,0,cuda:4
+Porto-derived,LSTM-AE,789,5552,12.599547670222819,12.599547670222819,fit_score_plus_job_io; pure training and scoring are not separated,45,,52946,0,cuda:4
+Porto-derived,LSTM-AE,1024,5552,20.578978078905493,20.578978078905493,fit_score_plus_job_io; pure training and scoring are not separated,80,,52946,0,cuda:4
+Porto-derived,USAD,42,5552,35.344801062718034,35.344801062718034,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:5
+Porto-derived,USAD,123,5552,32.82310846820474,32.82310846820474,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:5
+Porto-derived,USAD,456,5552,32.853956318926066,32.853956318926066,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:5
+Porto-derived,USAD,789,5552,31.462311292998493,31.462311292998493,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:5
+Porto-derived,USAD,1024,5552,30.75456996774301,30.75456996774301,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:5
+Porto-derived,LM-TAD,42,5552,818.1645298232324,815.6960932170041,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Porto-derived,LM-TAD,123,5552,871.7166356211528,869.1004327666014,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Porto-derived,LM-TAD,456,5552,854.0666502336971,851.5795790739357,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Porto-derived,LM-TAD,789,5552,721.4244660399854,718.8591014379635,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Porto-derived,LM-TAD,1024,5552,808.8260935521685,806.4286147798412,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1249036288,cuda:0
+Porto-derived,MST-OATD,42,5552,35.74796397797763,35.04877369804308,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Porto-derived,MST-OATD,123,5552,35.70596697926521,35.05880186287686,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Porto-derived,MST-OATD,456,5552,35.91150150820613,35.284969033207744,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Porto-derived,MST-OATD,789,5552,35.39219538960606,34.58647623611614,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+Porto-derived,MST-OATD,1024,5552,34.89011842897162,33.99665368068963,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+GeoLife,EWGB-TAD,42,3332,3.655616599993664,,end_to_end_job,,,,,cpu
+GeoLife,EWGB-TAD,123,3332,3.954901200006134,,end_to_end_job,,,,,cpu
+GeoLife,EWGB-TAD,456,3332,3.2631222999916645,,end_to_end_job,,,,,cpu
+GeoLife,EWGB-TAD,789,3332,4.2147685999952955,,end_to_end_job,,,,,cpu
+GeoLife,EWGB-TAD,1024,3332,3.788897899998119,,end_to_end_job,,,,,cpu
+GeoLife,IForest,42,3332,1.077946693636477,,end_to_end_job,,,,,cpu
+GeoLife,IForest,123,3332,1.0515069770626724,,end_to_end_job,,,,,cpu
+GeoLife,IForest,456,3332,0.6174715510569513,,end_to_end_job,,,,,cpu
+GeoLife,IForest,789,3332,0.6422429378144443,,end_to_end_job,,,,,cpu
+GeoLife,IForest,1024,3332,0.6154108298942447,,end_to_end_job,,,,,cpu
+GeoLife,ECOD,42,3332,0.13090198999270797,,end_to_end_job,,,,,cpu
+GeoLife,ECOD,123,3332,0.07794169383123517,,end_to_end_job,,,,,cpu
+GeoLife,ECOD,456,3332,0.07993783010169864,,end_to_end_job,,,,,cpu
+GeoLife,ECOD,789,3332,0.1485978802666068,,end_to_end_job,,,,,cpu
+GeoLife,ECOD,1024,3332,0.1375314248725772,,end_to_end_job,,,,,cpu
+GeoLife,iBoost-ODE,42,3332,1.7138279951177537,,end_to_end_job,,,,,cpu
+GeoLife,iBoost-ODE,123,3332,2.420726922340691,,end_to_end_job,,,,,cpu
+GeoLife,iBoost-ODE,456,3332,1.9272329309023917,,end_to_end_job,,,,,cpu
+GeoLife,iBoost-ODE,789,3332,2.057771645952016,,end_to_end_job,,,,,cpu
+GeoLife,iBoost-ODE,1024,3332,3.0010648709721863,,end_to_end_job,,,,,cpu
+GeoLife,CoMadOut,42,3332,0.25679740495979786,,end_to_end_job,,,,,cpu
+GeoLife,CoMadOut,123,3332,0.21703429333865643,,end_to_end_job,,,,,cpu
+GeoLife,CoMadOut,456,3332,0.2262650402262807,,end_to_end_job,,,,,cpu
+GeoLife,CoMadOut,789,3332,0.24713285500183702,,end_to_end_job,,,,,cpu
+GeoLife,CoMadOut,1024,3332,0.12448613718152046,,end_to_end_job,,,,,cpu
+GeoLife,Shape-KNN,42,3332,2.2543802550062537,,end_to_end_job,,,,,cpu
+GeoLife,Shape-KNN,123,3332,2.5377205591648817,,end_to_end_job,,,,,cpu
+GeoLife,Shape-KNN,456,3332,1.8984440937638283,,end_to_end_job,,,,,cpu
+GeoLife,Shape-KNN,789,3332,1.8195891152136028,,end_to_end_job,,,,,cpu
+GeoLife,Shape-KNN,1024,3332,2.7577059189788997,,end_to_end_job,,,,,cpu
+GeoLife,SegmentOD,42,3332,0.36443640710785985,,end_to_end_job,,,,,cpu
+GeoLife,SegmentOD,123,3332,0.5932615818455815,,end_to_end_job,,,,,cpu
+GeoLife,SegmentOD,456,3332,0.3904604301787913,,end_to_end_job,,,,,cpu
+GeoLife,SegmentOD,789,3332,0.5874895709566772,,end_to_end_job,,,,,cpu
+GeoLife,SegmentOD,1024,3332,0.3618079209700227,,end_to_end_job,,,,,cpu
+GeoLife,TADS,42,3332,2.8351607508957386,,end_to_end_job,,,,,cpu
+GeoLife,TADS,123,3332,3.2187612880952656,,end_to_end_job,,,,,cpu
+GeoLife,TADS,456,3332,3.142491179984063,,end_to_end_job,,,,,cpu
+GeoLife,TADS,789,3332,3.3825833038426936,,end_to_end_job,,,,,cpu
+GeoLife,TADS,1024,3332,2.1494313166476786,,end_to_end_job,,,,,cpu
+GeoLife,Profile-TAD,42,3332,2.094381770119071,,end_to_end_job,,,,,cpu
+GeoLife,Profile-TAD,123,3332,1.4572915020398796,,end_to_end_job,,,,,cpu
+GeoLife,Profile-TAD,456,3332,1.1545879007317126,,end_to_end_job,,,,,cpu
+GeoLife,Profile-TAD,789,3332,1.182860794942826,,end_to_end_job,,,,,cpu
+GeoLife,Profile-TAD,1024,3332,1.339836056344211,,end_to_end_job,,,,,cpu
+GeoLife,LSTM-AE,42,3332,12.360458228271455,12.360458228271455,fit_score_plus_job_io; pure training and scoring are not separated,72,,208290,0,cuda:6
+GeoLife,LSTM-AE,123,3332,13.623572053853422,13.623572053853422,fit_score_plus_job_io; pure training and scoring are not separated,80,,208290,0,cuda:6
+GeoLife,LSTM-AE,456,3332,13.623808709904552,13.623808709904552,fit_score_plus_job_io; pure training and scoring are not separated,80,,208290,0,cuda:6
+GeoLife,LSTM-AE,789,3332,13.219146597199142,13.219146597199142,fit_score_plus_job_io; pure training and scoring are not separated,80,,208290,0,cuda:6
+GeoLife,LSTM-AE,1024,3332,12.689391508698463,12.689391508698463,fit_score_plus_job_io; pure training and scoring are not separated,72,,208290,0,cuda:6
+GeoLife,USAD,42,3332,19.358599356375635,19.358599356375635,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:7
+GeoLife,USAD,123,3332,20.722215390764177,20.722215390764177,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:7
+GeoLife,USAD,456,3332,20.371508345007896,20.371508345007896,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:7
+GeoLife,USAD,789,3332,20.750495896674693,20.750495896674693,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:7
+GeoLife,USAD,1024,3332,20.329547484871,20.329547484871,fit_score_plus_job_io; pure training and scoring are not separated,80,,25828,0,cuda:7
+GeoLife,LM-TAD,42,3332,356.3286337191239,353.87935493979603,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1250551296,cuda:0
+GeoLife,LM-TAD,123,3332,531.9531420348212,529.3933355086483,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1250551296,cuda:0
+GeoLife,LM-TAD,456,3332,512.9854764030315,510.459669765085,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1250551296,cuda:0
+GeoLife,LM-TAD,789,3332,502.3612662400119,500.14583571301773,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1250551296,cuda:0
+GeoLife,LM-TAD,1024,3332,453.4041101508774,450.9356295960024,adapter_fit_plus_score; pure training and scoring are not separated,50,,56913408,1250551296,cuda:0
+GeoLife,MST-OATD,42,3332,26.117972558829933,25.48263268219307,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+GeoLife,MST-OATD,123,3332,25.11852240981534,24.5948972213082,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+GeoLife,MST-OATD,456,3332,26.030013287905604,25.519482764881104,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+GeoLife,MST-OATD,789,3332,25.24078448722139,24.64565174933523,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0
+GeoLife,MST-OATD,1024,3332,26.01151969563216,25.364010599907488,adapter_fit_plus_score; pure training and scoring are not separated,10,8,11840659,6965044224,cuda:0

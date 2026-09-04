@@ -1,0 +1,88 @@
+{
+  "generated_utc": "2026-09-04T04:34:26.160972+00:00",
+  "canonical_result_root": "results/phase4",
+  "canonical_lock": "results/phase4/metadata/CURRENT_RESULT_SET.json",
+  "lock_counts": {
+    "main_jobs": 390,
+    "component_view_nmin_jobs": 570,
+    "deep_timing_jobs": 16,
+    "local_entropy_bin_jobs": 120,
+    "extended_sensitivity_rows": 210,
+    "weight_stability_run_view_rows": 360,
+    "weight_stability_seed_rows": 48
+  },
+  "dataset_cache_count": 30,
+  "groups": {
+    "main": {
+      "expected_markers": 390,
+      "actual_markers": 390,
+      "selected_attempts": 390,
+      "missing_selected_attempts": [],
+      "unreferenced_attempts": [],
+      "ok": true
+    },
+    "analysis": {
+      "expected_markers": 570,
+      "actual_markers": 570,
+      "selected_attempts": 570,
+      "missing_selected_attempts": [],
+      "unreferenced_attempts": [],
+      "ok": true
+    },
+    "deep_timing": {
+      "expected_markers": 16,
+      "actual_markers": 16,
+      "selected_attempts": 16,
+      "missing_selected_attempts": [],
+      "unreferenced_attempts": [],
+      "ok": true
+    },
+    "local_entropy_bins": {
+      "expected_markers": 120,
+      "actual_markers": 120,
+      "selected_attempts": 120,
+      "missing_selected_attempts": [],
+      "unreferenced_attempts": [],
+      "ok": true
+    }
+  },
+  "summary_statuses": {
+    "analysis_summary_status.json": {
+      "completed_jobs": 570,
+      "expected_jobs": 570,
+      "missing_jobs": 0,
+      "statistics_ready": true
+    },
+    "deep_phase_timing_status.json": {
+      "completed_jobs": 16,
+      "expected_jobs": 16,
+      "missing_jobs": 0,
+      "all_scores_match_main": true,
+      "all_metrics_match_main": true,
+      "timing_seed": 42
+    },
+    "ewgb_phase_timing_status.json": {
+      "completed_jobs": 30,
+      "expected_jobs": 30,
+      "all_scores_exactly_match_main": true,
+      "max_abs_score_difference": 0.0,
+      "labels_consumed_during_fit": false,
+      "cpu_processes": 8
+    },
+    "main_summary_status.json": {
+      "completed_jobs": 390,
+      "expected_jobs": 390,
+      "missing_jobs": 0,
+      "statistics_ready": true
+    },
+    "runtime_summary_status.json": {
+      "completed_jobs": 390,
+      "expected_jobs": 390,
+      "missing_jobs": 0,
+      "pure_deep_training_time_available": true,
+      "deep_phase_timing_seed": 42,
+      "follow_up_required": null
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,2624 @@
+{
+  "AUC": {
+    "paired_seed_blocks": {
+      "metric": "AUC",
+      "block_definition": "30 matched dataset-seed runs; method scores share each dataset cache",
+      "n_blocks": 30,
+      "friedman_statistic": 120.06153846153848,
+      "friedman_p": 6.008071464516127e-20,
+      "degrees_of_freedom": 12,
+      "average_ranks": {
+        "EWGB-TAD": 3.3,
+        "IForest": 5.133333333333334,
+        "ECOD": 9.266666666666667,
+        "iBoost-ODE": 7.2,
+        "CoMadOut": 6.3,
+        "Shape-KNN": 5.133333333333334,
+        "SegmentOD": 7.333333333333333,
+        "TADS": 9.2,
+        "Profile-TAD": 9.066666666666666,
+        "LSTM-AE": 6.6,
+        "USAD": 3.533333333333333,
+        "LM-TAD": 10.1,
+        "MST-OATD": 8.833333333333334
+      },
+      "ewgb_pairwise_wilcoxon_holm": {
+        "IForest": {
+          "wilcoxon_statistic": 22.0,
+          "p_raw": 9.98377799987793e-07,
+          "mean_difference": 0.04272534864094059,
+          "median_difference": 0.037965579710145025,
+          "wins": 24,
+          "ties": 0,
+          "losses": 6,
+          "p_holm": 5.990266799926758e-06
+        },
+        "ECOD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.862645149230957e-09,
+          "mean_difference": 0.10207757697456492,
+          "median_difference": 0.11793725990920206,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 2.2351741790771484e-08
+        },
+        "iBoost-ODE": {
+          "wilcoxon_statistic": 10.0,
+          "p_raw": 8.009374141693115e-08,
+          "mean_difference": 0.06497053052790873,
+          "median_difference": 0.07650187489086774,
+          "wins": 27,
+          "ties": 0,
+          "losses": 3,
+          "p_holm": 5.606561899185181e-07
+        },
+        "CoMadOut": {
+          "wilcoxon_statistic": 34.0,
+          "p_raw": 6.917864084243774e-06,
+          "mean_difference": 0.05284312721902098,
+          "median_difference": 0.038398376113148225,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4,
+          "p_holm": 3.458932042121887e-05
+        },
+        "Shape-KNN": {
+          "wilcoxon_statistic": 210.0,
+          "p_raw": 0.6554384250193834,
+          "mean_difference": 0.06078540087887781,
+          "median_difference": -0.028586594202898497,
+          "wins": 10,
+          "ties": 0,
+          "losses": 20,
+          "p_holm": 1.0
+        },
+        "SegmentOD": {
+          "wilcoxon_statistic": 48.0,
+          "p_raw": 4.4075772166252136e-05,
+          "mean_difference": 0.06179663480006983,
+          "median_difference": 0.06751114130434771,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7,
+          "p_holm": 0.00017630308866500854
+        },
+        "TADS": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.862645149230957e-09,
+          "mean_difference": 0.10703155127757404,
+          "median_difference": 0.11171757246376818,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 2.2351741790771484e-08
+        },
+        "Profile-TAD": {
+          "wilcoxon_statistic": 1.0,
+          "p_raw": 3.725290298461914e-09,
+          "mean_difference": 0.10733446336068911,
+          "median_difference": 0.12485253623188414,
+          "wins": 29,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 3.3527612686157227e-08
+        },
+        "LSTM-AE": {
+          "wilcoxon_statistic": 91.0,
+          "p_raw": 0.0027663204818964005,
+          "mean_difference": 0.0694193571386997,
+          "median_difference": 0.08815181159420282,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.008298961445689201
+        },
+        "USAD": {
+          "wilcoxon_statistic": 223.0,
+          "p_raw": 0.8552717231214046,
+          "mean_difference": 0.0026979273616203818,
+          "median_difference": -0.0013360987427973314,
+          "wins": 14,
+          "ties": 0,
+          "losses": 16,
+          "p_holm": 1.0
+        },
+        "LM-TAD": {
+          "wilcoxon_statistic": 3.0,
+          "p_raw": 9.313225746154785e-09,
+          "mean_difference": 0.1596046597986147,
+          "median_difference": 0.18214398790815428,
+          "wins": 28,
+          "ties": 0,
+          "losses": 2,
+          "p_holm": 7.450580596923828e-08
+        },
+        "MST-OATD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.862645149230957e-09,
+          "mean_difference": 0.12409679813456724,
+          "median_difference": 0.057688858695652045,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 2.2351741790771484e-08
+        }
+      }
+    },
+    "dataset_mean_blocks": {
+      "metric": "AUC",
+      "block_definition": "4 dataset-level means; included as a descriptive dataset-generalization check",
+      "n_blocks": 4,
+      "friedman_statistic": 17.274725274725284,
+      "friedman_p": 0.13955202457327323,
+      "degrees_of_freedom": 12,
+      "average_ranks": {
+        "EWGB-TAD": 2.25,
+        "IForest": 5.25,
+        "ECOD": 9.25,
+        "iBoost-ODE": 6.5,
+        "CoMadOut": 6.5,
+        "Shape-KNN": 6.75,
+        "SegmentOD": 7.25,
+        "TADS": 8.25,
+        "Profile-TAD": 7.75,
+        "LSTM-AE": 7.5,
+        "USAD": 3.5,
+        "LM-TAD": 10.0,
+        "MST-OATD": 10.25
+      },
+      "ewgb_pairwise_wilcoxon_holm": {
+        "IForest": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.04389607549764277,
+          "median_difference": 0.04740825606774929,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "ECOD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.10741518792561547,
+          "median_difference": 0.12342802077876719,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "iBoost-ODE": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.06778734017592108,
+          "median_difference": 0.07371567934782608,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "CoMadOut": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.05678628956041551,
+          "median_difference": 0.0449568025362318,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "Shape-KNN": {
+          "wilcoxon_statistic": 3.0,
+          "p_raw": 0.625,
+          "mean_difference": 0.11542206870962102,
+          "median_difference": 0.07931413741924204,
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "p_holm": 1.0
+        },
+        "SegmentOD": {
+          "wilcoxon_statistic": 1.0,
+          "p_raw": 0.25,
+          "mean_difference": 0.075451319953728,
+          "median_difference": 0.09021047101449281,
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 1.0
+        },
+        "TADS": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.09904064213375235,
+          "median_difference": 0.10223271739130435,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "Profile-TAD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.08760115156277282,
+          "median_difference": 0.08416339008206736,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "LSTM-AE": {
+          "wilcoxon_statistic": 1.0,
+          "p_raw": 0.25,
+          "mean_difference": 0.09853491433123795,
+          "median_difference": 0.13519979243059188,
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 1.0
+        },
+        "USAD": {
+          "wilcoxon_statistic": 4.0,
+          "p_raw": 0.875,
+          "mean_difference": 0.006709572201850866,
+          "median_difference": 0.014069855072463722,
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 1.0
+        },
+        "LM-TAD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.18605903227038587,
+          "median_difference": 0.18206761164222107,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "MST-OATD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.1655409444844596,
+          "median_difference": 0.13050789440370175,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        }
+      }
+    },
+    "per_dataset_seed_blocks": {
+      "Synthetic": {
+        "metric": "AUC",
+        "block_definition": "Synthetic matched seeds",
+        "n_blocks": 10,
+        "friedman_statistic": 104.69010989010985,
+        "friedman_p": 6.67888557658231e-17,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 4.4,
+          "IForest": 3.7,
+          "ECOD": 7.6,
+          "iBoost-ODE": 6.5,
+          "CoMadOut": 9.0,
+          "Shape-KNN": 2.0,
+          "SegmentOD": 10.7,
+          "TADS": 12.1,
+          "Profile-TAD": 12.9,
+          "LSTM-AE": 1.0,
+          "USAD": 6.9,
+          "LM-TAD": 6.4,
+          "MST-OATD": 7.8
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 21.0,
+            "p_raw": 0.556640625,
+            "mean_difference": 0.009004710144927574,
+            "median_difference": -0.005397644927536194,
+            "wins": 4,
+            "ties": 0,
+            "losses": 6,
+            "p_holm": 0.556640625
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.027908949275362326,
+            "median_difference": 0.01268967391304332,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 10.0,
+            "p_raw": 0.083984375,
+            "mean_difference": 0.022009166666666635,
+            "median_difference": 0.016471739130434704,
+            "wins": 7,
+            "ties": 0,
+            "losses": 3,
+            "p_holm": 0.16796875
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 1.0,
+            "p_raw": 0.00390625,
+            "mean_difference": 0.0597034420289855,
+            "median_difference": 0.051251902173913066,
+            "wins": 9,
+            "ties": 0,
+            "losses": 1,
+            "p_holm": 0.0234375
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.05758326086956526,
+            "median_difference": -0.06832635869565229,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.07829601449275361,
+            "median_difference": 0.06751114130434771,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.14162384057971011,
+            "median_difference": 0.13493532608695646,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.16337840579710144,
+            "median_difference": 0.15013405797101453,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.07165623188405798,
+            "median_difference": -0.08480742753623205,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "USAD": {
+            "wilcoxon_statistic": 5.0,
+            "p_raw": 0.01953125,
+            "mean_difference": 0.026925797101449257,
+            "median_difference": 0.013755797101449307,
+            "wins": 8,
+            "ties": 0,
+            "losses": 2,
+            "p_holm": 0.05859375
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 3.0,
+            "p_raw": 0.009765625,
+            "mean_difference": 0.024563333333333305,
+            "median_difference": 0.021736503623188408,
+            "wins": 8,
+            "ties": 0,
+            "losses": 2,
+            "p_holm": 0.0390625
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.030492989130434765,
+            "median_difference": 0.022742391304347853,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          }
+        }
+      },
+      "Grid-Network": {
+        "metric": "AUC",
+        "block_definition": "Grid-Network matched seeds",
+        "n_blocks": 10,
+        "friedman_statistic": 115.74065934065936,
+        "friedman_p": 4.353430945313193e-19,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 3.7,
+          "IForest": 6.9,
+          "ECOD": 11.9,
+          "iBoost-ODE": 9.0,
+          "CoMadOut": 5.2,
+          "Shape-KNN": 1.5,
+          "SegmentOD": 3.3,
+          "TADS": 9.5,
+          "Profile-TAD": 10.8,
+          "LSTM-AE": 8.7,
+          "USAD": 1.5,
+          "LM-TAD": 12.9,
+          "MST-OATD": 6.1
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.0717630797101449,
+            "median_difference": 0.07085380434782607,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.15489576086956514,
+            "median_difference": 0.15402989130434785,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.09666465579710141,
+            "median_difference": 0.09274855072463767,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.030210163043478188,
+            "median_difference": 0.024130163043478203,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.03939260869565222,
+            "median_difference": -0.03344565217391321,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 9.0,
+            "p_raw": 0.064453125,
+            "mean_difference": -0.009321485507246397,
+            "median_difference": -0.006551449275362331,
+            "wins": 3,
+            "ties": 0,
+            "losses": 7,
+            "p_holm": 0.064453125
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.1044028985507246,
+            "median_difference": 0.1151692028985507,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.13022376811594202,
+            "median_difference": 0.13323043478260888,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.09403271739130428,
+            "median_difference": 0.08815181159420282,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "USAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.03757652173913047,
+            "median_difference": -0.03288423913043481,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.18882849637681154,
+            "median_difference": 0.19765905797101452,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.05192402173913039,
+            "median_difference": 0.052668749999999875,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          }
+        }
+      },
+      "Porto-derived": {
+        "metric": "AUC",
+        "block_definition": "Porto-derived matched seeds",
+        "n_blocks": 5,
+        "friedman_statistic": 54.46153846153845,
+        "friedman_p": 2.2598904349806898e-07,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 1.6,
+          "IForest": 3.8,
+          "ECOD": 8.0,
+          "iBoost-ODE": 5.4,
+          "CoMadOut": 6.6,
+          "Shape-KNN": 11.6,
+          "SegmentOD": 8.0,
+          "TADS": 7.4,
+          "Profile-TAD": 3.6,
+          "LSTM-AE": 9.8,
+          "USAD": 1.4,
+          "LM-TAD": 11.2,
+          "MST-OATD": 12.6
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.026522536231884098,
+            "median_difference": 0.02344130434782621,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.1085072463768116,
+            "median_difference": 0.106210144927536,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.050766702898550745,
+            "median_difference": 0.05192427536231892,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.1212595652173913,
+            "median_difference": 0.0664820652173913,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.3606432608695652,
+            "median_difference": 0.35826032608695657,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.10212492753623188,
+            "median_difference": 0.10409800724637674,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.10006253623188406,
+            "median_difference": 0.10028442028985518,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.018699420289855072,
+            "median_difference": 0.012532971014492689,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.19539630434782612,
+            "median_difference": 0.20708985507246358,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "USAD": {
+            "wilcoxon_statistic": 7.0,
+            "p_raw": 1.0,
+            "mean_difference": 0.0012139130434782653,
+            "median_difference": -0.0006119565217391765,
+            "wins": 2,
+            "ties": 0,
+            "losses": 3,
+            "p_holm": 1.0
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.3555375724637681,
+            "median_difference": 0.35104873188405794,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.370655,
+            "median_difference": 0.37107318840579717,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          }
+        }
+      },
+      "GeoLife": {
+        "metric": "AUC",
+        "block_definition": "GeoLife matched seeds",
+        "n_blocks": 5,
+        "friedman_statistic": 54.98901098901098,
+        "friedman_p": 1.8181492230514354e-07,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 2.0,
+          "IForest": 5.8,
+          "ECOD": 8.6,
+          "iBoost-ODE": 6.8,
+          "CoMadOut": 2.8,
+          "Shape-KNN": 12.2,
+          "SegmentOD": 8.0,
+          "TADS": 4.6,
+          "Profile-TAD": 3.4,
+          "LSTM-AE": 10.4,
+          "USAD": 3.0,
+          "LM-TAD": 10.8,
+          "MST-OATD": 12.6
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.06829397590361448,
+            "median_difference": 0.06423092369477923,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.13834879518072296,
+            "median_difference": 0.12369176706827323,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.1017088353413655,
+            "median_difference": 0.08318122489959845,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 7.0,
+            "p_raw": 1.0,
+            "mean_difference": 0.015971987951807255,
+            "median_difference": -0.022973895582329318,
+            "wins": 2,
+            "ties": 0,
+            "losses": 3,
+            "p_holm": 1.0
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.19802088353413652,
+            "median_difference": 0.19614457831325294,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.13070582329317265,
+            "median_difference": 0.12464508032128507,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.050073293172690735,
+            "median_difference": 0.04388654618473886,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 1.0,
+            "p_raw": 0.125,
+            "mean_difference": 0.038103012048192754,
+            "median_difference": 0.0522771084337349,
+            "wins": 4,
+            "ties": 0,
+            "losses": 1,
+            "p_holm": 0.75
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.1763668674698795,
+            "median_difference": 0.17127208835341357,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "USAD": {
+            "wilcoxon_statistic": 1.0,
+            "p_raw": 0.125,
+            "mean_difference": 0.03627510040160644,
+            "median_difference": 0.0353162650602411,
+            "wins": 4,
+            "ties": 0,
+            "losses": 1,
+            "p_holm": 0.75
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.17530672690763052,
+            "median_difference": 0.18129467871485938,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.2090917670682731,
+            "median_difference": 0.2147776104417669,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          }
+        }
+      }
+    }
+  },
+  "AUPRC": {
+    "paired_seed_blocks": {
+      "metric": "AUPRC",
+      "block_definition": "30 matched dataset-seed runs; method scores share each dataset cache",
+      "n_blocks": 30,
+      "friedman_statistic": 145.32747252747254,
+      "friedman_p": 5.017065163632833e-25,
+      "degrees_of_freedom": 12,
+      "average_ranks": {
+        "EWGB-TAD": 3.3333333333333335,
+        "IForest": 4.366666666666666,
+        "ECOD": 10.5,
+        "iBoost-ODE": 6.966666666666667,
+        "CoMadOut": 5.0,
+        "Shape-KNN": 5.333333333333333,
+        "SegmentOD": 6.1,
+        "TADS": 9.233333333333333,
+        "Profile-TAD": 10.833333333333334,
+        "LSTM-AE": 6.5,
+        "USAD": 4.933333333333334,
+        "LM-TAD": 9.8,
+        "MST-OATD": 8.1
+      },
+      "ewgb_pairwise_wilcoxon_holm": {
+        "IForest": {
+          "wilcoxon_statistic": 50.0,
+          "p_raw": 5.5925920605659485e-05,
+          "mean_difference": 0.06551655510743791,
+          "median_difference": 0.06556748135398799,
+          "wins": 24,
+          "ties": 0,
+          "losses": 6,
+          "p_holm": 0.0003355555236339569
+        },
+        "ECOD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.862645149230957e-09,
+          "mean_difference": 0.28384790303338614,
+          "median_difference": 0.319827512663315,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 2.2351741790771484e-08
+        },
+        "iBoost-ODE": {
+          "wilcoxon_statistic": 3.0,
+          "p_raw": 9.313225746154785e-09,
+          "mean_difference": 0.13041442660964117,
+          "median_difference": 0.1207873502167916,
+          "wins": 29,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 7.450580596923828e-08
+        },
+        "CoMadOut": {
+          "wilcoxon_statistic": 116.0,
+          "p_raw": 0.015460003167390823,
+          "mean_difference": 0.08385640742634402,
+          "median_difference": 0.025639224757502466,
+          "wins": 19,
+          "ties": 0,
+          "losses": 11,
+          "p_holm": 0.07730001583695412
+        },
+        "Shape-KNN": {
+          "wilcoxon_statistic": 208.0,
+          "p_raw": 0.6263462882488966,
+          "mean_difference": 0.07110786272476272,
+          "median_difference": -0.12449609420666913,
+          "wins": 11,
+          "ties": 0,
+          "losses": 19,
+          "p_holm": 0.6263462882488966
+        },
+        "SegmentOD": {
+          "wilcoxon_statistic": 119.0,
+          "p_raw": 0.018529480323195457,
+          "mean_difference": 0.07992386551165605,
+          "median_difference": 0.06760668438983847,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.07730001583695412
+        },
+        "TADS": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.862645149230957e-09,
+          "mean_difference": 0.2659962067714993,
+          "median_difference": 0.27165780447332155,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 2.2351741790771484e-08
+        },
+        "Profile-TAD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.862645149230957e-09,
+          "mean_difference": 0.3986001017569181,
+          "median_difference": 0.407602651720963,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 2.2351741790771484e-08
+        },
+        "LSTM-AE": {
+          "wilcoxon_statistic": 147.0,
+          "p_raw": 0.0803273618221283,
+          "mean_difference": 0.09874023310098487,
+          "median_difference": 0.15417282530754697,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.2409820854663849
+        },
+        "USAD": {
+          "wilcoxon_statistic": 148.0,
+          "p_raw": 0.08406547829508781,
+          "mean_difference": 0.051289008320857254,
+          "median_difference": 0.05629561438417913,
+          "wins": 19,
+          "ties": 0,
+          "losses": 11,
+          "p_holm": 0.2409820854663849
+        },
+        "LM-TAD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.862645149230957e-09,
+          "mean_difference": 0.3434452672960328,
+          "median_difference": 0.3853301046082523,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 2.2351741790771484e-08
+        },
+        "MST-OATD": {
+          "wilcoxon_statistic": 5.0,
+          "p_raw": 1.862645149230957e-08,
+          "mean_difference": 0.20274306729824357,
+          "median_difference": 0.09434105584528757,
+          "wins": 28,
+          "ties": 0,
+          "losses": 2,
+          "p_holm": 1.30385160446167e-07
+        }
+      }
+    },
+    "dataset_mean_blocks": {
+      "metric": "AUPRC",
+      "block_definition": "4 dataset-level means; included as a descriptive dataset-generalization check",
+      "n_blocks": 4,
+      "friedman_statistic": 20.80219780219781,
+      "friedman_p": 0.05335307233364328,
+      "degrees_of_freedom": 12,
+      "average_ranks": {
+        "EWGB-TAD": 2.25,
+        "IForest": 3.75,
+        "ECOD": 10.75,
+        "iBoost-ODE": 6.0,
+        "CoMadOut": 4.75,
+        "Shape-KNN": 7.25,
+        "SegmentOD": 6.75,
+        "TADS": 8.5,
+        "Profile-TAD": 9.25,
+        "LSTM-AE": 7.75,
+        "USAD": 5.0,
+        "LM-TAD": 10.25,
+        "MST-OATD": 8.75
+      },
+      "ewgb_pairwise_wilcoxon_holm": {
+        "IForest": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.07369191856337315,
+          "median_difference": 0.06967012719110793,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "ECOD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.29981536926813634,
+          "median_difference": 0.32763422435083606,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "iBoost-ODE": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.1408633757637507,
+          "median_difference": 0.14432722894342143,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "CoMadOut": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.10433840671774489,
+          "median_difference": 0.1122467142745538,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "Shape-KNN": {
+          "wilcoxon_statistic": 3.0,
+          "p_raw": 0.625,
+          "mean_difference": 0.18269668539947923,
+          "median_difference": 0.10713795666537029,
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "p_holm": 1.0
+        },
+        "SegmentOD": {
+          "wilcoxon_statistic": 2.0,
+          "p_raw": 0.375,
+          "mean_difference": 0.12041808508823557,
+          "median_difference": 0.16749450405558913,
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 1.0
+        },
+        "TADS": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.27188665492959296,
+          "median_difference": 0.2720407088187464,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "Profile-TAD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.3480125822267631,
+          "median_difference": 0.3482516387685847,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "LSTM-AE": {
+          "wilcoxon_statistic": 2.0,
+          "p_raw": 0.375,
+          "mean_difference": 0.1623651705496369,
+          "median_difference": 0.2217089684889192,
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 1.0
+        },
+        "USAD": {
+          "wilcoxon_statistic": 3.0,
+          "p_raw": 0.625,
+          "mean_difference": 0.07940657802431846,
+          "median_difference": 0.11377807915904214,
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 1.0
+        },
+        "LM-TAD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.37174819899882483,
+          "median_difference": 0.3885594890341788,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "MST-OATD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.2610029711767393,
+          "median_difference": 0.18057712536815246,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        }
+      }
+    },
+    "per_dataset_seed_blocks": {
+      "Synthetic": {
+        "metric": "AUPRC",
+        "block_definition": "Synthetic matched seeds",
+        "n_blocks": 10,
+        "friedman_statistic": 102.356043956044,
+        "friedman_p": 1.9212333543563667e-16,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 4.2,
+          "IForest": 4.0,
+          "ECOD": 10.3,
+          "iBoost-ODE": 7.4,
+          "CoMadOut": 5.8,
+          "Shape-KNN": 2.1,
+          "SegmentOD": 7.8,
+          "TADS": 11.9,
+          "Profile-TAD": 13.0,
+          "LSTM-AE": 1.0,
+          "USAD": 8.0,
+          "LM-TAD": 6.5,
+          "MST-OATD": 9.0
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 25.0,
+            "p_raw": 0.845703125,
+            "mean_difference": 0.01912761074295736,
+            "median_difference": -0.02020640507940258,
+            "wins": 4,
+            "ties": 0,
+            "losses": 6,
+            "p_holm": 1.0
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.144459184443097,
+            "median_difference": 0.10380239094104796,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 3.0,
+            "p_raw": 0.009765625,
+            "mean_difference": 0.09378469265370656,
+            "median_difference": 0.0834901448702439,
+            "wins": 9,
+            "ties": 0,
+            "losses": 1,
+            "p_holm": 0.029296875
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 22.0,
+            "p_raw": 0.625,
+            "mean_difference": 0.07439646082030951,
+            "median_difference": -0.004711274801706744,
+            "wins": 5,
+            "ties": 0,
+            "losses": 5,
+            "p_holm": 1.0
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 2.0,
+            "p_raw": 0.005859375,
+            "mean_difference": -0.13856978526369085,
+            "median_difference": -0.1702329058413743,
+            "wins": 1,
+            "ties": 0,
+            "losses": 9,
+            "p_holm": 0.0234375
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.1035365267590335,
+            "median_difference": 0.06760668438983847,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.35387568115928825,
+            "median_difference": 0.33195670408158395,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.45914997116503276,
+            "median_difference": 0.407602651720963,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.22881966476541563,
+            "median_difference": -0.261726372108173,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "USAD": {
+            "wilcoxon_statistic": 1.0,
+            "p_raw": 0.00390625,
+            "mean_difference": 0.11029565165105029,
+            "median_difference": 0.09437834198993161,
+            "wins": 9,
+            "ties": 0,
+            "losses": 1,
+            "p_holm": 0.0234375
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.07754345554779844,
+            "median_difference": 0.06607722862613019,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.12147637852761443,
+            "median_difference": 0.08858405283103965,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          }
+        }
+      },
+      "Grid-Network": {
+        "metric": "AUPRC",
+        "block_definition": "Grid-Network matched seeds",
+        "n_blocks": 10,
+        "friedman_statistic": 116.04395604395609,
+        "friedman_p": 3.789233109816611e-19,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 4.8,
+          "IForest": 6.5,
+          "ECOD": 11.0,
+          "iBoost-ODE": 8.7,
+          "CoMadOut": 4.9,
+          "Shape-KNN": 1.0,
+          "SegmentOD": 2.8,
+          "TADS": 9.3,
+          "Profile-TAD": 12.9,
+          "LSTM-AE": 8.9,
+          "USAD": 2.2,
+          "LM-TAD": 12.1,
+          "MST-OATD": 5.9
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.07920404564817755,
+            "median_difference": 0.0810854211222522,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.35936675668467444,
+            "median_difference": 0.37164464012199183,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.1252483639491381,
+            "median_difference": 0.11494356448002407,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 23.0,
+            "p_raw": 0.6953125,
+            "mean_difference": 0.011388356866775551,
+            "median_difference": -0.006487034190354235,
+            "wins": 4,
+            "ties": 0,
+            "losses": 6,
+            "p_holm": 0.6953125
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.16556977998564956,
+            "median_difference": -0.16663713380173067,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.10566567404203941,
+            "median_difference": -0.1016517813135106,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.15455493975133625,
+            "median_difference": 0.15544324884215266,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.5404003104694238,
+            "median_difference": 0.5625190233303046,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.1718003811727772,
+            "median_difference": 0.15663034219173155,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "USAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.12018791382318059,
+            "median_difference": -0.11299087074270653,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.4961353522330999,
+            "median_difference": 0.4968721811707791,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 3.0,
+            "p_raw": 0.009765625,
+            "mean_difference": 0.05097014055488983,
+            "median_difference": 0.06688274325272242,
+            "wins": 8,
+            "ties": 0,
+            "losses": 2,
+            "p_holm": 0.0234375
+          }
+        }
+      },
+      "Porto-derived": {
+        "metric": "AUPRC",
+        "block_definition": "Porto-derived matched seeds",
+        "n_blocks": 5,
+        "friedman_statistic": 52.72087912087915,
+        "friedman_p": 4.618039273611894e-07,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 1.0,
+          "IForest": 2.4,
+          "ECOD": 8.8,
+          "iBoost-ODE": 5.4,
+          "CoMadOut": 5.0,
+          "Shape-KNN": 12.8,
+          "SegmentOD": 6.6,
+          "TADS": 8.2,
+          "Profile-TAD": 5.2,
+          "LSTM-AE": 9.4,
+          "USAD": 3.6,
+          "LM-TAD": 11.0,
+          "MST-OATD": 11.6
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.060136208734038334,
+            "median_difference": 0.06422432523398225,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.399533843927776,
+            "median_difference": 0.3968021059662113,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.1634060939377046,
+            "median_difference": 0.13642366445835818,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.18147184145509626,
+            "median_difference": 0.06934760922863992,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.6820806082528258,
+            "median_difference": 0.6830472128603331,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.23145248135214472,
+            "median_difference": 0.2359090825972856,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.3889102623295426,
+            "median_difference": 0.3769458470656835,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.15514674090045916,
+            "median_difference": 0.14369643952076694,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.4348624099861248,
+            "median_difference": 0.4447838432389558,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "USAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.117260506667034,
+            "median_difference": 0.1289293087039789,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.632330362379143,
+            "median_difference": 0.6250461683962283,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.6318874934157623,
+            "median_difference": 0.6270084910950613,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          }
+        }
+      },
+      "GeoLife": {
+        "metric": "AUPRC",
+        "block_definition": "GeoLife matched seeds",
+        "n_blocks": 5,
+        "friedman_statistic": 53.43296703296704,
+        "friedman_p": 3.449381714512401e-07,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 1.0,
+          "IForest": 2.8,
+          "ECOD": 11.6,
+          "iBoost-ODE": 4.2,
+          "CoMadOut": 3.6,
+          "Shape-KNN": 13.0,
+          "SegmentOD": 8.8,
+          "TADS": 4.8,
+          "Profile-TAD": 8.0,
+          "LSTM-AE": 9.8,
+          "USAD": 5.6,
+          "LM-TAD": 10.6,
+          "MST-OATD": 7.2
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.1362998091283193,
+            "median_difference": 0.15740397508216208,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.2959016920169975,
+            "median_difference": 0.3202684238848004,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.18101435251445314,
+            "median_difference": 0.18289076532978693,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.15009696772879788,
+            "median_difference": 0.1441173220383819,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.35284569859443127,
+            "median_difference": 0.37739681359875876,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.2523490062838033,
+            "median_difference": 0.26901299615528496,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.19020573647820452,
+            "median_difference": 0.19583061502472354,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.23735330637213656,
+            "median_difference": 0.2552933986620713,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.27161755580506125,
+            "median_difference": 0.29453694302810696,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "USAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.21025806760237012,
+            "median_difference": 0.23181264257107181,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.2809836258352577,
+            "median_difference": 0.2956506464682745,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.23967787220869044,
+            "median_difference": 0.23860177820108372,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          }
+        }
+      }
+    }
+  },
+  "F1": {
+    "paired_seed_blocks": {
+      "metric": "F1",
+      "block_definition": "30 matched dataset-seed runs; method scores share each dataset cache",
+      "n_blocks": 30,
+      "friedman_statistic": 126.72338864949123,
+      "friedman_p": 2.8015777602048185e-21,
+      "degrees_of_freedom": 12,
+      "average_ranks": {
+        "EWGB-TAD": 3.1666666666666665,
+        "IForest": 4.733333333333333,
+        "ECOD": 9.516666666666667,
+        "iBoost-ODE": 6.6,
+        "CoMadOut": 5.266666666666667,
+        "Shape-KNN": 5.333333333333333,
+        "SegmentOD": 7.05,
+        "TADS": 9.083333333333334,
+        "Profile-TAD": 10.766666666666667,
+        "LSTM-AE": 6.433333333333334,
+        "USAD": 5.05,
+        "LM-TAD": 9.783333333333333,
+        "MST-OATD": 8.216666666666667
+      },
+      "ewgb_pairwise_wilcoxon_holm": {
+        "IForest": {
+          "wilcoxon_statistic": 29.5,
+          "p_raw": 2.970657232945119e-05,
+          "mean_difference": 0.07193120307316221,
+          "median_difference": 0.07336956521739124,
+          "wins": 24,
+          "ties": 0,
+          "losses": 6,
+          "p_holm": 0.00017823943397670712
+        },
+        "ECOD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.862645149230957e-09,
+          "mean_difference": 0.18916171934113266,
+          "median_difference": 0.20742753623188406,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 2.2351741790771484e-08
+        },
+        "iBoost-ODE": {
+          "wilcoxon_statistic": 4.0,
+          "p_raw": 2.60174464085567e-06,
+          "mean_difference": 0.1078356905884407,
+          "median_difference": 0.09620001746114892,
+          "wins": 29,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 2.081395712684536e-05
+        },
+        "CoMadOut": {
+          "wilcoxon_statistic": 86.0,
+          "p_raw": 0.002582523898808184,
+          "mean_difference": 0.07705168500087306,
+          "median_difference": 0.02626811594202899,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7,
+          "p_holm": 0.01291261949404092
+        },
+        "Shape-KNN": {
+          "wilcoxon_statistic": 212.0,
+          "p_raw": 0.6732635275306775,
+          "mean_difference": 0.05050055293638322,
+          "median_difference": -0.13496376811594196,
+          "wins": 11,
+          "ties": 0,
+          "losses": 19,
+          "p_holm": 0.6732635275306775
+        },
+        "SegmentOD": {
+          "wilcoxon_statistic": 115.0,
+          "p_raw": 0.015655734686798057,
+          "mean_difference": 0.07389194458995402,
+          "median_difference": 0.10054347826086962,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.06262293874719223
+        },
+        "TADS": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.7322162331441136e-06,
+          "mean_difference": 0.20363337407601417,
+          "median_difference": 0.21014492753623187,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.905437856458525e-05
+        },
+        "Profile-TAD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.733306644199106e-06,
+          "mean_difference": 0.38112959082707637,
+          "median_difference": 0.39221014492753625,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.905437856458525e-05
+        },
+        "LSTM-AE": {
+          "wilcoxon_statistic": 140.0,
+          "p_raw": 0.057089925760703535,
+          "mean_difference": 0.07643035911762995,
+          "median_difference": 0.11594202898550726,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.1712697772821106
+        },
+        "USAD": {
+          "wilcoxon_statistic": 179.5,
+          "p_raw": 0.27563402086761524,
+          "mean_difference": 0.029204499156044457,
+          "median_difference": 0.054347826086956486,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.5512680417352305
+        },
+        "LM-TAD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.733306644199106e-06,
+          "mean_difference": 0.28903512601129155,
+          "median_difference": 0.2928780338746289,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.905437856458525e-05
+        },
+        "MST-OATD": {
+          "wilcoxon_statistic": 11.0,
+          "p_raw": 5.213504226276105e-06,
+          "mean_difference": 0.16691039520400439,
+          "median_difference": 0.09420289855072464,
+          "wins": 28,
+          "ties": 0,
+          "losses": 2,
+          "p_holm": 3.649452958393273e-05
+        }
+      }
+    },
+    "dataset_mean_blocks": {
+      "metric": "F1",
+      "block_definition": "4 dataset-level means; included as a descriptive dataset-generalization check",
+      "n_blocks": 4,
+      "friedman_statistic": 17.327835051546398,
+      "friedman_p": 0.13767581815207694,
+      "degrees_of_freedom": 12,
+      "average_ranks": {
+        "EWGB-TAD": 2.25,
+        "IForest": 4.25,
+        "ECOD": 9.625,
+        "iBoost-ODE": 5.75,
+        "CoMadOut": 5.25,
+        "Shape-KNN": 7.25,
+        "SegmentOD": 8.0,
+        "TADS": 8.25,
+        "Profile-TAD": 9.25,
+        "LSTM-AE": 7.75,
+        "USAD": 4.75,
+        "LM-TAD": 9.375,
+        "MST-OATD": 9.25
+      },
+      "ewgb_pairwise_wilcoxon_holm": {
+        "IForest": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.07637506547930852,
+          "median_difference": 0.07237318840579704,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "ECOD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.2048929413305396,
+          "median_difference": 0.21639820150165878,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "iBoost-ODE": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.11460679675222632,
+          "median_difference": 0.12101449275362325,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "CoMadOut": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.0857768028636284,
+          "median_difference": 0.07970577964030029,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "Shape-KNN": {
+          "wilcoxon_statistic": 3.0,
+          "p_raw": 0.625,
+          "mean_difference": 0.14794285839008206,
+          "median_difference": 0.10503426750480183,
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "p_holm": 1.0
+        },
+        "SegmentOD": {
+          "wilcoxon_statistic": 1.0,
+          "p_raw": 0.25,
+          "mean_difference": 0.10617306181246725,
+          "median_difference": 0.16877728304522438,
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 1.0
+        },
+        "TADS": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.201509843722717,
+          "median_difference": 0.19655797101449277,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "Profile-TAD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.32246431377684653,
+          "median_difference": 0.3067039898725336,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "LSTM-AE": {
+          "wilcoxon_statistic": 2.0,
+          "p_raw": 0.375,
+          "mean_difference": 0.12266184302427101,
+          "median_difference": 0.16978020778767242,
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 1.0
+        },
+        "USAD": {
+          "wilcoxon_statistic": 3.0,
+          "p_raw": 0.625,
+          "mean_difference": 0.04819986467609569,
+          "median_difference": 0.08324275362318845,
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 1.0
+        },
+        "LM-TAD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.30189508032128515,
+          "median_difference": 0.30424305919329486,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        },
+        "MST-OATD": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 0.125,
+          "mean_difference": 0.21205037541470226,
+          "median_difference": 0.15598480880041904,
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0
+        }
+      }
+    },
+    "per_dataset_seed_blocks": {
+      "Synthetic": {
+        "metric": "F1",
+        "block_definition": "Synthetic matched seeds",
+        "n_blocks": 10,
+        "friedman_statistic": 102.96475770925116,
+        "friedman_p": 1.458846558493191e-16,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 3.8,
+          "IForest": 3.8,
+          "ECOD": 7.45,
+          "iBoost-ODE": 6.4,
+          "CoMadOut": 6.5,
+          "Shape-KNN": 2.1,
+          "SegmentOD": 10.1,
+          "TADS": 11.9,
+          "Profile-TAD": 12.9,
+          "LSTM-AE": 1.0,
+          "USAD": 8.45,
+          "LM-TAD": 7.75,
+          "MST-OATD": 8.85
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 21.0,
+            "p_raw": 0.556640625,
+            "mean_difference": 0.03786231884057972,
+            "median_difference": -0.01449275362318836,
+            "wins": 4,
+            "ties": 0,
+            "losses": 6,
+            "p_holm": 0.556640625
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.10489130434782612,
+            "median_difference": 0.061594202898550776,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 4.0,
+            "p_raw": 0.013671875,
+            "mean_difference": 0.08025362318840583,
+            "median_difference": 0.05163043478260876,
+            "wins": 9,
+            "ties": 0,
+            "losses": 1,
+            "p_holm": 0.041015625
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 8.0,
+            "p_raw": 0.048828125,
+            "mean_difference": 0.10579710144927537,
+            "median_difference": 0.05434782608695654,
+            "wins": 8,
+            "ties": 0,
+            "losses": 2,
+            "p_holm": 0.09765625
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 3.0,
+            "p_raw": 0.009765625,
+            "mean_difference": -0.09655797101449273,
+            "median_difference": -0.13496376811594196,
+            "wins": 1,
+            "ties": 0,
+            "losses": 9,
+            "p_holm": 0.0390625
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.1351449275362319,
+            "median_difference": 0.10054347826086962,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.2882246376811594,
+            "median_difference": 0.2527173913043479,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.4393115942028986,
+            "median_difference": 0.39221014492753625,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.17463768115942024,
+            "median_difference": -0.20833333333333326,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "USAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.11213768115942031,
+            "median_difference": 0.08242753623188409,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.10489130434782609,
+            "median_difference": 0.09148550724637683,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.11739130434782612,
+            "median_difference": 0.08605072463768118,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          }
+        }
+      },
+      "Grid-Network": {
+        "metric": "F1",
+        "block_definition": "Grid-Network matched seeds",
+        "n_blocks": 10,
+        "friedman_statistic": 114.09230769230771,
+        "friedman_p": 9.251011809274477e-19,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 4.6,
+          "IForest": 7.2,
+          "ECOD": 10.8,
+          "iBoost-ODE": 8.4,
+          "CoMadOut": 5.3,
+          "Shape-KNN": 1.0,
+          "SegmentOD": 2.7,
+          "TADS": 9.0,
+          "Profile-TAD": 13.0,
+          "LSTM-AE": 9.1,
+          "USAD": 2.3,
+          "LM-TAD": 12.0,
+          "MST-OATD": 5.6
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.08822463768115942,
+            "median_difference": 0.09329710144927533,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.21050724637681156,
+            "median_difference": 0.20652173913043478,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.10833333333333331,
+            "median_difference": 0.09329710144927533,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 27.0,
+            "p_raw": 1.0,
+            "mean_difference": 0.013405797101449245,
+            "median_difference": 0.009057971014492738,
+            "wins": 6,
+            "ties": 0,
+            "losses": 4,
+            "p_holm": 1.0
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.19221014492753624,
+            "median_difference": -0.1920289855072464,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.11648550724637681,
+            "median_difference": -0.11956521739130438,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.12753623188405797,
+            "median_difference": 0.1313405797101449,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.557608695652174,
+            "median_difference": 0.5570652173913043,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.14257246376811591,
+            "median_difference": 0.125,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "USAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": -0.12971014492753624,
+            "median_difference": -0.125,
+            "wins": 0,
+            "ties": 0,
+            "losses": 10,
+            "p_holm": 0.0234375
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.001953125,
+            "mean_difference": 0.4217391304347826,
+            "median_difference": 0.4211956521739131,
+            "wins": 10,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.0234375
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 9.0,
+            "p_raw": 0.064453125,
+            "mean_difference": 0.035869565217391285,
+            "median_difference": 0.039855072463768126,
+            "wins": 8,
+            "ties": 0,
+            "losses": 2,
+            "p_holm": 0.12890625
+          }
+        }
+      },
+      "Porto-derived": {
+        "metric": "F1",
+        "block_definition": "Porto-derived matched seeds",
+        "n_blocks": 5,
+        "friedman_statistic": 52.98075865860365,
+        "friedman_p": 4.151961268347272e-07,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 1.0,
+          "IForest": 3.0,
+          "ECOD": 8.8,
+          "iBoost-ODE": 5.4,
+          "CoMadOut": 5.2,
+          "Shape-KNN": 12.8,
+          "SegmentOD": 6.8,
+          "TADS": 8.2,
+          "Profile-TAD": 5.0,
+          "LSTM-AE": 9.4,
+          "USAD": 2.8,
+          "LM-TAD": 11.1,
+          "MST-OATD": 11.5
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.05652173913043475,
+            "median_difference": 0.05434782608695654,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.28188405797101446,
+            "median_difference": 0.28079710144927533,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.13369565217391302,
+            "median_difference": 0.13224637681159412,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.17028985507246377,
+            "median_difference": 0.09420289855072461,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.5739130434782609,
+            "median_difference": 0.5960144927536232,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.20362318840579707,
+            "median_difference": 0.22282608695652173,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.2655797101449275,
+            "median_difference": 0.2844202898550724,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.11884057971014488,
+            "median_difference": 0.13586956521739124,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.3257246376811594,
+            "median_difference": 0.33695652173913043,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "USAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.05434782608695647,
+            "median_difference": 0.05253623188405787,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.49420289855072463,
+            "median_difference": 0.5072463768115941,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.5003623188405797,
+            "median_difference": 0.5090579710144927,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          }
+        }
+      },
+      "GeoLife": {
+        "metric": "F1",
+        "block_definition": "GeoLife matched seeds",
+        "n_blocks": 5,
+        "friedman_statistic": 50.93392070484579,
+        "friedman_p": 9.568348912885203e-07,
+        "degrees_of_freedom": 12,
+        "average_ranks": {
+          "EWGB-TAD": 1.2,
+          "IForest": 3.4,
+          "ECOD": 11.8,
+          "iBoost-ODE": 4.6,
+          "CoMadOut": 2.8,
+          "Shape-KNN": 13.0,
+          "SegmentOD": 9.9,
+          "TADS": 4.5,
+          "Profile-TAD": 7.8,
+          "LSTM-AE": 9.0,
+          "USAD": 6.0,
+          "LM-TAD": 8.1,
+          "MST-OATD": 8.9
+        },
+        "ewgb_pairwise_wilcoxon_holm": {
+          "IForest": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.12289156626506022,
+            "median_difference": 0.14457831325301207,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "ECOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.22228915662650603,
+            "median_difference": 0.2319277108433735,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "iBoost-ODE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.136144578313253,
+            "median_difference": 0.12951807228915663,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "CoMadOut": {
+            "wilcoxon_statistic": 3.0,
+            "p_raw": 0.3125,
+            "mean_difference": 0.053614457831325305,
+            "median_difference": 0.039156626506024084,
+            "wins": 4,
+            "ties": 0,
+            "losses": 1,
+            "p_holm": 0.75
+          },
+          "Shape-KNN": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.30662650602409636,
+            "median_difference": 0.3373493975903614,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "SegmentOD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.20240963855421681,
+            "median_difference": 0.21084337349397592,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "TADS": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.12469879518072288,
+            "median_difference": 0.108433734939759,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "Profile-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.17409638554216866,
+            "median_difference": 0.17771084337349397,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "LSTM-AE": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.19698795180722892,
+            "median_difference": 0.2078313253012048,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "USAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.15602409638554215,
+            "median_difference": 0.18674698795180722,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "LM-TAD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.1867469879518072,
+            "median_difference": 0.2078313253012048,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          },
+          "MST-OATD": {
+            "wilcoxon_statistic": 0.0,
+            "p_raw": 0.0625,
+            "mean_difference": 0.19457831325301203,
+            "median_difference": 0.18975903614457829,
+            "wins": 5,
+            "ties": 0,
+            "losses": 0,
+            "p_holm": 0.75
+          }
+        }
+      }
+    }
+  }
+}

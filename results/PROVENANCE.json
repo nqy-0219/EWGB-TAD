@@ -1,0 +1,2560 @@
+{
+  "status": "complete_and_locked",
+  "algorithm": "sample-adaptive-histogram",
+  "included_unaffected_baseline_jobs": 300,
+  "audited_tuned_deep_jobs": 60,
+  "completed_final_ewgb_jobs": 30,
+  "main_jobs": 390,
+  "component_view_sensitivity_jobs": 570,
+  "extended_sensitivity_jobs": 210,
+  "deep_phase_timing_jobs": 16,
+  "ewgb_phase_timing_jobs": 30,
+  "main_missing_jobs": 0,
+  "analysis_missing_jobs": 0,
+  "all_ewgb_phase_timing_scores_match_main": true,
+  "included_methods": [
+    "iforest",
+    "ecod",
+    "iboost_ode",
+    "comadout",
+    "shape_knn",
+    "segmentod",
+    "tads",
+    "profile_tad",
+    "lm_tad",
+    "mst_oatd"
+  ],
+  "tuned_methods": [
+    "lstm_ae",
+    "usad"
+  ],
+  "copied_job_records": [
+    {
+      "dataset": "Synthetic",
+      "method": "IForest",
+      "seed": 42,
+      "result_sha256": "c1825a05d5f5622bd7f9121c094a2b091efd64bca92267bd517b6ec509cbe1da",
+      "score_sha256": "ab1f8cd9f3e2e2080e0746c6ebd482b4c93e480f54359915fbf2b1ec5a0fac3c"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "IForest",
+      "seed": 123,
+      "result_sha256": "e427f18d79c925b4e7ab9223d51cc09b2264e945635a4d6ef2c32dd89d6b6e5b",
+      "score_sha256": "e736e35291e6c9c733bdf239fe3ff1632921b0f57929360bfceed50a956151e1"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "IForest",
+      "seed": 456,
+      "result_sha256": "4e3de2e7a4ca65f1b05f53fd139af9464d52d2c85c865b8b0109d6ad69a00a7c",
+      "score_sha256": "595b55aa7947abd5992082c73fc0d13418eb90806a7d14d85d7dc085d33999e5"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "IForest",
+      "seed": 789,
+      "result_sha256": "1d289d17bf081646c6b03aa154a127d784eabae3c62d5f6ec329ee09565d7198",
+      "score_sha256": "0a48551c0e6a12ac4b6419f445ca22dfbe849180c16dd10f0524164d95b36e8d"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "IForest",
+      "seed": 1024,
+      "result_sha256": "fa76bef5a576a642123c1dd7744e7ad3fa3b0020e3718b4b370278be4f7d19b0",
+      "score_sha256": "dd0616febc78b3cfbe81115716b1c9851c723342d37b138204f548a9993bed7d"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "IForest",
+      "seed": 2048,
+      "result_sha256": "c1448813122d5d78b725c1b0dd9ccd00858f9a0411a04536ab47e624d06b6b11",
+      "score_sha256": "05a85db5ae23df88bae3d72bb9650a19c91e389995048cb557337ade9a5f4f75"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "IForest",
+      "seed": 3072,
+      "result_sha256": "09a52447cc4ab712d30588bec25f2aa9475d8ba16c0423b47b54c71248bd6e76",
+      "score_sha256": "c02aed119a9987c035797cc0ce71c437ddb5e56b7d5e91eb4499299c0ad19748"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "IForest",
+      "seed": 4096,
+      "result_sha256": "043bedac4160f4cbf53aca1d3538bc79085ddde2d15f3fea12c27b3dcca05d57",
+      "score_sha256": "04198d29b83b67e8cabf0902cbdbb4556bb76e93e76a3decb4d21c84c623fb3a"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "IForest",
+      "seed": 5120,
+      "result_sha256": "ed6eb6bc4e1b47f33652fd80b212c9ca4184a05e9082a93d5bd9f575419e8ac4",
+      "score_sha256": "4274800b14627748ed2d260234e6a0be1bac3360388d3048f8b4755dacc37329"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "IForest",
+      "seed": 6144,
+      "result_sha256": "f127e5748f6b5f375b3985f5e47e8f52dd0ea28a2b89b67872700b0f4b3c1efa",
+      "score_sha256": "9f3aeac6919cc10abd9572d5a78233054a1982a0de38cff1fa3b070f86bd24c5"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "ECOD",
+      "seed": 42,
+      "result_sha256": "d1fe3e8ddfecda0a88382fec67110d7ca698d1b93024c3e972a22087e2f6075d",
+      "score_sha256": "01b9dc2749a1c5b0c2b57af5198c307b4592bd8f1b35b7febdba952b48144100"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "ECOD",
+      "seed": 123,
+      "result_sha256": "206e48c72b36773136563bd14f8ccdbd5f49dc09cbba60b66c7cc5ec3107df92",
+      "score_sha256": "e476c7a3ea7beec39c3a2bc21423c8e06d66b8d61566a6ee1ed7d599f734a519"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "ECOD",
+      "seed": 456,
+      "result_sha256": "58c5521c38cd83866a2308bd899d167848bbeb71d81c51428ab5fddd5b868976",
+      "score_sha256": "d69f37fdbd350d0184e266872985e8e12855de1363a4d858194284188ae55cf4"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "ECOD",
+      "seed": 789,
+      "result_sha256": "1b915283bb27bdf05e3dd08369caa62a4f75a7f2d7efc454bc6336a9e9ab7475",
+      "score_sha256": "99a21779ac1906b6656b9cbca95d3a51f57fa0122553591a1a4b45478c41ce29"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "ECOD",
+      "seed": 1024,
+      "result_sha256": "ae66f2ffc1c20918e2c50d7ed2cdf7a6ef68beacaeba752b2c5eb0c93cbb0808",
+      "score_sha256": "a19b3746be8b7250b34ee267d7f43fc8bd3a22f7bcd759b1bff14b4caac1a18e"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "ECOD",
+      "seed": 2048,
+      "result_sha256": "f7d4e92dbdefd9dbf1de222093528b34c536e2ed81c24c1f5f99702a3e8a76f0",
+      "score_sha256": "b7cd8f6479aec786e80342fc7c268819aff0870e14f9128f99db0f6b48d161fa"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "ECOD",
+      "seed": 3072,
+      "result_sha256": "50ea9b22f5a24a17e6b67fe97c0bd6043841b1f8d30036d29d482490c95bd84f",
+      "score_sha256": "07c0063509c7d93884a90519b330031cc215307ea7aa62d9ce607e39cf197ea9"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "ECOD",
+      "seed": 4096,
+      "result_sha256": "68b0d8188f0621eaef24ad951ba260044c2b7d2df3517264916f85cd3c325274",
+      "score_sha256": "912a2a8365cdf476b8e8be316a9066795353a61fe35267694d9d5904213fc2ae"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "ECOD",
+      "seed": 5120,
+      "result_sha256": "2b238ecfbf08994e72c1ecffb4a0f76bd9b0dcfb3867408f87ff677813d4f134",
+      "score_sha256": "c29baa0bbac66eea1837a15e3dbb71a0ef1f717ddd87d92fd00c4ccb58737d8d"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "ECOD",
+      "seed": 6144,
+      "result_sha256": "8baf01b5bda302b53210f239112bad213461ed55bff6b612d20a32988939e87e",
+      "score_sha256": "035254d2d33599d7835ad8bdf1b43a0f89fc88b01b7c6aa334ce2592c16020a5"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "iBoost-ODE",
+      "seed": 42,
+      "result_sha256": "f5995114c635ec802988da94058baacb69e0edb7df5d638620329afce8179a7f",
+      "score_sha256": "267d5ae61f02b30016d0286d69277f3578c7382da792f0b5a13f89a73d2fcb50"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "iBoost-ODE",
+      "seed": 123,
+      "result_sha256": "b01beeece5cbb677a72afa695185250bc6b40cbeeaa6dc94b8be870c6644cd69",
+      "score_sha256": "282c137cc24f1e17c57a246b51b0fb822ac22e3b120133bb0645036717e1057b"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "iBoost-ODE",
+      "seed": 456,
+      "result_sha256": "853ad5b366f88f6d53ae6b7e9921ee516b047563259aca08932536406e389f5e",
+      "score_sha256": "27ae1875a1b03f781c3b2960e31fa7e8a577c367a505cdb19607d1e4f1ae55b5"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "iBoost-ODE",
+      "seed": 789,
+      "result_sha256": "5a984d437a233e262751c784cad50e6815ed73a7412ebea050752ce7fa17bc31",
+      "score_sha256": "ae1c289e5dc3df5b56b9812b28078b7d1a59d23a29f2caa07162ee0074c0293e"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "iBoost-ODE",
+      "seed": 1024,
+      "result_sha256": "6a56eb62d99ae4dc9a6e6ee8ffa619cef941b5c1f16f656834fb5ab61283119b",
+      "score_sha256": "3934a3ab9cb1f3ce172d271f06888feac52d280688c7898b9923f305f45b9104"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "iBoost-ODE",
+      "seed": 2048,
+      "result_sha256": "acae519f66cbdf48ab373f4774f288324ced5bfb566f19df4f742aa977ed9fd5",
+      "score_sha256": "1c22b8d319aa3ede4ee4bca403adae8fbcdb504a782902b644d6b52019042e3a"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "iBoost-ODE",
+      "seed": 3072,
+      "result_sha256": "761ce03d1f94ca2e0bdbf40c993d978c880706017ac9067f4ade755808636fc4",
+      "score_sha256": "d92be6254e7e98d8574372863cbb6c7639bbff093e4bcba081724a64e06b7719"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "iBoost-ODE",
+      "seed": 4096,
+      "result_sha256": "7df040d9f917ad67d3f7b8ced6434df532e51bb18bf422f83d9691226100e463",
+      "score_sha256": "b62593e7fece6ebc2c50838f031251374cc5b33d1181f27322e56db07a82c1fe"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "iBoost-ODE",
+      "seed": 5120,
+      "result_sha256": "de5d9f8662b3fd7c6c15ed9f7cf8d642ff6484f32229013eb7cc88da008951d5",
+      "score_sha256": "699790721e03cbd181189e25b2d8088047dbbabb19eeb4dbf9d76de1f3e53f78"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "iBoost-ODE",
+      "seed": 6144,
+      "result_sha256": "3a9fbc48e02226118785d7908bbb1c32ccfcded9f1bb670dc8e45b16e20abcc6",
+      "score_sha256": "79e0ac0ab06c268da22b6666548b64bfde1f30503183c637d21c8725554f92c6"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "CoMadOut",
+      "seed": 42,
+      "result_sha256": "d80619e5df039ddabee3b2f6ecc08cd9dc092fbb31068258a22f87f456626a7f",
+      "score_sha256": "e8ceb5c1a8ea4bc03893c6390eef095db8353e9eaf0dbe184f83418772aa4b55"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "CoMadOut",
+      "seed": 123,
+      "result_sha256": "7d6770041bfbc2f2596029c674e42b13c9d3c37bc82e1fdf6a688d57743eac35",
+      "score_sha256": "4a4c08713c907654f1f5725919f6e24b0ef3a3c8d41123051474b13ea6b6e1ef"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "CoMadOut",
+      "seed": 456,
+      "result_sha256": "455d9056fe34e043f51e0fae085ecd5b2172eef90b1f03b5fb99c3232601d223",
+      "score_sha256": "f168594de270f3e300ca619185f95b9d70e10f8409765b0f5de2581978bd87cc"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "CoMadOut",
+      "seed": 789,
+      "result_sha256": "b789a58a52dc588ef93eac66673743bff9b077549f2f685f46ff09f4d5c7cb3d",
+      "score_sha256": "f9868b1857990fdd4c7bf4e7fd6a7977d2ccf78bb62d295c60e626e74cf607f4"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "CoMadOut",
+      "seed": 1024,
+      "result_sha256": "37b09778a2879b8c6cc442bafd472683b7c99a810209c94a0d05039d9501d3fa",
+      "score_sha256": "a0b6d09eecd9cc649cb5e6b2ad7b0895077280addfebd924821f1c599b442143"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "CoMadOut",
+      "seed": 2048,
+      "result_sha256": "e31bf4e52e86e0877a44d30e735752905f65f534fe66ce1af89236412907ab98",
+      "score_sha256": "6b197856ce5c66c5713c656e4e7a10983c562d75649ccf4feca1770b67ee9098"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "CoMadOut",
+      "seed": 3072,
+      "result_sha256": "1e55597683f5b6d2a6f592db612d1b07a58cd9b73f55737223186ff4b20b1c15",
+      "score_sha256": "625a77fa527d18e8d2060a1a3eec0536b4d9a44bef839b294d80f7a01d419d29"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "CoMadOut",
+      "seed": 4096,
+      "result_sha256": "bf7770245b39c809c28d30d098bc053ccc576979d2fa408bb12a5baea55d0310",
+      "score_sha256": "ca4f22424b5c76d358add53e2cc9c8b450c9aef02bf6942e3435b98842e339fb"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "CoMadOut",
+      "seed": 5120,
+      "result_sha256": "02a0bad7f7a2d7fc594e470c8cc01227f3a37876fd54f4b3018d308e6374f8c3",
+      "score_sha256": "6d4de79321462323bdd82da177c9c0914458f8b63a276ba880dc072ff8b07a3f"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "CoMadOut",
+      "seed": 6144,
+      "result_sha256": "fee86deacf95e68d2d131fdbfd1b4fd3f11e6ae58eccca201bb583c43fcbf8cf",
+      "score_sha256": "0d3ecf82c34947bc4b0a9c64848d0af833957de9db95ecad860a61b0f1617183"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Shape-KNN",
+      "seed": 42,
+      "result_sha256": "786cec4b7bf93d0c00fd3bafb7a5dc1584bb889a89d2e8b2c98c43b6c30bd6e7",
+      "score_sha256": "0437601f0b3b646dae37f5fb4147ced3b56dbeb2b17372f14fa64cb0f0cc609c"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Shape-KNN",
+      "seed": 123,
+      "result_sha256": "d9ac7f3d8b404e39a477a9c73b14967e938c17ad4fa8f32e52a0d15285a050fd",
+      "score_sha256": "1ccbd7a71ac0074c77fa94d0b34196cfa17f9214e4b5354a595ae5faa5892b18"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Shape-KNN",
+      "seed": 456,
+      "result_sha256": "20b58183932e4e12061e11b47ae2e094d0361db59e746caa52c9534493970294",
+      "score_sha256": "d8538bf81f393c119175d4c003d0cd5ebb77bdb069580e0ed71eee8b6c13604f"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Shape-KNN",
+      "seed": 789,
+      "result_sha256": "7b4beecf3cdeef9a8e8ce61bf1c71111f521355ffe3abaea3cddb8fb7f1785bc",
+      "score_sha256": "9254fcdc628b1655483c49099414f7492d3f1a108104c53451cc584ac942d7e7"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Shape-KNN",
+      "seed": 1024,
+      "result_sha256": "8f4b6fd36288fd93e7a9629e694efe1b9b3acf99a544fc263d562588d7cc2a47",
+      "score_sha256": "6c32b7fd9c1520102fc68695cae52a829df90ea9e54419dc7d306a7fb0abf56a"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Shape-KNN",
+      "seed": 2048,
+      "result_sha256": "57e921284bf34385c896b255d8e715cd02145abb2bf0690005f7c19122cfa769",
+      "score_sha256": "5176122ef2187c325b5bf59dffe38813d3fd0358be2b6a12201a9ff6cf8defd5"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Shape-KNN",
+      "seed": 3072,
+      "result_sha256": "29e2badc15a43714bab961a9809c8b922fec1935528d9fc51f52e7e73d6343d4",
+      "score_sha256": "351c3d7e7b040bc346be618c650905ec7a764a8bc7928a4cea173effc3d3f6c5"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Shape-KNN",
+      "seed": 4096,
+      "result_sha256": "b365fc0873ffaec8ef5ba4659be87a56b2b85a5e84e61560988c5d40fdf5845a",
+      "score_sha256": "ec71c435b0289062f0f21a74f470ef5376b15635fd61debd11ae87d8400d0a0a"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Shape-KNN",
+      "seed": 5120,
+      "result_sha256": "45cd6a928e390b25720197872caaa816ff3afaf8efa0c8c3ca5ef50ea129140b",
+      "score_sha256": "eb0df588f502d74aeff7a6d88494c67cfc082b66908a9937911a971c3839696c"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Shape-KNN",
+      "seed": 6144,
+      "result_sha256": "92a992a241e875acf3b362d793f3b5584ab320a4dd9fd0ef0ba736875ac1f1d2",
+      "score_sha256": "8c6330597adba5be77cde732e4390a8c47348bd4adf5e18f281e51a7423d76d8"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "SegmentOD",
+      "seed": 42,
+      "result_sha256": "4ca9deae6095447a403a1ef1d48bb353ef63943e1782e0f2eb5754651655101d",
+      "score_sha256": "28ac82c03435bedbc6b7df096f8149025e4aeb6acbd4c6dd3aa95d5e62b61b46"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "SegmentOD",
+      "seed": 123,
+      "result_sha256": "028d3bb58107a2af652109504de4c90db573cd48261efda5b999859e7ce4b178",
+      "score_sha256": "d2bc163acb0281e380ff90d7e1f1b0024783a64a15ef93a37efac8adb70f4768"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "SegmentOD",
+      "seed": 456,
+      "result_sha256": "ee445d0ba2902723aef784f4fe80e2a61808425b83fc3228631aac20a449055b",
+      "score_sha256": "e3665e4519da326cd30450921b080dbdd8333696763a76012f01146be5cae6fb"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "SegmentOD",
+      "seed": 789,
+      "result_sha256": "152ce76efc121acc31888f931802f497cf78d751fb9568255ddcda46e0cdd565",
+      "score_sha256": "c30d07973c53b95df4fbd330928297c7a7005213999b9a8134b476cdad0cc105"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "SegmentOD",
+      "seed": 1024,
+      "result_sha256": "633aa5a6cae5a84101bc9424ed6ef79929e7ffbe20952daae664442aa308e80a",
+      "score_sha256": "9c8edb4730f8417a4b391c04432c6e16d5941faed9d80f766d5dbfc2f84a0582"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "SegmentOD",
+      "seed": 2048,
+      "result_sha256": "eb0904273c8b9a78212b5415cd41fd5a5684840eb4957c51d273647800479030",
+      "score_sha256": "a4c13c7950d0ae39609d902a0c8069321d0a2756f9d7c1b23cfb1a1958ec7631"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "SegmentOD",
+      "seed": 3072,
+      "result_sha256": "466701f801fb9891fd8a5104b774f79d64cde17d59cb46c0c3a7d5c392de136a",
+      "score_sha256": "f2a9e5f1b098336e6c212cd3b332f1683108dc1844d46699425cb5b759cadde7"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "SegmentOD",
+      "seed": 4096,
+      "result_sha256": "bb0182845df983ac718ddfdb5332ab4cb8fcdb89faf933eb50f3ff0683bbd490",
+      "score_sha256": "68ad6249e8aaa5b0515ad516109c7f2dbe7bdaff47ad4aae590ebefa6579d0bb"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "SegmentOD",
+      "seed": 5120,
+      "result_sha256": "993a5fa3b6dca44c1e63c904f5f1360b7bccbf51ed7e6d22e09309b39f7e808c",
+      "score_sha256": "f92af853fac0a287b9aed942266fd5c593d923fbbf8fc450039b2e66e395bc06"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "SegmentOD",
+      "seed": 6144,
+      "result_sha256": "5a6f278e495ea346f7c3fef7c17b69be7822a219749341e3fa5a923a3e129dce",
+      "score_sha256": "b8b2d2e2ca655bc068d370c9e19cd01eed96f639402a7864475dcff90ca45466"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "TADS",
+      "seed": 42,
+      "result_sha256": "e6ff838daaa02057e32ada29fbecb228623a9b7d30ae37ed9966e07313de0bc0",
+      "score_sha256": "a7790399bbfff9e4f36ce50c82e472d1da9bb4ff06a4272b1cebc92720682799"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "TADS",
+      "seed": 123,
+      "result_sha256": "0ad1b1d352f5d9d7683ea8bfd01e5f313789cd65148eed8f700e1b7e9fc8cd11",
+      "score_sha256": "e39acf7d634168687927e18e89a99f20a9ce768fd66daa511749e798d9ae0ab6"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "TADS",
+      "seed": 456,
+      "result_sha256": "b211667469d17602624b20fe9611c7387ce4abc823e00fc9f1174a56048544d7",
+      "score_sha256": "2fb4d7e77c5432cf78d9ddf7f7a9115d34e2fec1363d5c8341bebc6592456835"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "TADS",
+      "seed": 789,
+      "result_sha256": "8137cc124affe21b21d35376250476f1da1c3e2b92b4af54ea32055846076256",
+      "score_sha256": "ed59ab0c4ac7c61bd1b1a36cac8759cfd5dfab6e80dbf18eae8b9da67818ba64"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "TADS",
+      "seed": 1024,
+      "result_sha256": "bf3503362d26c822b38666ab42f4cdc8c5a73b7080126f8519bbba20d19c683d",
+      "score_sha256": "36e354bbc032fb6addc27c3ee10c5b0103a238a01b841937ad5b142d5f4e980f"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "TADS",
+      "seed": 2048,
+      "result_sha256": "e1eb517a373872249a8206befd3db75b727efb69e0882f9230fbaf948a3a8218",
+      "score_sha256": "4cf35b176a96f021f37cdb86b46c8d3e6d55e7ff2a7ff50a1a35900f5d67e287"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "TADS",
+      "seed": 3072,
+      "result_sha256": "8666640abccb45331fadbc266eb26af70b7c738502e510692582321b8277953e",
+      "score_sha256": "00375114efdc5c0db1f61e986cb24e46fdfa4725210c8c6067b7917be6f9fd02"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "TADS",
+      "seed": 4096,
+      "result_sha256": "59921077543d10d6cef7851a4aa8e999fe6186304b50a87d3892c0e5e3790d1d",
+      "score_sha256": "56ee27bf5581c1733a60c2a543a234fda54462c4eacf24ab6333b12ba3ffc777"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "TADS",
+      "seed": 5120,
+      "result_sha256": "99bec82e29c3952cb9a3ffaa273f38d227dcf55ff7346cde0c8ffb32bb0ea5d8",
+      "score_sha256": "8bfb58b7320f30a932dde6de344d202cdfa6325ee6c8d49f0cc41a0b87f60dc5"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "TADS",
+      "seed": 6144,
+      "result_sha256": "63827c4c6bbaf2691f6de3341b1a4f176f12da42bb13313fe616198e021c18e0",
+      "score_sha256": "e913193c371ed040a41fc883e88ede4d41cef6ff0fd967c6c013642e94194e33"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Profile-TAD",
+      "seed": 42,
+      "result_sha256": "6343f2724d18d759c5268920128a15da35fcd3f8a7419d1b22473b610cf49973",
+      "score_sha256": "24ab54761e84458b112e7883161a2c4e6bd9ed592f7a3b8c32c3f6fdf6daca79"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Profile-TAD",
+      "seed": 123,
+      "result_sha256": "b216fb2b43fbab6cc1202bdd50c5bfaafa86c93fee5db484f654149d0c0c5d10",
+      "score_sha256": "8284e0b9d716d62036e60d275bbf52f8bd0c0dbf669d52a203fd5d74e458a7ac"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Profile-TAD",
+      "seed": 456,
+      "result_sha256": "beb24a0274b2c1090e32b0c6bc96ca3c3a7e080baa1374294338a29d643449d4",
+      "score_sha256": "82592266927efbd478bf10a1f391711f4c10905505f062568a1f059dd78d0436"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Profile-TAD",
+      "seed": 789,
+      "result_sha256": "be98020db2127e52a9f81d6e2355bc764ce2f35eeea291dbae09d0607773ada5",
+      "score_sha256": "5514754888ee5e7c5c62d44f79155513e67b6a47ccc8202fea8317287e5b4413"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Profile-TAD",
+      "seed": 1024,
+      "result_sha256": "048d0ba7e876c5b1dbec53b40bf8fd5387d61a669a6a4677719e23a322d8c8c1",
+      "score_sha256": "a9167ee96e3e73b62f4512efdcaa09c392d39a83b1c40558ebad809324c24353"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Profile-TAD",
+      "seed": 2048,
+      "result_sha256": "ea9d6deea993ab6dfa8b4675c599960f10f5ec21d31329e1bb94a96f014a9ed4",
+      "score_sha256": "2e5b4798974824bb5997c147eb6d0f57dad44b13b399fcbcd2cc2d6102f15aa1"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Profile-TAD",
+      "seed": 3072,
+      "result_sha256": "dc6130de7b38928896764d5be6518c01c92c5fa21359a50d8f1d49cebbc8b50c",
+      "score_sha256": "2b2379853be7cbeecaca1ec20a238ecce500de9599db6ab1747f5580ee570834"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Profile-TAD",
+      "seed": 4096,
+      "result_sha256": "86c133388bf6eec8c929df618b7dd39a3de3b2ecf94e634db6ef4828da8223ab",
+      "score_sha256": "44f2cd2ecdc7c558b9a85989cf6465e5791ee2c8bf596908c7ca68442419e85a"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Profile-TAD",
+      "seed": 5120,
+      "result_sha256": "bd6a3e31ea022eb009330279691a01376dcd0d98392c2b3f0cab6f5ab9fd4320",
+      "score_sha256": "c563592a674ae3f1af7d91bb8b9b2d38ffe5161225ff196c84b19a06f8c3e8a6"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "Profile-TAD",
+      "seed": 6144,
+      "result_sha256": "19926168199835a1bd369a182c64a3ef8e336f7e8efcd06b59a076023e2748b0",
+      "score_sha256": "41c410e10d87ff576ba084a2df9c5a568a079b755c0c436438162ca1d6364896"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LM-TAD",
+      "seed": 42,
+      "result_sha256": "fc3d437762f96c1f4193059b0dfa7a9f73508e77339b94424368c9ac972c2c92",
+      "score_sha256": "699be04cbb01c570c210dae7467f68d3ee51e9daa5d0ff0ff318d145e3219015"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LM-TAD",
+      "seed": 123,
+      "result_sha256": "30462ed8d6873cdde56903608d708164f598bb791c7d371e745ba374135b3db1",
+      "score_sha256": "dd2eddc89abbf2ee2d96340d5296622e63709019b8bf9a1efa17ea0e69487207"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LM-TAD",
+      "seed": 456,
+      "result_sha256": "63fe3457e526611cc07bb89dcfcf8a33bbae330b0132bb148d5bbfc2f857bb7d",
+      "score_sha256": "b5961fd8985b1033fa3cd1a2f72a5cff34b741f752ea8a953fbbee5cd42a19ef"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LM-TAD",
+      "seed": 789,
+      "result_sha256": "495d069ab0639946c43d5149fa5457cf47dbef62e3b6f9e68cc7baf216720076",
+      "score_sha256": "777da6251d4d3f181e57b744d1b9483cfaed5bd271c18c348bc37831c519e530"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LM-TAD",
+      "seed": 1024,
+      "result_sha256": "4b07ed3098f67b9742085c043aa472b7d98bccc394b689941eeb1219b16fdee8",
+      "score_sha256": "881c9068a021fd3a449cf060edf46c6b218b150eaa97cadfecb2552511504fef"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LM-TAD",
+      "seed": 2048,
+      "result_sha256": "bafebdc0cfdef75a5d05c3ca91b408547429f5a67012696e02aa2f1fb2fefe0e",
+      "score_sha256": "75107cf2bef0d4ecc27114cadbe4bda8cbfa7df2e425fa98d71aa6c4d544ce63"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LM-TAD",
+      "seed": 3072,
+      "result_sha256": "6472425e1ec270928a650b4015dfa0757dce60bf00f1a79376f92047f226cfd5",
+      "score_sha256": "0da3ebfd6f4ae909962624a18a06a8bac113b62f52fdcdcbd4c90def57de6249"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LM-TAD",
+      "seed": 4096,
+      "result_sha256": "5d5ce16b6a512f820687821bc123418bb3e9d7a69835f51f5566c0a509b76a16",
+      "score_sha256": "ef83b50169d3a1ebf84200a24cececeec3ca0ab7e1e11b034b76fd1262b22622"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LM-TAD",
+      "seed": 5120,
+      "result_sha256": "832b8cbd1a067bf18c928abb95243706f28733dc7be6fad1492f1865201c60d8",
+      "score_sha256": "392ba2eea1dd9ea10797e5cb2e275b708ca699eb07c7929c71a3bbb09e38f267"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LM-TAD",
+      "seed": 6144,
+      "result_sha256": "aff5b1f2ba436b6ae5c0063855511360996ab707bf28061058ea8169215686b2",
+      "score_sha256": "f2ab91f20e4d94510e9a8f4de8f490e82a98be83f944f0aba6c9739511dad1a4"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "MST-OATD",
+      "seed": 42,
+      "result_sha256": "89cb7f0e8478c6a02181d56afe8b5c4bf4eb19db293b6e0172f83c1aaf583fd4",
+      "score_sha256": "050dcd4f476cd8fb5660dc60861e2d893d510ec644b33f3a55cc8055998fe284"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "MST-OATD",
+      "seed": 123,
+      "result_sha256": "7fb75a02fa3995339df45cfad0c1ffd015a32a42c605cbbe55643b10afe20b0c",
+      "score_sha256": "61e358aa6afb28560ddf59214b5c7ea695d150831e246b48f25c8c4eefe982ba"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "MST-OATD",
+      "seed": 456,
+      "result_sha256": "6bf2f9e1d43fbac288e13b803c9911d447977dc43a23dbf334520b97bc913249",
+      "score_sha256": "537cc359299fdf1dfbf218c22aa9071c0bc73ec27e04034b942d224b31b78c2a"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "MST-OATD",
+      "seed": 789,
+      "result_sha256": "8de7ed9ae321673a901f96238017e03fd44a297bc437ef1f16bd81d007b0de87",
+      "score_sha256": "23b059615355e0dea241ae3818fea44d0e25b092bafcc7283090d95a4458be83"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "MST-OATD",
+      "seed": 1024,
+      "result_sha256": "2f1ebcddc047abbf071042b5b029a916421c5015218b2b688aabde0fd5e9ea35",
+      "score_sha256": "fec04043d34aeee76314f4f62dfae2c5bb27c3eb27327aa9696405e4c0a5ae29"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "MST-OATD",
+      "seed": 2048,
+      "result_sha256": "343f6b360721e22314602929aa5841ff95839dcf33ecb33b1a31bb56bfb3d755",
+      "score_sha256": "2ba83aa6bc66d2e08f5b5533d611fb91b2a376c6312a3ad17dd04bfb2e515ee4"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "MST-OATD",
+      "seed": 3072,
+      "result_sha256": "664ddc8f972b47f43d108d6f20a9e941c8db0a3b6c73651d2c6b8274b1d92d3e",
+      "score_sha256": "8579456d93278ce68b180c9d0f069e3687cb111378e621ef320da59c668a2c66"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "MST-OATD",
+      "seed": 4096,
+      "result_sha256": "a000ae8ebcfc8e828e3bbc9a0ede1072d23c0493e3103a75b08e64ae1fd65477",
+      "score_sha256": "bf39c4f8f6f22cf3289ad1d8c2aad08461a7da316e27dce7faf361708517fd40"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "MST-OATD",
+      "seed": 5120,
+      "result_sha256": "f6e4367f29b3518fb3d2554dafe032ba9646deb26528ba9d1168f25708d144f9",
+      "score_sha256": "4a409f1e8d16c711029e91bc81239fc550622fd56ba7ba24db63d79117bc2924"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "MST-OATD",
+      "seed": 6144,
+      "result_sha256": "1605fb3049391eb8bfd767a447784ab64a494776e71c4573266820aaf29c0f0f",
+      "score_sha256": "fac53f8b2cbdd4c23dd584cf63477faedc860f29d2547a8f63d5cc3cfc6bad6e"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LSTM-AE",
+      "seed": 42,
+      "result_sha256": "722461e1492ff434124718b808c1fdb8ed9fc12f48c0bc51c393c2caaff3bc82",
+      "score_sha256": "cb2aa8e5b7a50dce5d77b3caaf8c9459deded2e05b05dfd0f41253059f331792"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LSTM-AE",
+      "seed": 123,
+      "result_sha256": "6097e002f58a765ab7352362a833b2e665ef6870c1e8af24175a7c874b4d9dbd",
+      "score_sha256": "cc033792c21502e42a9a59d64563a072365fab8ca759b9787f20f99a9d9d7002"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LSTM-AE",
+      "seed": 456,
+      "result_sha256": "9b6e9ebfb72e4f2fe19baaa5e650f566c31cd432ad2d88aadb89306b9674ab8e",
+      "score_sha256": "68ba9598ac59f352348438339494645bc4c36bd3967eaaa8869657be0bc439ff"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LSTM-AE",
+      "seed": 789,
+      "result_sha256": "977d6bae9bf6dca971c67a7846932f000484d19878df3e3f2f25a77af946603b",
+      "score_sha256": "897c72f13c7ec0ca76eda60ede2be20fec4f685387600f7a8089e2e95091cfdd"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LSTM-AE",
+      "seed": 1024,
+      "result_sha256": "712c4950c332dbebaf178fe05e8f54f2a6e499bd96b5aab13791477c1236c0b1",
+      "score_sha256": "0df2b6f7019b39254e39ce7d5bd8459d9048bdcb50cc91c86bfc20aa4a2b3e8d"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LSTM-AE",
+      "seed": 2048,
+      "result_sha256": "bec927934186b597a0989175993cb496531b7e98340ff247940904436b65eb12",
+      "score_sha256": "88338b283fee3248f0274fb2f9a2bc550ced1fa3e8e2cbacd19cdc63dd00b0dd"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LSTM-AE",
+      "seed": 3072,
+      "result_sha256": "ffe2a234da29f3125273b2d1279643923fc246ec73b00af3567d053723c33084",
+      "score_sha256": "66a3b219f0ad0978997659acfdc465b90de8c00cac90665e2292f7e1f7c6255a"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LSTM-AE",
+      "seed": 4096,
+      "result_sha256": "3e9b4fbfe707ee9c63ad7b6e233bdb93dbc84c5d5851b919dc8b97ecd3047712",
+      "score_sha256": "684212210a428e792c473e7b618ed192567b71f4d36dee644c764f7246c425ad"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LSTM-AE",
+      "seed": 5120,
+      "result_sha256": "212e6eef96793e95b8985202652c97dce3395042ef554f03e9cd2ee58d3313c0",
+      "score_sha256": "1d47c5f41274a0a3669a910fc79864e8223db7dca2ffa0069aea19ae11a97a00"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "LSTM-AE",
+      "seed": 6144,
+      "result_sha256": "f066e1770b2dded6ec690e49e2baad8fa325f573b755a1177383174db7e11da8",
+      "score_sha256": "2987152deb955982cc14113d36f87b1b7210e70ad8cbf4c43ab3f240223d8451"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "USAD",
+      "seed": 42,
+      "result_sha256": "1afeb7a569b561de58c371127ec2dc9cbe4fa1a3964f3e03e3f8b84ad574d865",
+      "score_sha256": "df994a33333a4d26ff61f0cc04f8843b38740abf97b3c715d1e482fadc71a21f"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "USAD",
+      "seed": 123,
+      "result_sha256": "311b63f1b9a71d55a25fb37046c7a287fd07c1f1481578845895a2d744e6b4b1",
+      "score_sha256": "765572d10b9f30805fe1e35dcaca18aa679b9e5ac562e87b797c62f06ea76895"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "USAD",
+      "seed": 456,
+      "result_sha256": "a8e080d3af63102fabcd823de744218abb0c690e811edaa247ed2ca6f88b64f7",
+      "score_sha256": "80d70942fecd9df1fac8a9edd8dbe62a74c1b295d3c73e540135a84c5f2747bd"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "USAD",
+      "seed": 789,
+      "result_sha256": "1c7f9b9520ce09227aaebb11e45b4084ec2a5292199c8844843648edf636722a",
+      "score_sha256": "ccebfc6ae7592241ca4623385a48efd5906074f10ab2e0f766f9e2cee899499a"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "USAD",
+      "seed": 1024,
+      "result_sha256": "9989c1b6b124b59115c50639241bc2cd1cb4ac13810bf9c6461c83ca70f27f80",
+      "score_sha256": "f2f4457af11c3a4e1a6d3b11978f614ce85607da20f8b270d7f5aa4f015539a1"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "USAD",
+      "seed": 2048,
+      "result_sha256": "287704a88da362a0f873c8412f11f638f225ce3e2867fcb389edff5822389684",
+      "score_sha256": "f578e916a3a5de16e284d500670d3105ab8dcfc8d9434bf6688dcf6acd9b1c46"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "USAD",
+      "seed": 3072,
+      "result_sha256": "3b63b66eb576a1e180f4a9fac1fe42924057c591eed4df634e123d9c2f617cf7",
+      "score_sha256": "a23384091aeca8251b6ad0e772baa6eeb1e7f27193a2c4cfb5eba5761f87090a"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "USAD",
+      "seed": 4096,
+      "result_sha256": "7608d83a61d4f8dd6a461655164047c9c00da0587c447c0ad84dec9a3b6dbbac",
+      "score_sha256": "ddc76028a85575191bc638eae01df96be1cba8da0a8f372233c8ca609519facf"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "USAD",
+      "seed": 5120,
+      "result_sha256": "cbe2c675abbd8958d8f6a656ddae1c000d0ecd3719aea724b1d73f6cdbb32e51",
+      "score_sha256": "b5dc686bea95461f64b15c22901829d054bb3bbaef5edfe723eacd1213fe3d42"
+    },
+    {
+      "dataset": "Synthetic",
+      "method": "USAD",
+      "seed": 6144,
+      "result_sha256": "aca7a8e2058869b6b39cf2bb470d49cfc1bf55ca668cf4ed963ad7a4a377db54",
+      "score_sha256": "62e857ddd4b74379619f8721dd305644d06d3180fd07dd4e56a21194d3c05ca6"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "IForest",
+      "seed": 42,
+      "result_sha256": "16f63b197a9ae71453aacde5ffdcfee4ebb5f209b76bb8eb903ae6d1766a2c14",
+      "score_sha256": "ae560d2463250d65efe4e13a1e7a2501a1b447887533cf734df92609e7bb9d5b"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "IForest",
+      "seed": 123,
+      "result_sha256": "60e4ab4d2e58f8f98bd7376651643a25023d0de75e729361ed0a5936a01c2b21",
+      "score_sha256": "be7b4ced611c14c4250612789f18bd795e4ac90728a27fb9178280eef134c319"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "IForest",
+      "seed": 456,
+      "result_sha256": "a299388d5ce556b9ad1780b52286075ecdf0102d0274480ec30b43a53ebf5adf",
+      "score_sha256": "e232b75a982f0b8c75d6bca320b8bcf38c0f8f0d6834ef58ff1a78de1fa56051"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "IForest",
+      "seed": 789,
+      "result_sha256": "234caebff0bd426d5d68534758dae51e587e8d20c423d221b1732131b29b9742",
+      "score_sha256": "192e43667d0ca0f52b472554836c38f1beee602d465deed50238e30943383030"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "IForest",
+      "seed": 1024,
+      "result_sha256": "8c038cc4f258eb74e69c550941cbf9fcac2b8985db0f195f7bc60caca13b977d",
+      "score_sha256": "c1862a8afd0362c4470e737f9babc863250467d13ad0133d9588213c15533c61"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "IForest",
+      "seed": 2048,
+      "result_sha256": "3df56cccef466d988e6955c695867a7d8fd53e37ad3b68657fba9280930fb0da",
+      "score_sha256": "558c0cf8277bf6482af5c092d83f70257ba8830d2afd9b67b736d965aae8a9ff"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "IForest",
+      "seed": 3072,
+      "result_sha256": "7b75140dbede013a48be0c626660336d83247dcfeb508df8bdf1764c47db7aec",
+      "score_sha256": "b0cf7d6302727a245e64897e9e21d153fa656c8c2181803b27a283d49f54e6f0"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "IForest",
+      "seed": 4096,
+      "result_sha256": "80e69169025928ce44a386f7153b11cfe3d26e40923c07641e8cfbc5a57addc4",
+      "score_sha256": "bc12780ef466a34ed90364900d88e480f7bfbfe69e38cde5793ab5410fb116c7"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "IForest",
+      "seed": 5120,
+      "result_sha256": "43a3dea2747ce4fe81beb7707024badff1c9fcfcd0ee322b8e410dc8b047614f",
+      "score_sha256": "40a5a1b48c86489a637c826842e4be28a3aad01443cab0f80166de0dedab9703"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "IForest",
+      "seed": 6144,
+      "result_sha256": "7beb748e276670e68363adc87bf1695c72e14580a555fe15d70db63a3b2dd878",
+      "score_sha256": "f62f295d3f33b8710ede602402bf116370339d2c89b24733cd318beb92cf2f76"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "ECOD",
+      "seed": 42,
+      "result_sha256": "235f8d5a473ecea649d6fe85a967dc86364f130c081558dbbd7d8693d92dffe5",
+      "score_sha256": "eb1f5001fe5b6b6610b54e06a58297c02b59400825272ed8c1bb0470cf0f9556"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "ECOD",
+      "seed": 123,
+      "result_sha256": "77db170cf8e699ae7712f23af361669e008947dc4287bdf5a53cc34f315f90d0",
+      "score_sha256": "1535bb2b310707b52469fb31c4785b7b4098e61f83cac5923741f45051a66c38"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "ECOD",
+      "seed": 456,
+      "result_sha256": "5efc5549259c128cfcab39b69e1c8fa8cffeb9f5a4f2c66e31886e86d4dfe146",
+      "score_sha256": "48d19e00f294f24651eb34c724d18e962eb64fb3d2942eb06684b5461b97939d"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "ECOD",
+      "seed": 789,
+      "result_sha256": "2cada5e05ab730f0e416a95dfc28574c48163f586aed30932fc891a4fc7d568f",
+      "score_sha256": "3e9b90c4a63daf03f9a3dcd92444132c01877b4325ce0f763d8611737f72d996"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "ECOD",
+      "seed": 1024,
+      "result_sha256": "383870b5b6c27fd1b3e2cb60ed99c08da25d2faab0ed67ffa60da6036643cd57",
+      "score_sha256": "2f4c1b41521026e17f81fd5b8f40678dcf333339e9c362dc9769497ae20204fe"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "ECOD",
+      "seed": 2048,
+      "result_sha256": "aa53fd8a81d187973992d77812cc33d51e4b560689e4e476e049b527c220dbe2",
+      "score_sha256": "51bf2b72cd84dc4e5740a42d94988f7a743b87b6b398ca1d00c0cfe9646aef00"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "ECOD",
+      "seed": 3072,
+      "result_sha256": "9807ca758832c16a1db7748c9a9a39669f00590dac7e798c3b32dd72e060dcba",
+      "score_sha256": "acf0d3768d55ebc9b001555516f76111361bb1b84590ad95820ef46d4d99f5e6"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "ECOD",
+      "seed": 4096,
+      "result_sha256": "f01abf4e0ffe80a892634c7eab851756241c3508eb00d941a77b8d33ac6a3b8b",
+      "score_sha256": "545cf859bce54b936217ecf3dd3b0f4cd11f103b14c737872aa537841af51172"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "ECOD",
+      "seed": 5120,
+      "result_sha256": "641e95b0c3be04a5c93edf27f2467fab8e54454382785a8f665e91cb405303d5",
+      "score_sha256": "bc4cee71c2ae9d7802d35c344d47c2d301bd8e80d50147e23adef9f9cd3262d3"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "ECOD",
+      "seed": 6144,
+      "result_sha256": "d96017dc950b0fca50fea9d61c62a3eca2d0d6b630ccd51a94c7e5587f149e35",
+      "score_sha256": "f8a63a50c735c262be01782087ee6362d91b47b7594cb239c5da1066f7c7d6f2"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "iBoost-ODE",
+      "seed": 42,
+      "result_sha256": "c9504c52149c600ba82e765382ea7b9bfa75e3210bd2e526df63f8d7c4092d17",
+      "score_sha256": "a7660e6f891d72b9cf23f4eae88650ef55d10ac6a7425841d30ccd265d938ce2"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "iBoost-ODE",
+      "seed": 123,
+      "result_sha256": "e695c093e5f1acf33763ff641d3e6edd4aeb1499f112be306534df723782ed80",
+      "score_sha256": "d83b69a1088bb0fcd448772e01cc5d206de7dab4ab2a6693917d7f911e440a08"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "iBoost-ODE",
+      "seed": 456,
+      "result_sha256": "ad985b954763a33286b35009f2baa193898ed7423599f7a96ca42b42c3fee59d",
+      "score_sha256": "eba73cd64e1ba9ae3cd848508426de8e596c2a4dc83fd21b3e5a9b6d56bda508"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "iBoost-ODE",
+      "seed": 789,
+      "result_sha256": "c128b84592bb36e76bad5f47551da7765bd8d2fd92d9ee74706a94158a6514f7",
+      "score_sha256": "6fc53be47389421f3e6c6980b7fc8a23bc38972134159a4561babe1717fda778"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "iBoost-ODE",
+      "seed": 1024,
+      "result_sha256": "20d47a3a08c29fd208be0cd8079d5491fc580ce3ec49724ce840e2ac7d9d999c",
+      "score_sha256": "b19fad896a150e4f09ffe3e33d3411398767a8db9f9dc2d9239b3ede7464793b"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "iBoost-ODE",
+      "seed": 2048,
+      "result_sha256": "181f43ba78e7ddf79557591ccf2d4647415e5ab7e9625c14e8ca1cad25ef1ac6",
+      "score_sha256": "5c7bba850d73454e146caf9ded16ea27a387dfb887e4e95ccfe8aa135c69d4d7"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "iBoost-ODE",
+      "seed": 3072,
+      "result_sha256": "f490907eda5aac13cb0f23f0df71dd6f061b15a744b726501d60f3fb6c8c55f2",
+      "score_sha256": "a9be55c28b5548e1a77db7d0189a8c2a4ec4738d02b904eb976ebc3d574f6a3a"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "iBoost-ODE",
+      "seed": 4096,
+      "result_sha256": "f5a242f71b4ca99ac35bdef539a06e2841fb1f6efd729f9e9dd1fb950cb11ac5",
+      "score_sha256": "cdad0a4c69d7b4b6ba0780814e475a3fbf143523642aadca0224c700ca561ca5"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "iBoost-ODE",
+      "seed": 5120,
+      "result_sha256": "274d60f0a546141f6c04112c1ba610fdd637602ee426fe977031d2f2d29ff418",
+      "score_sha256": "ee7f7bd122b90426754eba0935ed5cd01f7bcbfb7fe39f85e6d6dd810e054512"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "iBoost-ODE",
+      "seed": 6144,
+      "result_sha256": "34ea962de6fd9b2bbbfe03fd07565877705f21a6ceaec1db6c9175e6f3089c77",
+      "score_sha256": "83ce9a2f6b916be35d7f63af8e46b8abec2306d71b1d003c0277357489037358"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "CoMadOut",
+      "seed": 42,
+      "result_sha256": "a08d5506a65bd3efabcfc6c94c6478702c9b73e6e3229d3ba253fd93f113dfdc",
+      "score_sha256": "89a962691b153896ad2a5cff896078160ca1b8040ccddb7944d8c018f37585ea"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "CoMadOut",
+      "seed": 123,
+      "result_sha256": "f068900deb625dc37d6753ff2beeacf7f927a6e25e4f0672a7b24f80369ff478",
+      "score_sha256": "f81976a5792e19360b202ee841042b822098df8ebaefeaebcace411f54f27118"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "CoMadOut",
+      "seed": 456,
+      "result_sha256": "0097997e3ed479c14fc321870c8b559be738bd65b8a37c451dea51f527b4024f",
+      "score_sha256": "38506f53c453bab496346f36f49bcebf3fcc48f5dba23faac8c1f97b097f9020"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "CoMadOut",
+      "seed": 789,
+      "result_sha256": "fe8417285cdc6a96cd3a3ec9d56a613ad64257a7e2b44fb1ae16f676e9ce053b",
+      "score_sha256": "41af582f59dc88d1ded7ca7bcabac5897dec7cae8648b2f72e07d1448cbfac81"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "CoMadOut",
+      "seed": 1024,
+      "result_sha256": "0c0eeccf2bb62e4699c3d803d94108ce0b0e5056d06cb82ae1268f5427e56898",
+      "score_sha256": "4b5e70c3689dfaea332f97abb05b6275644e9f1ce9e0aa31497d8a9d4136cf3b"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "CoMadOut",
+      "seed": 2048,
+      "result_sha256": "1f266c2a79089a037682873e66e5f7bd6913ea22ed974844fcda00f1a5161d50",
+      "score_sha256": "ee0476b6eac1e4c3b710b9850f0e740595d742f119c79a33431b082543fbb2d6"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "CoMadOut",
+      "seed": 3072,
+      "result_sha256": "6862800c6257e1e107a435f7f076d3c35a599677dc6665f166d6f7180722e9bf",
+      "score_sha256": "80af8663aad4b2b611743f181cef8d196e994916868f8f505d89272996912cd1"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "CoMadOut",
+      "seed": 4096,
+      "result_sha256": "2347bdb49efbd500269056bdf96d3397f052c68e70824488439638dd02e31d98",
+      "score_sha256": "8d88afb0b378ae6eec8922aaf0955f9a7326086a551fb0c7d1051deef4a11539"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "CoMadOut",
+      "seed": 5120,
+      "result_sha256": "767cf537650152334b0c182c3102dfdc7d89a6c8550510f949bed38e94176256",
+      "score_sha256": "519f4db969849bd1dce59ab0705fc9c59397c0c2d5a50acaabd87e8ace703380"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "CoMadOut",
+      "seed": 6144,
+      "result_sha256": "27728f2feba45db08a058e00fc27ca97189aec972729207681ea70777d6f08c7",
+      "score_sha256": "7e3398f5844ef59a2c4718a610caeae16a461d9c465007b9658594f7f38472b6"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Shape-KNN",
+      "seed": 42,
+      "result_sha256": "ae9bf49f570e652bc81664479f88b1774e52c6f81ade6241b1b9567cea02a169",
+      "score_sha256": "91df9541c87d9d80a40f16cd461eb7a3ed5a5cbc752b76361e4313628a5a0543"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Shape-KNN",
+      "seed": 123,
+      "result_sha256": "81bc3a8da97f91a965779e7199ed5ffe93f22a4dbb3abdd7c8b952be9736abca",
+      "score_sha256": "f1b274c2ad68f3d9f6d1b308673fb4e01c1a522bd0776918f17920d969c570ec"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Shape-KNN",
+      "seed": 456,
+      "result_sha256": "7ebf16a9878b2555f852d385b0eedcb4e543c0af773a8fe4e22ea7bd50c3ba22",
+      "score_sha256": "cf8a592bd810dc5724f9eb51937e47475c633055982f83b3ad45514e58cc7ad9"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Shape-KNN",
+      "seed": 789,
+      "result_sha256": "2e05aa03a9a085f30e39a0b4f238343efdc9173e1f7035cab2d27a44ae05f820",
+      "score_sha256": "d9e8247eb967ae14c2a02b64c7011e0ad62933c331fdc9b7a268baabdaf1bba0"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Shape-KNN",
+      "seed": 1024,
+      "result_sha256": "3d1cea58881f53008d87aac57e162984abfc99938b6f9e7a9934d58821e0a7b7",
+      "score_sha256": "4cea201cc1b4858ce19bfae7db1e741394eba03a97c5504657d4e6529589bd6f"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Shape-KNN",
+      "seed": 2048,
+      "result_sha256": "8a93587e5708378c12c5ea0f915a7197123a9ea08980393619c7283400c6a986",
+      "score_sha256": "518d2250d7fcc690345a5b6b3478ac80e5ce23fb5c982ced25f7e31abe8477ff"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Shape-KNN",
+      "seed": 3072,
+      "result_sha256": "15fe48f41837ef5568b3507f7d29b00549db478b2e791824bf40ebf2050a052a",
+      "score_sha256": "6169e89a69658033e61b25b5c4a894cc99c742bd511366e87a57a9ff8462e94c"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Shape-KNN",
+      "seed": 4096,
+      "result_sha256": "2f241ad0c2d6c7d944b4c64f68e6d2c9afaaccdf98621d258fca01d8c4cdfb8c",
+      "score_sha256": "c4d6cba3e70baf87b6042a8e6a526416be01443ff773ea9eb640341d43f4c7b7"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Shape-KNN",
+      "seed": 5120,
+      "result_sha256": "b25606b45deefeab071ee605705b5affeacb9f7f220c6f5c8538cc62965b820e",
+      "score_sha256": "025a353512a436c86dafc8f54efb4f6009fe225179c22553fdeab63093507728"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Shape-KNN",
+      "seed": 6144,
+      "result_sha256": "15f42e0d8eeadb0ce61296d56c849e54e29082e8b4be1e5d10b3f0cb03bcf3a6",
+      "score_sha256": "7bc5a170931d9a3bc85c822179eee88af06c21cde8b0b6be02903e6b5e6dde89"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "SegmentOD",
+      "seed": 42,
+      "result_sha256": "b3ea39233139812cf77bd5dc0fd4c8e67ebd53e44746af46ad10ceebe42fc402",
+      "score_sha256": "2135190eeac8c656691f4e81f799f4899e8f7f73a7b20c00b1eb2ccb91d05620"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "SegmentOD",
+      "seed": 123,
+      "result_sha256": "3772f15ee3cac344f6153faf1605bc07bac1b545db46672b68eab3b688451193",
+      "score_sha256": "91e5762d1b124f1988462c66c0ad0b780f0565b0c507b3efa9aa2b44325c0d10"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "SegmentOD",
+      "seed": 456,
+      "result_sha256": "8bb15949f1632c170f1e2e94339252f3124e095541e14d22b7f913e83a4373e3",
+      "score_sha256": "9abb25eaeca5460b2046a78b25af1405c4c2bd44ae10b2c0f3e7a1d01604035c"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "SegmentOD",
+      "seed": 789,
+      "result_sha256": "7c987bfc5b445edbac784e06748e9603bf0ecfcac600165f7d6f142b9fe73fa3",
+      "score_sha256": "49cfa5e10790c9e0f6907715203b5d7c10a9d9fdcc7d774fc23e61410143effc"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "SegmentOD",
+      "seed": 1024,
+      "result_sha256": "a4983314a887019392d3e0f39f40ba2b92a3f123fdeca81c3dd1131ca43e667d",
+      "score_sha256": "c61dc427344f252de5321cfc390ae79929710620894702470306b6470c0e476a"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "SegmentOD",
+      "seed": 2048,
+      "result_sha256": "b932941b7fd91e5078260bb5325f827a3fc8c2250addab77b57d9ae595d111dd",
+      "score_sha256": "03e507c7bffb8ba5e863e20af299f4edac57a31785c288352e1954da6bfab422"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "SegmentOD",
+      "seed": 3072,
+      "result_sha256": "2ee494fbe421eb1c8e467a8014159605614830cdcbd22a76dd26d81e04b69238",
+      "score_sha256": "1290d28b7a14d783b6c09c3d217a2ed623b4b19fc511a58493db412a8534631a"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "SegmentOD",
+      "seed": 4096,
+      "result_sha256": "2890b9d31ad63da27630d3e018f658b4d58331a5567db2532e97f4d521b41460",
+      "score_sha256": "99a6d4271304148241a0dde8350465b97291c8bc6073d91cce7a32b8a81fb680"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "SegmentOD",
+      "seed": 5120,
+      "result_sha256": "11b2b356fc645b15f9ea077ceaef04d04ddeb595a22b53801ff3fdc98736cedd",
+      "score_sha256": "aef5344f348b72b3037085b38725fa51d31b49e664c39b8b74a64e9929e80264"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "SegmentOD",
+      "seed": 6144,
+      "result_sha256": "3917d10674159f591cf56bfd5ab36f11601e29f48a7cfb9cb39c0753916754ef",
+      "score_sha256": "1856ab312c4ffc6516694239a8931e3e992ff4f5529710dd425d79abb8d3357e"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "TADS",
+      "seed": 42,
+      "result_sha256": "91cc015bec6fd36c29a8bf382eba9c703fa39422bf0c60db2e234fcdd3d27c8e",
+      "score_sha256": "72c0852bb374e986c93b3084b0a5386e1c2844e22d4de43c6b45ffe85ea45d13"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "TADS",
+      "seed": 123,
+      "result_sha256": "6afc45d34e016f6636b80a969c0b6930127e76a4a64888e2bfed2738b1f07c59",
+      "score_sha256": "32a6b08371eb84ae6dc368023eba886fc8eead047d0907ff3be2b9546e0615a0"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "TADS",
+      "seed": 456,
+      "result_sha256": "6910e0d0853a61e414c1e4c23413d313af6631b5c8b4ea8e559750e9ae89a335",
+      "score_sha256": "a1b207d51f3707554115dd366b8ab39109cfeaa5d94a00c7c69ee2824a1843c7"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "TADS",
+      "seed": 789,
+      "result_sha256": "49a7577e40e8048a360632eac9bc1e9af2c11145b0b481040c605d68539d62dc",
+      "score_sha256": "2bb59b2a04ba358f68673a054ce8ad75bbd5b99f1e0810408c968e7d9fa4fcd3"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "TADS",
+      "seed": 1024,
+      "result_sha256": "29e79ccc51386895297fd9f7e2aed93b50b1318bb33d50a10d866eda045cc73a",
+      "score_sha256": "4c521d52589a7f9ec2df13e02c9f6b6551b0efd22c2747375fedc2a6a288a748"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "TADS",
+      "seed": 2048,
+      "result_sha256": "7dc9d8ddeb5365316b087ab50f34a8b7c3628ba6a9f2842a016ae17ed5385919",
+      "score_sha256": "3805dbc8556429a926e317b2ef5b6470e3c4816569c17383b04f5a573e7c0783"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "TADS",
+      "seed": 3072,
+      "result_sha256": "33ac794f5490e4f387e64eaea46d2f565fc98494e0d84e6e3724bfc127c32b6b",
+      "score_sha256": "345f11b0ca5bcf5c16ac234b0bf06f427263d7e1948220ca93992bbad07dc8c3"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "TADS",
+      "seed": 4096,
+      "result_sha256": "02853ebeda54fbecf55bbef6fa620fc6121f9fabd154db9c9e83a031d2b6a25b",
+      "score_sha256": "9bb837a650388b327e9c9b3113b7a19cd0781bc4b69f22987414c12484aea6fe"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "TADS",
+      "seed": 5120,
+      "result_sha256": "acbf83888aadb68ea419fd36cfb97769d2d48b4cd8a9aaeedab72d21f802c4a2",
+      "score_sha256": "9a7194eaae048ed5ee4cd876fc40960827102fde859fa77824daad5d95123e63"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "TADS",
+      "seed": 6144,
+      "result_sha256": "67e98f14ae4d2672514cf6146dc4fb274fea4b9ed6d28caf82f343d3c82bb627",
+      "score_sha256": "bee399ee2871df1b504eec5820e3f05aee07d0007b865ef41dc1f13d9bf74435"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Profile-TAD",
+      "seed": 42,
+      "result_sha256": "0cccd9a8322c3da52a6c34c6e426fa4c8604684beb425c569d389c257fc47029",
+      "score_sha256": "11a1c9380fbd68278ab702e1f86769d52c9720cbe18203fe8da35577871ca8c3"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Profile-TAD",
+      "seed": 123,
+      "result_sha256": "fe06a17fd1b4d6845529cca3af7ba72fd65f1a4861234b1f4196072ca6aede38",
+      "score_sha256": "6b91837d68ef1f52c6e8a6954cd4ddb98ba3309c8ebd4840b2f04f6f1161efd8"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Profile-TAD",
+      "seed": 456,
+      "result_sha256": "33f5cda1e215f19296e961dcbb9891ca3d44aaba953a6e4c60417c40579cc7ca",
+      "score_sha256": "1f260eea4c71c21740c8cb9ac66eccc65e98ba4339043ec25c17b285a0c4e8d9"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Profile-TAD",
+      "seed": 789,
+      "result_sha256": "89c4b9e6898e1407fca0c345ea474af4bdc0e9750e50f5968b2e77133a8def8a",
+      "score_sha256": "27c4206061b33ad1d6cd12b85d01d0d2aeec5f81a24f99a88f85b8ac339f27b6"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Profile-TAD",
+      "seed": 1024,
+      "result_sha256": "dc85ed393defc8ff1a1e90e485105c42e3163ff586d735577751f0aa8139594a",
+      "score_sha256": "663a63aa45e0efbb61470f0c485cce865daad3cb1e808986a10a0541e783bd62"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Profile-TAD",
+      "seed": 2048,
+      "result_sha256": "09c200db0f0ff0ecebe5408c684230ecd463b24cac8d074006162f5ab3942e50",
+      "score_sha256": "fd3e11ee447671eed2c5290f8ba401d62ed6169d8784f122cf073f03ddf73196"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Profile-TAD",
+      "seed": 3072,
+      "result_sha256": "5ce1ea2399f7c7f0517f4d858539ef4086a4c85f012b1e93c01a1a64471ed8dc",
+      "score_sha256": "792bf1c24da250727a0ddd2f0fd8bd246389cc7c27ebbba45c8a7f55a5127d16"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Profile-TAD",
+      "seed": 4096,
+      "result_sha256": "6436900edd77baf1ae981c3d13aa8379c851fd7d20728d1db00c7a6ab251813f",
+      "score_sha256": "c0770fe3db7f0be10cc87942d1a3dff96fa49b1e74d277d3bcbd065ad8eccee6"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Profile-TAD",
+      "seed": 5120,
+      "result_sha256": "ffdb4eecd0807d1ce0db6f44158466bca37bc2f4d6ae988d92fe7f0fe36712d3",
+      "score_sha256": "9c56e2e5159f02af167a960f51b83513cbc04c11a4953bae89534d47a7bf1659"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "Profile-TAD",
+      "seed": 6144,
+      "result_sha256": "b4f3c4d8d6ace885e2c31f096ebcc46bb0a8455ae70446a3a71de16daa5b0562",
+      "score_sha256": "8178a7d79ebf11fe4c4ebdf8aeaa9c1497e705dcc04395b7dd98c555d710f981"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LM-TAD",
+      "seed": 42,
+      "result_sha256": "bc1ee9aef0f6ead7d43b84c5f772bdc9225a95fd876ac1793f2701daed7b3e8e",
+      "score_sha256": "30721fbdafca077db7cf4089cb327a36175820d869954626007a0a639d995080"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LM-TAD",
+      "seed": 123,
+      "result_sha256": "67e924c62f6bc7aa3f501822c8874f06ab87a601f95ef3d94b574d848d663fc4",
+      "score_sha256": "1a32410c1a2d8e8dd87e25ef5d2d52e1dfb712c14f4f3f5af20e1ea0b0961995"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LM-TAD",
+      "seed": 456,
+      "result_sha256": "34fb1f5b8cb11f58ec2717710892e11f471d591354c34dd571e2b89aab8f6d40",
+      "score_sha256": "0fc31cc250b9fde48abb0540383547069862498a86b7b5deeedea97b0800b111"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LM-TAD",
+      "seed": 789,
+      "result_sha256": "5d6fab9d2eeadd6f1ca66a34af937d31b119b5409ecbbe97d477708483092bc5",
+      "score_sha256": "3671befdb8d4032164590e1eea4a474e183a8bfad4c2b077ef8ece30a0539032"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LM-TAD",
+      "seed": 1024,
+      "result_sha256": "8a71f3028c60c86d92051a262fee215f85b3ead6558ca5a9409c6e0ff3ac7f98",
+      "score_sha256": "e389bf219ea701d305f627033719847f4d39a6c4dc9f2678fbc075b904cd002c"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LM-TAD",
+      "seed": 2048,
+      "result_sha256": "876fbbeca9fa70d77aec083421e510569474c73277c371f22a9a35d231cd3fc6",
+      "score_sha256": "290ccf53b7c8a432d6e027572ebccfffc77eac2437cc0709e7fb360bee6a36f0"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LM-TAD",
+      "seed": 3072,
+      "result_sha256": "15d5d56e245cfd6c0380019377bd56cfd73f80e6a9c0b4c5a89ade544986512c",
+      "score_sha256": "44bf2fc42a85207478ec4776b60e85d018c93c33778d5de8ec87eb7214af741e"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LM-TAD",
+      "seed": 4096,
+      "result_sha256": "322399e9fbc8679ebd58432b116d8ea8a701b758b0ae415658a394777f518970",
+      "score_sha256": "d63fdb1a3cd74ee1c7af7f320c8ff12abab9cc8feacba79ab1dd0d63017af36c"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LM-TAD",
+      "seed": 5120,
+      "result_sha256": "c8e1886f5baad17d840e2472f95604510ee2c581fd8917be9912b57872d174de",
+      "score_sha256": "33b1d538188d804216f60aee889a1db7260cd58795bb64c5578af55992cce4a6"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LM-TAD",
+      "seed": 6144,
+      "result_sha256": "ca6e179a1c9136eaae79685a8c027a970f9369071416d43cde06c61be66f8a62",
+      "score_sha256": "73bfc1fb314862d9a547deca3e81cae5ef2ab151d854a9157c6ad3db5e6335fe"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "MST-OATD",
+      "seed": 42,
+      "result_sha256": "b6581f0703b42b1901dc5add6a3eab1ae922d06cd8e4e4f762cb6f8b2b67acda",
+      "score_sha256": "90fa9fd7f18abff1ccebf5e99191da056113746bdc64df2268adcb7711454e2a"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "MST-OATD",
+      "seed": 123,
+      "result_sha256": "4d7135b05cfa04fc7a1dee3c1a686282ce042fa2a3b15cc5e5f1135b90537e9b",
+      "score_sha256": "bf65196c729ebb0d0f9ce7d89830de6dfea4b33974062a06bef868c1d0bfb4f4"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "MST-OATD",
+      "seed": 456,
+      "result_sha256": "44fd989634433d3cd3a37dbc6a5d76353f066dde61223eafee9505e1477763fa",
+      "score_sha256": "74b372d46a3fad7ba1eef4ea6481269c77e4413c93551bdd3bc4e40226547f00"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "MST-OATD",
+      "seed": 789,
+      "result_sha256": "12a19c085f305cefd5a124b1f302eeeab8aad8a330771876aa5a14b23ca4b7b7",
+      "score_sha256": "f9ecac8952b290694e470ec51a0b818f626ffbd73c13c783be74f27a9dd5874f"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "MST-OATD",
+      "seed": 1024,
+      "result_sha256": "8f2c5b2e3bf36bfbc84c366cab4cde0138f06396fbd611ce4d23f5ea63908ac4",
+      "score_sha256": "4f2a3eac7d7c59ab2f609b6c584c82c7a30d72c7d6bfa07d1e3b5795d316f6eb"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "MST-OATD",
+      "seed": 2048,
+      "result_sha256": "a3e0640119426a0e9aa2c4fe4ed47a3506d7dd1d4b93db16969050079ce6cbd8",
+      "score_sha256": "69815e13a7d3749ec2315458b9f80cc8c76c05bb44dc04ac6bb569a398e71c07"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "MST-OATD",
+      "seed": 3072,
+      "result_sha256": "883ca5e522e6bbc1bf653b49590b502a11b7d44503c4aea67f4b7b85e280adf8",
+      "score_sha256": "d4929b1ee7c331bd2483071036ecc5997e50d3f1cb7f8480dde077d771d2ad97"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "MST-OATD",
+      "seed": 4096,
+      "result_sha256": "b3170c565be2c9d6380b8e795e2953dcacb66f1029f3d18a3456db2628207384",
+      "score_sha256": "946b4537e31eeb5025b0431bea1deb4a367e2887ebefa396bc9a879d28fc91b0"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "MST-OATD",
+      "seed": 5120,
+      "result_sha256": "f5806bf828172742208e07c9f6f2507fb0d0a30f2c607503774c258cd7f2487e",
+      "score_sha256": "0ce0d0c0ecf3db3933de0855d52da2f83707328ba72258541d7c2f6228db2442"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "MST-OATD",
+      "seed": 6144,
+      "result_sha256": "b7c7021b5206ad42de3683d0c09a37948405f534a2a79ac497f3429e981f46bf",
+      "score_sha256": "088b4ed1a076e5c6913f88579fc7616908b1b590986d95522329c8ed5bafb3c4"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LSTM-AE",
+      "seed": 42,
+      "result_sha256": "fb59714e7a3d231d41cbb76f243a723ccd9b5581d02065420fd300c7cc9dae65",
+      "score_sha256": "e43da67904e9c14c3ab23c66e458f5503643582eb2d9af8ba32f8c71d27d9859"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LSTM-AE",
+      "seed": 123,
+      "result_sha256": "f49ab4695d6b248f5ed373af410ac465596b760adb453c18f08693ededc712c1",
+      "score_sha256": "989f253025341f1fee3b7d78c3caf180bf4b63a55c9d32c682dadcf2f277e1ee"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LSTM-AE",
+      "seed": 456,
+      "result_sha256": "9f7bccc9d88846d1912dd5cb36240ef1968ca82a06be43dea45918c51541a3a0",
+      "score_sha256": "08144a507163f5ae77752a080afd5dd08846903dcf63925ef873928de1d2055a"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LSTM-AE",
+      "seed": 789,
+      "result_sha256": "cf9b01f7c1f0c14b98c25f2cd780f9bc75e5c07669a06f2aa10b671f2109b0f1",
+      "score_sha256": "ad795d1fb695dbf2eb18e67457cd0752b4fa842f077bcd6edd63552d091b6ded"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LSTM-AE",
+      "seed": 1024,
+      "result_sha256": "3905eeaad4efcce27db9e8dc5b37bbe446ada7a42cd36f5ab575b7db5e09918c",
+      "score_sha256": "2a3b43f826d45559fde8cda8d2996f319e48b636c8ff3771a752a5ed4345b29e"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LSTM-AE",
+      "seed": 2048,
+      "result_sha256": "a7c28658bc8845187e371ca43daad06a7adc133871f492282284d001957e4df1",
+      "score_sha256": "701ea076102529d57ef22d9bf00e7bc64134f4689d54808b7d4d1e97ae39fb6d"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LSTM-AE",
+      "seed": 3072,
+      "result_sha256": "cba683925766dbeff95140e5c5ba512e9510eb3bcd184b24404622ebed5b236e",
+      "score_sha256": "158f4a67ac4aaf2b4097299602ca53c0e6f6968f06f89315a0ddae78689d6d89"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LSTM-AE",
+      "seed": 4096,
+      "result_sha256": "923568fa53152dd0af624b83b6744075f0e6757b1f200866743965dc5ffb4e89",
+      "score_sha256": "873748b859d8fa0ca8ddcee12a583bbdb33eba16d0b993e1e2bbe04269fe9bd6"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LSTM-AE",
+      "seed": 5120,
+      "result_sha256": "8116ff6d854a1b8549c367bc068335ebf7161fc0d212918524fd29f4eb129810",
+      "score_sha256": "ef3031bac70f724fd26fec4e3e82787d02370b94200f2f24b528053e1f8b818e"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "LSTM-AE",
+      "seed": 6144,
+      "result_sha256": "0af5af6dee769ab44b89560fed7550e4a1a5614cd26d3327365b67dffb779a4a",
+      "score_sha256": "58db3ee8aeef186520964ed6280699e67def19b0e84370d9d175ec6b324112b0"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "seed": 42,
+      "result_sha256": "183c3e87e9fdb57a6cc111e01bb3b86bcdf4f5e8e0e6899373c2bf479a066f78",
+      "score_sha256": "ba44b9925e97c0eddf5e2de3d24885962c017ad6b0310dc2bf12541b9bcd729a"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "seed": 123,
+      "result_sha256": "3cd89f5f79f99e6921ad351ae48ab08d896275b944ddc2bb50c0490fb6aec3c6",
+      "score_sha256": "a7fba2b12b09956a7dee7bd9c8215e746be51f810e61e32f51538c4a68718625"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "seed": 456,
+      "result_sha256": "2a6d81683426052593bebf72923797dcdc4e6402cbe028be6ef078e4d7d0bc5a",
+      "score_sha256": "5b2c616297c325ec30b99dd4c1abe2502064e8ec4b856d3ea59e2d74bb2a1bc3"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "seed": 789,
+      "result_sha256": "7176dc3425c5eeb47802e2378e53e09f57478db6dcb03d49525a5aafc77de3df",
+      "score_sha256": "d4330197fb2306a54a8ca56b9629a40466044c815392a43d74857fdb8df521a0"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "seed": 1024,
+      "result_sha256": "d3e07c69b29963809fdbe4957ba9962b1af6f553b014ff94fec9f77a44b668d6",
+      "score_sha256": "0fd14bcd3b5c3d4fc14feaad46934c6a9272a98fe7ad27ddaf29ec9cc6af92e3"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "seed": 2048,
+      "result_sha256": "80dd66cde03eb92162935ae6aca5d86983ec86eab544b9a6325967bb1ee01255",
+      "score_sha256": "6b465e22c85c5c9e3632f744058b8d500da03a31f40ce05bd0ff9e9e2a2c5f82"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "seed": 3072,
+      "result_sha256": "04568b99a20c0bf78c38e3072b51774a767ebdeffd6d33be095e16c7aa11addf",
+      "score_sha256": "217a17ac060b9a99e489d5ec48f41588aba658f9e232d785f6e6a090c8edf316"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "seed": 4096,
+      "result_sha256": "e1d8a491fc2f524443c2faeb0416b85ef1224e76e21c2983d4d61363f1616d54",
+      "score_sha256": "9509596bb962b618d0276ad6e6233f28014a0c2760d8e35637cc63e5f3542a3f"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "seed": 5120,
+      "result_sha256": "44e427838aa3bb167f8ff2164f9a48a1aa92805a2965d9f59801700c4d1117ad",
+      "score_sha256": "3ea605ab17f5053c8271b76d95a15ea1bb85c6dfee6f19be63f08e4ac9546d8c"
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "seed": 6144,
+      "result_sha256": "f7b60dede42c814fa4b509164f702e379ae5ae9876dff17186fb9225344b1662",
+      "score_sha256": "10c8cefb55c9ea087c951b3b7ab915c9cc9dfcf3c8eb8ca6b1df601da51b87fd"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "IForest",
+      "seed": 42,
+      "result_sha256": "526eaf614b12b4e607509ded020326e72125364a3b30a7a08a1579c985f53e84",
+      "score_sha256": "4bc361a056e58a66c46688670cac0f2be406fa1883f82962357eb278b5589539"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "IForest",
+      "seed": 123,
+      "result_sha256": "73715e1e1b048de23b0f67a261131a51c9622c4a2f559db3f62c6bbca886f115",
+      "score_sha256": "bf2402146853990920457e88926b95ee9b1c5f40f3875f79446b0d36955c6edb"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "IForest",
+      "seed": 456,
+      "result_sha256": "f6989ed6c43b59121aeac7d994743ac2650b0c78efe04dde82031e3e48dfe685",
+      "score_sha256": "0bf95af4a4e1e81dd8d89f3debfa10c6a6f7dd0bbc6207fa35305b538d1b0075"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "IForest",
+      "seed": 789,
+      "result_sha256": "b48dc1eee43e18cd2c77f6303f183219cd5c1c6ee9cdc2f1dfe92f2eb4f8c117",
+      "score_sha256": "4c93d11910ccc3f17c1474fbb993c1238bda7853679a5cb360d25f88016088ef"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "IForest",
+      "seed": 1024,
+      "result_sha256": "0d712ff9f6c285429a830e7b34cdb257a7bfaba317b06b3ac23d11485aad48a4",
+      "score_sha256": "b44ffad18eb0f1259932847b5665826a9ab28c625dbf0036b970e151046eae72"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "ECOD",
+      "seed": 42,
+      "result_sha256": "4896f09eed6c8b67ababd3e6df687b7543a08931d730ff86e71d813f900d720d",
+      "score_sha256": "f8aabf7e3508bb35e967cdedaf2e5641b1624d12c201243e5fd3edc931f0c082"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "ECOD",
+      "seed": 123,
+      "result_sha256": "a4178a489a8ba659b0db5fa5646872caa01162cabd2acc41fe284b0d69d3839c",
+      "score_sha256": "638cfc50bc34906f30034cdeeadc371a32cfa7075ae90849b56cbf8a80cba75c"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "ECOD",
+      "seed": 456,
+      "result_sha256": "14b86ffe1c0d2154bce2833e6fa21efec398ac9edc2bd9a62e5912f4a25b44c2",
+      "score_sha256": "1eb066fa318dd0b6dee5d45a703a66bd959f521afe3c2f9d50719d97cd63708b"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "ECOD",
+      "seed": 789,
+      "result_sha256": "b30dd7b7969054e3487ff3aa3f15e044d633b361fdc33bf8751f464a67eaadde",
+      "score_sha256": "ce2083fb530ba646fdef14a4e1075b468aaa6efad2e84560ea6bdf39f953fc32"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "ECOD",
+      "seed": 1024,
+      "result_sha256": "86985bd870c888a6a141351b8834eb718a4ad3ef54c0d98598c48ba76baa6669",
+      "score_sha256": "3b36cc86f3cfcf7afae361d03c0a9260c010e4601273172674fb35bb24ba5875"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "iBoost-ODE",
+      "seed": 42,
+      "result_sha256": "0337c23bf2606eb98bf891277285f1a4a80f472c35bfc1924567bce7477ebe6c",
+      "score_sha256": "db827f0c80110e157c1de0916c0c772fa58842c4bc0f82e10a7acaf614a407b1"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "iBoost-ODE",
+      "seed": 123,
+      "result_sha256": "94575e0d442be34a559f21c27d73baa2772dc549b6a827bacbf92fd3b1ad960d",
+      "score_sha256": "443c20f84a7849bdb37a3b89aefb112986864fd9bb54484991ebde991e7e1c92"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "iBoost-ODE",
+      "seed": 456,
+      "result_sha256": "09d92d880dc049370660efc6f1ae47464885cc64081e536371277fa3602f3cd3",
+      "score_sha256": "77ac6ad29f3c186024f54eaf5948da420256d7fca12f444518b073c116837210"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "iBoost-ODE",
+      "seed": 789,
+      "result_sha256": "73e8381a44f76913282664acd95851c70d22e12cb06c8a236f564078b4d36bba",
+      "score_sha256": "71254bf9d65237e665a025053334def1b391064b6a2279f33b8b978544fa1159"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "iBoost-ODE",
+      "seed": 1024,
+      "result_sha256": "4f8063250da89be0aaf375f256b53b91a50134ed94f75ddac344a04821775b9b",
+      "score_sha256": "c8dc618697de4b80fbbaa8df685557926259c3bf96dbcde8ded6fab3db6221e9"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "CoMadOut",
+      "seed": 42,
+      "result_sha256": "92a0ed0646fdd36b109d02e0c3514f0a0b392fe08c1dede4b5f9f353b1b11338",
+      "score_sha256": "ff18f272b8e925b918dd62d4c4fb1035324ca934624c9fd84154ad371b04d647"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "CoMadOut",
+      "seed": 123,
+      "result_sha256": "bf44022bb15512cffb091526ff3f738c121f8b1f756a566ad34230712453db91",
+      "score_sha256": "3412072f7553454ed195d3b17bd4ed1917110a8e67d029acab6e972b04f50b94"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "CoMadOut",
+      "seed": 456,
+      "result_sha256": "5f8d576ef725bd96ba8a10fab713c20646925d5aae19907097fc1599a8c84b9e",
+      "score_sha256": "d0d779974df86578b0e05707ac40ce60c048c5cc9a4b6185b29f78e8b6da39f7"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "CoMadOut",
+      "seed": 789,
+      "result_sha256": "b16afa8a0f027538accc0121d25c461abf6a44f8bfd3a9d6a117625a5e5a85a2",
+      "score_sha256": "a76f7a74def5029c4a6fe8839e2c289cab9237cad5d7772c0b6d8cd46b7ab4e9"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "CoMadOut",
+      "seed": 1024,
+      "result_sha256": "45b53e075f6228f4ad7f2eeca9eef1fc4af8ca9ff8acf304c7323e0119843bb0",
+      "score_sha256": "a8ff527c729c46dd34d4882859343f000de6bdc7dda0d27a103ce840cebb754a"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "Shape-KNN",
+      "seed": 42,
+      "result_sha256": "77b49ca64aa5e76927aabc0640b8c3edb9736f427ae98c239c23689b66a733ba",
+      "score_sha256": "56739ca7b12a2c3f495aba9e8fe3ca4be05da23c0049a22ff9411191aad3fa27"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "Shape-KNN",
+      "seed": 123,
+      "result_sha256": "8071f071026625e90a1e93f785bc2b42968921075aa15594b287a0100cf5844e",
+      "score_sha256": "c0bd7830281de29ca8991558cb8ffcb57cd8f82f0bd29be3c1c4d4ed0f1cc5a0"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "Shape-KNN",
+      "seed": 456,
+      "result_sha256": "5ada16562759ccd8181d997cc3901f89a142334545637df82b890f4fa49424d8",
+      "score_sha256": "005109441a1b2718cecdd2ebd92ceb5212066bccd2626db6f128eafcb5b4aead"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "Shape-KNN",
+      "seed": 789,
+      "result_sha256": "c72d654c3aa9c2774b8eadcae1c7c5c6b900953afc3c7f1850e443bf96905920",
+      "score_sha256": "a34d4a3e965a4a6e2077a02d75dbb11dac52b984150e3c02e6cde86833065e76"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "Shape-KNN",
+      "seed": 1024,
+      "result_sha256": "511d502dd62c572a31c7e9363ce0ebd28d3d680b8b247f046af59234a7bd471a",
+      "score_sha256": "89d3ed86e2e5afa0f5ddcfb49015159abb1233c9bc232764e4714892e52eeedf"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "SegmentOD",
+      "seed": 42,
+      "result_sha256": "86fdecb4960e944bb0ac5000d31e4adc2ffdd494f84ef406e29782b464881f6b",
+      "score_sha256": "f6885cbe0781e0ecd9c1941834f3e3891a29f5436e6aa64555831e63bda87de2"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "SegmentOD",
+      "seed": 123,
+      "result_sha256": "dcbde840653af08b81751cc234329ee1c758b556f0765e202d4043e583b2ece3",
+      "score_sha256": "4162c252e1d07fbb43a9a5158c297b57e02c58c7bd08fbed9e66d6eb07fb7ad2"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "SegmentOD",
+      "seed": 456,
+      "result_sha256": "9c32c05a6d1e1efa6e7baf08a6be6cafbeb1f9e36b4637ebb2434a002b94bb95",
+      "score_sha256": "da99d0ae5c39c8959d91769c0756df9f1f97ed1003d26887506bb2148e2a38a3"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "SegmentOD",
+      "seed": 789,
+      "result_sha256": "8067b0dc5fa3bde517dc478f7a9719b3527b004c2ca49acf75c440380158e1aa",
+      "score_sha256": "cfeca547d027e8fcf0c3ee1906e2034e12df7903de2754481d391d33387256b2"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "SegmentOD",
+      "seed": 1024,
+      "result_sha256": "6340711d60cd3e7273f79e22a7291be607472234d1bffd850733e4fbe3478398",
+      "score_sha256": "f7a618f065a8c7e23abdc47805a11f4fdb24c8eee54a535b678bb4e5afe354d4"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "TADS",
+      "seed": 42,
+      "result_sha256": "dcdd79bf92fe2063877959fb8fe17d6284c6458b7bc672ca75baa398112c0529",
+      "score_sha256": "36742d1ccc5b6b09a47976db7d1a32a6ee10295f506887595902dd2146cb5c77"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "TADS",
+      "seed": 123,
+      "result_sha256": "5dc7197042902a85e9927f85fd58beb36c99bcc298fef72deb4921044dd81d85",
+      "score_sha256": "cc7240d47973c7cb98164d847f5bcfab15e93fde5aaf2c0d8761c887f92a3f93"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "TADS",
+      "seed": 456,
+      "result_sha256": "dee359421ff27e464c8b65fa1c23756bf2e58e63a3aaa1ef99a4a3eea667f637",
+      "score_sha256": "04402a600fbe2a217aec2c8646b556eb1293be4d318b789798dbed7b327d616a"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "TADS",
+      "seed": 789,
+      "result_sha256": "62bda9036cacf792780a03124dd759f8491c95088d083e824c3bff045cebfcd9",
+      "score_sha256": "deb002bb67a949a7e315719e931d48ec36f0bb5c91e2615ef47483176b396c4a"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "TADS",
+      "seed": 1024,
+      "result_sha256": "a3aac780fd4ce50b0c60a036a8ac1d1b8b9931bed55180af787c0ae16bae7a26",
+      "score_sha256": "77cc10b2370b791a2caa121f9578ece203a71a7a8e9bb6d84c60d905c38d8879"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "Profile-TAD",
+      "seed": 42,
+      "result_sha256": "fa53696eca3705f08ed95cbd52f5cd7076764b50fa91bffe4c485042c4e0ce1b",
+      "score_sha256": "31a041411c56832ebc31242c7d937ba99eec1118497cf196f31c57367b10d2c0"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "Profile-TAD",
+      "seed": 123,
+      "result_sha256": "f0958880392cc2003db9ef8efc5a0903fcb62a801e69c2b2ac150b3dfe6437ee",
+      "score_sha256": "20c8943949d5b30d0cbee006e08faf2e6993f9a2168d5f6d06925fa623f703ee"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "Profile-TAD",
+      "seed": 456,
+      "result_sha256": "e3a1b209cf6c9ddd9d406d30ba2b247a97ab4ec8806f7c911a4ddb37578a9811",
+      "score_sha256": "249f943df184cb8a2e4caeb2a8b58ff92fd9d3f45b5e84b9c3a9c7758b73d306"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "Profile-TAD",
+      "seed": 789,
+      "result_sha256": "b4837d55f45efac307d58467e9faae051a22f4eaa1e7a4c652face233c9bb446",
+      "score_sha256": "1b678048b0bbbf8df73d0bddacc05b90e54c7ac7e9ebd6cb92ba0d661b6709c4"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "Profile-TAD",
+      "seed": 1024,
+      "result_sha256": "b7d7765e9d2239a6e71c1df6d5bbf490cd2fa497a1491d5645c8d7c41a4201eb",
+      "score_sha256": "d651c6e4f6919c05691265b8af09fa003da36fc2129d75141aaf9f9379895665"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "LM-TAD",
+      "seed": 42,
+      "result_sha256": "5024206ab0931bd06abd2ddde5900f6aba7521a4ff97fc6f69b28500307df35c",
+      "score_sha256": "28682b7fba6ea6a205ee54c2560da7bc9cc4cb3bb5b2cc637846b7d2a2f78f9d"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "LM-TAD",
+      "seed": 123,
+      "result_sha256": "77614545eb2760053bc815a879bc8a7a1fa022acaa6031e9f91a0608b7e3a629",
+      "score_sha256": "b5c802157ea0db73868e7a16a079cca42902eebd3390db3f30b6b931d3ef42cd"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "LM-TAD",
+      "seed": 456,
+      "result_sha256": "caca9401758e161b55515ee47714ffd5af179b7d19466347bb2af4a46eb6587b",
+      "score_sha256": "80e9fa2fadf7c6902d408007dd49fb6db81efd7063974c2c3c516ff7d1fa3831"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "LM-TAD",
+      "seed": 789,
+      "result_sha256": "a67364c9c6615f847c66ecadb55f28cc60499e51e7145ab1c2f781e4b6955439",
+      "score_sha256": "b625b726319355ea7b721901cf4bcb3a2d77983c350c7dfcf39bdc65736ac38d"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "LM-TAD",
+      "seed": 1024,
+      "result_sha256": "3d145b554f68e94849f9f486c1e670287b30ad2c4c3574da20b423d2e8f28096",
+      "score_sha256": "a43510d8b2bf7f25190458c41d46aa44476c65b663492897f1f673de489bd3d9"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "MST-OATD",
+      "seed": 42,
+      "result_sha256": "ba9d58878da8d755e60a5a7fc7edda1088775353f87b42cabf5465446018a61d",
+      "score_sha256": "62b3dfc41071c9edbdf8880da22c79da15d582be43c12d07875c5df56e7361c8"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "MST-OATD",
+      "seed": 123,
+      "result_sha256": "470570d8edc3ede9cbd941411276956ee5ee86de6d50397db795d61ca2582e54",
+      "score_sha256": "8a7d924f478b9251c0f5a01c71bfbb9d624ca6b4b5d184cd58efdb9e0afe94fa"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "MST-OATD",
+      "seed": 456,
+      "result_sha256": "a5590ce5d33a09c08def37c1ee0ed3cbd969ac54d06d1eee11b6b38acb3d6c33",
+      "score_sha256": "6e9d7d35e33f7fede7d869b640860ce340de1cdea69626abf64415b6e31af547"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "MST-OATD",
+      "seed": 789,
+      "result_sha256": "5e05de9c1ed1d18aa658c473acf06a8ad1c0fbac984af5f8471f1de1b61055d2",
+      "score_sha256": "2245db7cb386aa69ea8b8978dc249acf84a401988d8448157ef648db7812b453"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "MST-OATD",
+      "seed": 1024,
+      "result_sha256": "23ee755547511e8a192a3006b8756ad2938eac98ebb04ccb0246e3ffc8e674fd",
+      "score_sha256": "53397e5d6c072b69d63210b9b8ecdbc9f380c7d59422e6125b2e779e712f36c9"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "LSTM-AE",
+      "seed": 42,
+      "result_sha256": "5a3299fc133a521c7c46769f0d224442e198735782196b173fd9f6785622c457",
+      "score_sha256": "4734bcc46f2a576041a1bf55e8e7d5baef23c7056209003f036d2e4d6785dea2"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "LSTM-AE",
+      "seed": 123,
+      "result_sha256": "736461ca681eab2dc0b4b17257c75a186dd8a0b393d52da84ad4d02e534e1ff4",
+      "score_sha256": "7cba1ad19c98b984f28ce7bc65a7e86a1a2942f3e98f1926f11d19602268be24"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "LSTM-AE",
+      "seed": 456,
+      "result_sha256": "1ca377cb2c9e608badf400696ea278d1039198d0429a51dfae5893d3700af44f",
+      "score_sha256": "028d5d399513f5f950737b7ad3c20dd8163528a1fa656f288db8d0d4bed0fbc5"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "LSTM-AE",
+      "seed": 789,
+      "result_sha256": "073de51af7ccfaca220bb4258a35d4fa2518955248de3a7a9356d9e2d8f7ee23",
+      "score_sha256": "fa3df7cc63ab3fbc0bae7f784def5e47f1e9c50a0a21d6d057994a6396ce95dc"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "LSTM-AE",
+      "seed": 1024,
+      "result_sha256": "cc6dc890c0e17a08213be81db387808f1c53ff6862731fa81e8ec6977d620d0a",
+      "score_sha256": "46175bb92392fd197faca70403304154d7ae391dc5a5df16df9dc593c12fd649"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "seed": 42,
+      "result_sha256": "4a45b260b8c86b138924cfa9615b6fa9a241b92255f456abfa47028340900036",
+      "score_sha256": "af4b1373a7c376b4a359e7c9c512929d9b1001f1e92b285b074cec155764979e"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "seed": 123,
+      "result_sha256": "d0dd1150156e77dcb368c3ba94ce722a0cb4d3fc5903987330d648244febba52",
+      "score_sha256": "b17690193e98d1776c993295ff9a035adb124ee47577d644600f92d383f766f1"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "seed": 456,
+      "result_sha256": "266c5eeea06c375a3ada104ae1a36eeb8bd168a85dcb1e56ea1cd5b8aea971de",
+      "score_sha256": "22d42fd6840adea1c2753b6b0cf680459e69bb9798172fb98cf8c361cf0432f6"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "seed": 789,
+      "result_sha256": "ff782b384764fde545744cefc9fcc4eac9e4c4cbf5509a44dd348fcf49d7c456",
+      "score_sha256": "eac96c05b7f18536a41c13fd7ca678472c0e96757683c947362e30b8a30fde46"
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "seed": 1024,
+      "result_sha256": "614b4e0fad7371f30e4c3f03d98f55132306a3c2ab96ba17178e42bf50ec1aa2",
+      "score_sha256": "a2a235414599775bb9a7d3ab5c8e35ebc3ede75948d242e536a08622be1e05a9"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "IForest",
+      "seed": 42,
+      "result_sha256": "5e322e2e9cfaefb1a4e35d64045dd23a6db281303e223e3d843ea1df0959e395",
+      "score_sha256": "27813ab4667dbd8da145232d9a83e999d163fa33ff5fc4c97bf21b2d849df6ae"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "IForest",
+      "seed": 123,
+      "result_sha256": "ea6249963c137c3932ec1cc9396b140e40e9a9a1d5c16875885e10cec0409d4b",
+      "score_sha256": "7b7a7307c6c73f074daf438f12a847807a865f0a5dffac5265b14b713b860fc0"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "IForest",
+      "seed": 456,
+      "result_sha256": "47c57eb6d81955e4a2d91b8c4561e01610600caaac53256361b863e93f2fd2c1",
+      "score_sha256": "18dc5604363983149ad3463704a0878cdcf6522812470a33a9a69a7513f4e832"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "IForest",
+      "seed": 789,
+      "result_sha256": "41072617afee8877f7a8e50620ca927bce51b2ae320738676b60e469aeeed42a",
+      "score_sha256": "5016a0d253f74c2c7fb9150bccb3a16e3c11a0e6cf3c54d274c7a2bc31b10f1d"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "IForest",
+      "seed": 1024,
+      "result_sha256": "5613551e68d79a63099223732837aa32af5d7f13c84079e29f270d368b03e983",
+      "score_sha256": "fb5706d09744d64c05ff7fb00335a3de72ff88c911150ba8faf25f38a5b8763e"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "ECOD",
+      "seed": 42,
+      "result_sha256": "ae8dbfaca99223dabb4fe9687246b18218b99f79a9aeeb26dfbc8eaa95b0b79b",
+      "score_sha256": "35b1c8965697fead9e2c9c7e13257985af690fc305c04ccfd07726356f74ce45"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "ECOD",
+      "seed": 123,
+      "result_sha256": "f9dd078454b055b7fb58ab6ac45925de5fcc74e85a4e8c16191bdf5d704f4055",
+      "score_sha256": "441293f2562f899c0af29101d262ba8102ba82dc8d474d954f6e170e264b02c5"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "ECOD",
+      "seed": 456,
+      "result_sha256": "4cb72efd69e2138fbe9f1323fabc10c9d7abcedffa9962b1208bb98ec08b1308",
+      "score_sha256": "280f88e52879d3b75a351562fd92460a97aeec889c184ed38e000dd1602c034c"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "ECOD",
+      "seed": 789,
+      "result_sha256": "620f3b41cb2fbb62a9058de59719cedeacf7d863777d9cb5673541b75ca4c764",
+      "score_sha256": "1caebcfca4b3e05585f71955cf8474616d70325510f9806c1c0e146303b5d164"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "ECOD",
+      "seed": 1024,
+      "result_sha256": "8712b1a9f358464aaf90249afde997b12431d4df23c63340fcd6b454982efecb",
+      "score_sha256": "cf75fb0c7736543baed02ba382bd6b6e62dc904fa504ccb48e60a80f6ab30a97"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "iBoost-ODE",
+      "seed": 42,
+      "result_sha256": "931b8650e57a564e763594b2862cd1302c9bfff7e8041612dd1b85d21903007d",
+      "score_sha256": "13bbb86f273bf4eb658e75be4669f2240c7feb10bc505b38ec472c88b6e59802"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "iBoost-ODE",
+      "seed": 123,
+      "result_sha256": "ce9f08f1919e6bee870ca34266cd32d12ec4e7fed054d1a857a86d766b8bd13b",
+      "score_sha256": "a9100a0524efdf0d1037ba565e248b4b0d3f2b1790b34b140e5219ed9bb0695c"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "iBoost-ODE",
+      "seed": 456,
+      "result_sha256": "4b1de2833a7af88a5522e9bdc62d55a24f5a3f46df04d40b9c765efe59054fd8",
+      "score_sha256": "218667a4fb34b5c2e45d5c110679584fd9ab08f5aee77dbe702ec5157f947014"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "iBoost-ODE",
+      "seed": 789,
+      "result_sha256": "4dcaf003e3f18a76d00d477f9b4714dc437cf4cc01839ed649c47ed489bd5fe9",
+      "score_sha256": "f861c8d7836facde37e32cbc431306198dc13ce29269b63dd909bf1680c03b7f"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "iBoost-ODE",
+      "seed": 1024,
+      "result_sha256": "e6e58b922bc5f8df4637ef07c6b77c6a2ba1986d9ccd5697baedd9e3eb6019ce",
+      "score_sha256": "3b161fee5678f6c34188de980932d13d353bf69786975ecc302f8fefaa05dab8"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "CoMadOut",
+      "seed": 42,
+      "result_sha256": "fd3dfe46a25fcd2190a319e5472083d9fa2d4d0848786ccb3fec92af587c15c5",
+      "score_sha256": "ca2b7b1c1ce001fcf0b00e55773dfe675532750e4359ec56de7e8f1cd697fa82"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "CoMadOut",
+      "seed": 123,
+      "result_sha256": "61dd0e29bdfb4de4b46cbe11fb8d36c0cb2f8482acb2ea025828fcdd959abaec",
+      "score_sha256": "e57cdea127b1552d7be6f511a42f078c5ccce6d8a1bfe04c319a76d1a8ad47a8"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "CoMadOut",
+      "seed": 456,
+      "result_sha256": "5fdae660109f918d8a1fd290b9a3ab1af5769d48cf99ea05c459c353b4dd1483",
+      "score_sha256": "0e8a2b3e48fb1fbf338851b618a9b58ebf79b875a36a9742f316c61ead7a182d"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "CoMadOut",
+      "seed": 789,
+      "result_sha256": "61492cd1409da047ecd56d30b263afeb84a30eba42dd48c41bc71874d78682b4",
+      "score_sha256": "49850a9d59beb65155c542c43e6679ca7b1118547b1b47037ba4ab32d635cf51"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "CoMadOut",
+      "seed": 1024,
+      "result_sha256": "e2cf940c35ccdeb7927170222bbb5bf5c9ddf2591bd5ac5227acd8ba68d41fff",
+      "score_sha256": "683896ca4f6737129ba215fe7b919c8ac6470e73d1c284f7cd4a01eabf110ebf"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "Shape-KNN",
+      "seed": 42,
+      "result_sha256": "7af4645c76fbc9ffb7fd8a17d2f355af7624f733aef006004288f5194d4e6d21",
+      "score_sha256": "2be7f167d8e94b91cdabaa69bebd3ca0d08f3b5ce146e1bf1e832cc5ef9d1280"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "Shape-KNN",
+      "seed": 123,
+      "result_sha256": "a86787fabf54ec2ec2b64373109c0a995f38ce8bd1ce43421c73a81b4f6f6a30",
+      "score_sha256": "591f7f71ea6f659a565c3d793eaf2c5e0f0d81319d28a7b6d1a2efc618a5309e"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "Shape-KNN",
+      "seed": 456,
+      "result_sha256": "665596f4d68dfe2f808ad237b34514dddcd178dc4223d4639dc823f6d8e6d3f3",
+      "score_sha256": "49bbae9f9f9bc0d2d5c6d240b6943aa71c0a0434737269dfb2a01f9716a3ae08"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "Shape-KNN",
+      "seed": 789,
+      "result_sha256": "80f063fb11646ce45dae126c9665f2535a71cb819aa77cb4c6885d6b04a43186",
+      "score_sha256": "3079c3f879c96f1bab847a6c25b32c136641d16f520b8bae656174818691cdcd"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "Shape-KNN",
+      "seed": 1024,
+      "result_sha256": "e694d186ec8a5cba22ebe060db3258410ecb195290368a9f1c05be7794a93901",
+      "score_sha256": "4e55deb40845d8b8ef5fe5dda5cea589325abbc091de0d6290ed67055148d28d"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "SegmentOD",
+      "seed": 42,
+      "result_sha256": "7729433be19b8a0f9e966f09d406269156f23e14ff54816a2a12bf57b6e6c21f",
+      "score_sha256": "4f8665426286bb8f83ba4d3e69137ae00e2d78aa407a23df03d013fd80bf3b97"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "SegmentOD",
+      "seed": 123,
+      "result_sha256": "b7d4b7da826c64f9a90782bb98154707e240278349536dcf38bd8641aec1cd1f",
+      "score_sha256": "29e1c52a3890defc130dc6d9d11be2f9d5eee1aea5eee6b80561a3d0683afd79"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "SegmentOD",
+      "seed": 456,
+      "result_sha256": "5a4ab02488281d7a8c639bcd9ba67ef46c0c723aab9df8d35611941a3d2fb113",
+      "score_sha256": "87d25618eebee80056061ee338f64905592fa74c4485900553cd4670bb9862fe"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "SegmentOD",
+      "seed": 789,
+      "result_sha256": "5d9a99e4be3d4c9019adc3e6a243652e9bf1b37f90ffe9c4a24bf6748db67269",
+      "score_sha256": "bb136ee066daa20a9ab5ade0f7a4d90e619ad91652808343d04135188c0108e8"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "SegmentOD",
+      "seed": 1024,
+      "result_sha256": "30f11da1d5053aaa0ef131e0ee2cbde3f2824446d040b1fa5b091f4fda042dd6",
+      "score_sha256": "02f65fc8ec314682699d8eb24b1104c965c1b27e6e345dc8385ab810dbc4414c"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "TADS",
+      "seed": 42,
+      "result_sha256": "a86a398954234e2e3cfb0566623db7903a9cb58b7fcf92e7681c1f4980fcceb7",
+      "score_sha256": "8182efa76a456f66677e72a72d76d9a3891074039bebdc18ff7da553a7e181ba"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "TADS",
+      "seed": 123,
+      "result_sha256": "3ed61f4dc884e52da48cfa764be43c6d81c81e56bb1a2f2b9dd6bea7abfad623",
+      "score_sha256": "a0a5b283b2d1057570ded0582652e3b0062f33fd4eda9a0ea60a885c4303fd1f"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "TADS",
+      "seed": 456,
+      "result_sha256": "411bd2dc90f3dee895e6831ec4d29cc072872f351b87ea144217f0e2291df40b",
+      "score_sha256": "b97af2a35637873ffa7aa1a6679ae424a4471ed93b7a8b94ccb5cc3cce571b49"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "TADS",
+      "seed": 789,
+      "result_sha256": "1412a753976f4c089b24f20839149057db95dcf2e6e5070ee83ee659f7408b28",
+      "score_sha256": "e272df6a0a5481f7bce463eae4a7d632195ec10857ef95479a9946ff75f29ee3"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "TADS",
+      "seed": 1024,
+      "result_sha256": "90cc20e2df463fc65941ba9583725cb3f68adda925baf34919c2d31ecaebf442",
+      "score_sha256": "4556c468ab674fc2567be1801eeb785d48e5670ccc67c7212c9c7888a6c0e9aa"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "Profile-TAD",
+      "seed": 42,
+      "result_sha256": "bb35d80b31bf1d4f3368930ea63718409d7e6bc47e9b987f7eee7e3f3e45dc9c",
+      "score_sha256": "95119f3dad84a35ee578cf843865c994e478b0f39d856cac26504c1a9993dbbc"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "Profile-TAD",
+      "seed": 123,
+      "result_sha256": "c4a7661d79ba18cb9b9454fcc8788b4102d912b32755789ba16522061b40e8f0",
+      "score_sha256": "67b1e2d782b571d880fdc32ebc58a4c01c6792973ca70fd492ed34764a50c6ee"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "Profile-TAD",
+      "seed": 456,
+      "result_sha256": "d17fe92fbd43cf9f370feb5702c46bbea921d080789896cd894c3e126888f819",
+      "score_sha256": "20e3d4b43cd3e64b1e204d890487a1833e448cdbfaa521247012f2889bb502fb"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "Profile-TAD",
+      "seed": 789,
+      "result_sha256": "5a934e9e2e16f091fff2c57c26826babc348c0236f26f9e37a85c1f9d545ae14",
+      "score_sha256": "559ca3ad521330a1e1fe936ee677a7d15ceb2634914263774fdc7673825b5b2d"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "Profile-TAD",
+      "seed": 1024,
+      "result_sha256": "51582786dcb2a892ad57b7523f580b44cd21b31055040b57e33d85ec475a9350",
+      "score_sha256": "b9c9553ef5253acce6b310045f19d16d297ebfd12efddb65aeffed2514587c1c"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "LM-TAD",
+      "seed": 42,
+      "result_sha256": "d65491c3982fd827b1c77f72898b6bcb570fed6e7618058b76b4dc1cfac2a541",
+      "score_sha256": "d1b1931d65bf6a14715cb6eb78da28403622930571ac412863c2e24824fef61e"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "LM-TAD",
+      "seed": 123,
+      "result_sha256": "91bc979beea998cd95f45a663ac00137bb562ccefd427d182c27723e53d9e98f",
+      "score_sha256": "511265dc8204a60cc31a791fc66a0b00d003f5ad24f60f7c8a1a296e7c4fe84b"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "LM-TAD",
+      "seed": 456,
+      "result_sha256": "08642948013ddb6db299f690ba6b04b4b3463e4d7a4f0eb4483c851dc28d9f91",
+      "score_sha256": "85ba659b97a283a5e034563751e0f4ad4fb204d21ee45bc2ea7da1f19b08c8cb"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "LM-TAD",
+      "seed": 789,
+      "result_sha256": "700068e0637fa77e84d149b0a8668d1714da69d8fd8c434aad101145e20b323e",
+      "score_sha256": "9fe6d7e57bfa71eafeecf68d623908e0485a96890b0660d4066364ce57ee0550"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "LM-TAD",
+      "seed": 1024,
+      "result_sha256": "48c6e1b01fb3f5467fca281683151721a8556f7f1ccfc21416237cf851e31505",
+      "score_sha256": "365aaf4eb81d2c748dd128e5cb70ede4924671f433bc412018e4adfef3794791"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "MST-OATD",
+      "seed": 42,
+      "result_sha256": "b787adc4c80d9eb292eeea84f8f94543dda47397418a9ada826dc18c3a1fc543",
+      "score_sha256": "3e3ce7028af165c931f5a2404dbf649ace25506d59840805fd70eeec45d4e2a9"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "MST-OATD",
+      "seed": 123,
+      "result_sha256": "39d1aa572cc3e7de6e73186ab2ada043eb4ca8b0ead87eec7441cd037a6db50f",
+      "score_sha256": "978da7322ddb9a2f255ba50b4929d3f76e4794bb0e8f495a172021978cc17950"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "MST-OATD",
+      "seed": 456,
+      "result_sha256": "88f047120284aba17034e92716d3497b999b13f21fdb16eea1aabd72463ae15b",
+      "score_sha256": "b3b92f9288a9c2b4147355edde2bea3cdd26390ff7eb65194ac9768e05d1f50f"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "MST-OATD",
+      "seed": 789,
+      "result_sha256": "70ffd82fda334cbce6003d18e2ca925de399c32068da9696cb4b3b9698363a1b",
+      "score_sha256": "64627717d2944e38a7a06485bab7bfcf696c92b22f95a31600b13b45fa9757a9"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "MST-OATD",
+      "seed": 1024,
+      "result_sha256": "7349f9488bce8c55c1d30fc7ff474dc0336c80ffd03d17ccf75a58f4f7d784af",
+      "score_sha256": "d2bedbf55576d3c280538364b36f721827aba093ed93a4ba3e0ff5e2b3cf99df"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "LSTM-AE",
+      "seed": 42,
+      "result_sha256": "1a7aba41bbca2f7de5d8142e3c7c0f1a4105d7e7773034e90724573b3b1257f8",
+      "score_sha256": "32bffd6dff35428069e60b499f744aa9482524414d93a37d614a188c0f29ba0b"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "LSTM-AE",
+      "seed": 123,
+      "result_sha256": "73520e73533e75a4a8dd8c566cc1b39e8c3fefa8abcd83f1c2c3ff05cdd79d82",
+      "score_sha256": "e9cc23605c45a9401337cc3b7e525147541631693283e977eacbdcde7c9e3360"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "LSTM-AE",
+      "seed": 456,
+      "result_sha256": "4487b46b3571b60e748fd5c995236a106c4f2a06297b2352ddd5cb7422543edc",
+      "score_sha256": "28cac92e08037fc135d5d0436de7f806c25e577b975215c3d8f69dd16989e3cc"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "LSTM-AE",
+      "seed": 789,
+      "result_sha256": "960f3edcc034fa89e7adfba538eef963e2b67ea5422069501c8dc3bc9473673d",
+      "score_sha256": "796938a63825d5ad81e5c7cc47e89115bb4929491c6ca3cecc7a7ccc2b7a8f9f"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "LSTM-AE",
+      "seed": 1024,
+      "result_sha256": "ff6359f16b64ed3a8533024ade602d23be9d05e8bc7880942f72177c03447576",
+      "score_sha256": "24b5320be9408d38fc6ac736bf864b90f80aeb4c1ed98fa235ef26bf209a97b9"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "seed": 42,
+      "result_sha256": "ac496d14169ed0651240321e5a64eaf20e6ea4dfcaac65ffe752724657656e23",
+      "score_sha256": "1c776deb363519bcaafa3ef96e7632435329c7d1631529ecaad966ca4e29e94e"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "seed": 123,
+      "result_sha256": "6c5b13c11b641ece81e6b1aa6c6f4955657a8e3e6d1cb4d3600c7648e7e775ba",
+      "score_sha256": "c2a9098393226436cbde35e081a4fe396d0684e106f2d8903250b88a1991862b"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "seed": 456,
+      "result_sha256": "24a38f23d5a1ed773626fe77049ff3b3643931bc2d302d30580f728667bbf82d",
+      "score_sha256": "f5a893c71f8caecf21e624ce25994e447549c2cf6a6b7a7feebef96842918f1e"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "seed": 789,
+      "result_sha256": "0817cc389b7f1f33b4610ed5e4a0ff28fb45b4b3ceb795cdece5c065ea63769e",
+      "score_sha256": "9e4f2ece9d4d2c68da0bc0734cffbfd4cb5513010df561a3fb02e3ee64e5f8fd"
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "seed": 1024,
+      "result_sha256": "51d0fad2d41c121f73022ae572219df0f9eb8fdf9598ecd678a87cef8d061265",
+      "score_sha256": "41104b5dd1fd23ec8d55dcec3f2081ed935cba37ddf8a4114bef45a16e007372"
+    }
+  ],
+  "source_policy": "Only the COMPLETE-selected successful attempt is included for each job; unreferenced and failed attempts are excluded.",
+  "generated_utc": "2026-09-03T04:42:48.728841+00:00",
+  "canonical_result_lock": "metadata/CURRENT_RESULT_SET.json",
+  "canonical_result_lock_sha256": "EDF80265AAD8B0A4375B5C00EBA7A8E581A353FFC577F9315238873CBB9F597D",
+  "source_hash_manifest": "protocol/source_hashes.json",
+  "source_hash_manifest_sha256": "6E3000BCA4937A590CB37222D1E6D8010F49177C859F3422D34F739E0122FA46",
+  "shape_view_policy": "Every EWGB-TAD main, component, sensitivity, stability, timing, and figure path fits the trajectory-shape PCA from the predefined trajectories through canonical_shape_view or the fitted ThreeViewEWGBDetector. The cached trajectory_shape array belongs only to the shared 34-dimensional generic-baseline representation."
+}

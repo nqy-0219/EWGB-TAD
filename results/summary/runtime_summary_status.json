@@ -1,0 +1,8 @@
+{
+  "completed_jobs": 390,
+  "expected_jobs": 390,
+  "missing_jobs": 0,
+  "pure_deep_training_time_available": true,
+  "deep_phase_timing_seed": 42,
+  "follow_up_required": null
+}

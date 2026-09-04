@@ -1,0 +1,172 @@
+[
+  {
+    "dataset": "Synthetic",
+    "method": "IForest",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "EWGB-TAD",
+    "seed": 123
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "Profile-TAD",
+    "seed": 123
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "TADS",
+    "seed": 456
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "SegmentOD",
+    "seed": 789
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "Shape-KNN",
+    "seed": 1024
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "CoMadOut",
+    "seed": 2048
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "iBoost-ODE",
+    "seed": 3072
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "ECOD",
+    "seed": 4096
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "IForest",
+    "seed": 5120
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "EWGB-TAD",
+    "seed": 6144
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "Profile-TAD",
+    "seed": 6144
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "TADS",
+    "seed": 42
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "SegmentOD",
+    "seed": 123
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "Shape-KNN",
+    "seed": 456
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "CoMadOut",
+    "seed": 789
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "iBoost-ODE",
+    "seed": 1024
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "ECOD",
+    "seed": 2048
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "IForest",
+    "seed": 3072
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "EWGB-TAD",
+    "seed": 4096
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "Profile-TAD",
+    "seed": 4096
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "TADS",
+    "seed": 5120
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "SegmentOD",
+    "seed": 6144
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "Shape-KNN",
+    "seed": 42
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "CoMadOut",
+    "seed": 123
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "iBoost-ODE",
+    "seed": 456
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "ECOD",
+    "seed": 789
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "IForest",
+    "seed": 1024
+  },
+  {
+    "dataset": "GeoLife",
+    "method": "EWGB-TAD",
+    "seed": 42
+  },
+  {
+    "dataset": "GeoLife",
+    "method": "Profile-TAD",
+    "seed": 42
+  },
+  {
+    "dataset": "GeoLife",
+    "method": "TADS",
+    "seed": 123
+  },
+  {
+    "dataset": "GeoLife",
+    "method": "SegmentOD",
+    "seed": 456
+  },
+  {
+    "dataset": "GeoLife",
+    "method": "Shape-KNN",
+    "seed": 789
+  },
+  {
+    "dataset": "GeoLife",
+    "method": "CoMadOut",
+    "seed": 1024
+  }
+]

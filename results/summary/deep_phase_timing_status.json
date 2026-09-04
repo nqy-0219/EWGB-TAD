@@ -1,0 +1,8 @@
+{
+  "completed_jobs": 16,
+  "expected_jobs": 16,
+  "missing_jobs": 0,
+  "all_scores_match_main": true,
+  "all_metrics_match_main": true,
+  "timing_seed": 42
+}

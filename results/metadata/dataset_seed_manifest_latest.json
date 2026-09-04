@@ -1,0 +1,909 @@
+﻿{
+    "manifest_name":  "dataset_seed_manifest_latest",
+    "protocol_date":  "2026-08-31",
+    "generated_utc":  "2026-08-31T10:42:58.8648092Z",
+    "dataset_seed_count":  30,
+    "cache_policy":  "Local dataset caches are required for exact reproduction but are not included in the public release.",
+    "records":  [
+                    {
+                        "dataset":  "Synthetic",
+                        "seed":  42,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator.py::generate_synthetic_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/synthetic/seed_42.npz",
+                        "cache_sha256":  "d8c9d6f73e8c1f96c0f415eb10df9ddd81580ac355fcfc938d5129ce10f055f2",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Synthetic",
+                        "seed":  123,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator.py::generate_synthetic_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/synthetic/seed_123.npz",
+                        "cache_sha256":  "70f91bb980b24f6fa3d5546b3b73c18bcff38a9ce3b91fdf36e254d5c89ef728",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Synthetic",
+                        "seed":  456,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator.py::generate_synthetic_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/synthetic/seed_456.npz",
+                        "cache_sha256":  "a8c3349e5cd920f4df075a1a3c3692ca6d6ae3dbd7467bd53c519eb15a70f399",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Synthetic",
+                        "seed":  789,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator.py::generate_synthetic_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/synthetic/seed_789.npz",
+                        "cache_sha256":  "0bfb3f8ea357f81925ebe21804709feda2f639453e99956c9882870a0d019dbe",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Synthetic",
+                        "seed":  1024,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator.py::generate_synthetic_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/synthetic/seed_1024.npz",
+                        "cache_sha256":  "07cad2afb89d7a0f794847037eb3ff283d0973fe65aa5fdd0728f328e97e3119",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Synthetic",
+                        "seed":  2048,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator.py::generate_synthetic_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/synthetic/seed_2048.npz",
+                        "cache_sha256":  "4b1c9fcd152d8177156560c04ed501d6864245f45d10d410356e06774023c825",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Synthetic",
+                        "seed":  3072,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator.py::generate_synthetic_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/synthetic/seed_3072.npz",
+                        "cache_sha256":  "4d9d301b87022197b783dc18a401f4edd7acdc5289d695a89704486726f5169c",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Synthetic",
+                        "seed":  4096,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator.py::generate_synthetic_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/synthetic/seed_4096.npz",
+                        "cache_sha256":  "226a527a9454f6451b5f7788274553fd603bf46e71fb7cf391b4bd4415b15547",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Synthetic",
+                        "seed":  5120,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator.py::generate_synthetic_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/synthetic/seed_5120.npz",
+                        "cache_sha256":  "7afe4451fe1a05d2898006e5cec9fa17a802baa44fd023e1be24d61b05913119",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Synthetic",
+                        "seed":  6144,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator.py::generate_synthetic_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/synthetic/seed_6144.npz",
+                        "cache_sha256":  "1ff05645d1f232f96b7534c957f126c4b40d967892f55afcfafc3929e6c3f2d0",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Grid-Network",
+                        "seed":  42,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator_real.py::generate_grid_network_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/grid_network/seed_42.npz",
+                        "cache_sha256":  "f185cbb826278886f2b24a9ee12049f6129332f9c36fabc569a932613bd1bbe7",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Grid-Network",
+                        "seed":  123,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator_real.py::generate_grid_network_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/grid_network/seed_123.npz",
+                        "cache_sha256":  "78184264d449fb477a7bf234c0f01ea7c4aa772421e98186256fa47882d89d09",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Grid-Network",
+                        "seed":  456,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator_real.py::generate_grid_network_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/grid_network/seed_456.npz",
+                        "cache_sha256":  "93b7a617228faf192ce9ab3d45f36e437b8bdf08f7cf0ef2f401db21b81426e6",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Grid-Network",
+                        "seed":  789,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator_real.py::generate_grid_network_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/grid_network/seed_789.npz",
+                        "cache_sha256":  "85bd0adc212018b1c9238b4999e9d20f0e64682e4fed1d4e4e4b8e511e3dec2a",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Grid-Network",
+                        "seed":  1024,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator_real.py::generate_grid_network_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/grid_network/seed_1024.npz",
+                        "cache_sha256":  "9e0a1c445f00e5fb542dc6c61d2b5ba327c48f308c6c6a8c0d294ab84d08a159",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Grid-Network",
+                        "seed":  2048,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator_real.py::generate_grid_network_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/grid_network/seed_2048.npz",
+                        "cache_sha256":  "e7d2f22b00b6022f3427cbd62ded5ad0012a003276b83fc64aa0b7f82eb90462",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Grid-Network",
+                        "seed":  3072,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator_real.py::generate_grid_network_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/grid_network/seed_3072.npz",
+                        "cache_sha256":  "f6fe6fbace2c996e08dfddb3bf7224ed50c9f6068c096ffad22e24c75ae06ae4",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Grid-Network",
+                        "seed":  4096,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator_real.py::generate_grid_network_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/grid_network/seed_4096.npz",
+                        "cache_sha256":  "65482cfbb8028577212024727e5a30372332a0394258a0fec172b44668b31f37",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Grid-Network",
+                        "seed":  5120,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator_real.py::generate_grid_network_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/grid_network/seed_5120.npz",
+                        "cache_sha256":  "e9aec8882ce54518fbc0c1f3e10ea6a550a7b1991f5499e208fc84cd560cdacd",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Grid-Network",
+                        "seed":  6144,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/data_generator_real.py::generate_grid_network_trajectories",
+                        "context_seed":  null,
+                        "cache_relative_path":  "results/phase4/dataset_cache/grid_network/seed_6144.npz",
+                        "cache_sha256":  "8caa45f88359f2e2200b3ba7396ca5c74d8c2a60f7bd18cb9093ed04829ef1f1",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Porto-derived",
+                        "seed":  42,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/porto_data.py::inject_anomalies_porto",
+                        "context_seed":  42,
+                        "cache_relative_path":  "results/phase4/dataset_cache/porto_derived/seed_42.npz",
+                        "cache_sha256":  "5801bd5efe0fe8498958f68bcc2b7043f38386e0453014f6eff9714c5c1c781b",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Porto-derived",
+                        "seed":  123,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/porto_data.py::inject_anomalies_porto",
+                        "context_seed":  42,
+                        "cache_relative_path":  "results/phase4/dataset_cache/porto_derived/seed_123.npz",
+                        "cache_sha256":  "12bebc37ce32308f61ff061266feaad3089cd450df049ee2158064fe70e16ca2",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Porto-derived",
+                        "seed":  456,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/porto_data.py::inject_anomalies_porto",
+                        "context_seed":  42,
+                        "cache_relative_path":  "results/phase4/dataset_cache/porto_derived/seed_456.npz",
+                        "cache_sha256":  "029da06a7cc31accb65fbc7b136dc63c1fe44335fd968337c9ad8f8eac258410",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Porto-derived",
+                        "seed":  789,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/porto_data.py::inject_anomalies_porto",
+                        "context_seed":  42,
+                        "cache_relative_path":  "results/phase4/dataset_cache/porto_derived/seed_789.npz",
+                        "cache_sha256":  "d4bdc12acf2ceb0b122f25cd161fa3fc24636c682f3b81b50983fc313e398c25",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "Porto-derived",
+                        "seed":  1024,
+                        "n_normal":  5000,
+                        "n_anomaly":  552,
+                        "n_total":  5552,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.0994236311239193,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 5552,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        5552,
+                                                        34
+                                                    ],
+                        "source_function":  "src/porto_data.py::inject_anomalies_porto",
+                        "context_seed":  42,
+                        "cache_relative_path":  "results/phase4/dataset_cache/porto_derived/seed_1024.npz",
+                        "cache_sha256":  "fd515868129fa6190093b26928ecf4ae602df03b9e856a69d4168d489a5d394b",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "GeoLife",
+                        "seed":  42,
+                        "n_normal":  3000,
+                        "n_anomaly":  332,
+                        "n_total":  3332,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.099639855942376954,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 3332,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        3332,
+                                                        34
+                                                    ],
+                        "source_function":  "src/geolife_data.py::inject_anomalies_geolife",
+                        "context_seed":  42,
+                        "cache_relative_path":  "results/phase4/dataset_cache/geolife/seed_42.npz",
+                        "cache_sha256":  "95b49470e26e8aa44b7bfa34274b640d2eb3ba2fadf6919330e8972756de5846",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "GeoLife",
+                        "seed":  123,
+                        "n_normal":  3000,
+                        "n_anomaly":  332,
+                        "n_total":  3332,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.099639855942376954,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 3332,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        3332,
+                                                        34
+                                                    ],
+                        "source_function":  "src/geolife_data.py::inject_anomalies_geolife",
+                        "context_seed":  42,
+                        "cache_relative_path":  "results/phase4/dataset_cache/geolife/seed_123.npz",
+                        "cache_sha256":  "62e1529f57e84221aff826d0c5064803d779c6b0faf321893dc4b074364be96b",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "GeoLife",
+                        "seed":  456,
+                        "n_normal":  3000,
+                        "n_anomaly":  332,
+                        "n_total":  3332,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.099639855942376954,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 3332,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        3332,
+                                                        34
+                                                    ],
+                        "source_function":  "src/geolife_data.py::inject_anomalies_geolife",
+                        "context_seed":  42,
+                        "cache_relative_path":  "results/phase4/dataset_cache/geolife/seed_456.npz",
+                        "cache_sha256":  "88b0dc9f8d70963a97eb149c901889def9e98ae0f3298c068fa4ddcfdf85ed1a",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "GeoLife",
+                        "seed":  789,
+                        "n_normal":  3000,
+                        "n_anomaly":  332,
+                        "n_total":  3332,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.099639855942376954,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 3332,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        3332,
+                                                        34
+                                                    ],
+                        "source_function":  "src/geolife_data.py::inject_anomalies_geolife",
+                        "context_seed":  42,
+                        "cache_relative_path":  "results/phase4/dataset_cache/geolife/seed_789.npz",
+                        "cache_sha256":  "e99d1d23b2ae817605d162c5f97ad32f7617c71a7b299e1570a1e36fd3c6c41e",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    },
+                    {
+                        "dataset":  "GeoLife",
+                        "seed":  1024,
+                        "n_normal":  3000,
+                        "n_anomaly":  332,
+                        "n_total":  3332,
+                        "nominal_contamination":  0.1,
+                        "realized_contamination":  0.099639855942376954,
+                        "anomaly_types":  [
+                                              "detour",
+                                              "loop",
+                                              "speed",
+                                              "route_deviation"
+                                          ],
+                        "trajectory_shape":  [
+                                                 3332,
+                                                 32,
+                                                 2
+                                             ],
+                        "canonical_feature_shape":  [
+                                                        3332,
+                                                        34
+                                                    ],
+                        "source_function":  "src/geolife_data.py::inject_anomalies_geolife",
+                        "context_seed":  42,
+                        "cache_relative_path":  "results/phase4/dataset_cache/geolife/seed_1024.npz",
+                        "cache_sha256":  "e53a7b8600b602181ccc33abc8b674822d92bcb22837299d2f35bd768181050d",
+                        "labels_used_for_feature_construction":  false,
+                        "cache_included_in_public_release":  false
+                    }
+                ]
+}

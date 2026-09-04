@@ -1,0 +1,568 @@
+{
+  "generated_utc": "2026-09-03T04:39:07.027638+00:00",
+  "purpose": "Exact label-free inner train/validation splits used by neural baselines with validation",
+  "labels_used": false,
+  "array_dtype": "little-endian int64",
+  "archive": "unlabeled_inner_splits.npz",
+  "archive_sha256": "d05425f6f7641c266a83d38589f394557299bbcca898bb7c130f1302ef63edbb",
+  "split_methods": [
+    "LSTM-AE",
+    "USAD",
+    "LM-TAD"
+  ],
+  "full_unlabeled_pool_methods_without_inner_split": [
+    "EWGB-TAD",
+    "IForest",
+    "ECOD",
+    "iBoost-ODE",
+    "CoMadOut",
+    "Shape-KNN",
+    "SegmentOD",
+    "TADS",
+    "Profile-TAD",
+    "MST-OATD"
+  ],
+  "tuning_rule": "LSTM-AE and USAD use the dataset seed-42 split for candidate selection; selected configurations are fixed before formal repeated-seed evaluation.",
+  "records": [
+    {
+      "split_id": "synthetic_seed_42",
+      "dataset": "Synthetic",
+      "seed": 42,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "c1e0cec1a18166f264b73ba07297003d7ee682ca237fa05dfa06e95a23bb4f39",
+      "validation_indices_sha256": "dfcbad8b6e69b8cf55441a14bae51c7bc371da4dd25f23793e53dcdeded9bb0f",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "synthetic_seed_123",
+      "dataset": "Synthetic",
+      "seed": 123,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "9fe3850a1d3abe8aaab2e6ff982459aae19275f6000d8a0f6b1e1c26decf1aa8",
+      "validation_indices_sha256": "e96229d8169f11f60962df2c83c95014ecbec7c93cc79a12e38ac13c5ec7e341",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "synthetic_seed_456",
+      "dataset": "Synthetic",
+      "seed": 456,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "82ac00b033789ed5ceeefb49359b933ccc00cffaf560dee2ae7a533ee14afdd6",
+      "validation_indices_sha256": "c223138578b02c1177dcf1fc6165c8a89a8c6d6c4697f63e7fd87b4bab64269d",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "synthetic_seed_789",
+      "dataset": "Synthetic",
+      "seed": 789,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "b8bd1b1cde27ec09b9a8295434fc63acdbead3e6c08f6cb8bdc4e3d7e1081d8b",
+      "validation_indices_sha256": "189af8f5c04d171934081e88dc10f0dde183e0572a92c030f4ba1e56e671a1c4",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "synthetic_seed_1024",
+      "dataset": "Synthetic",
+      "seed": 1024,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "409a200b34f304db4a9ef67ec5b97faa24f35e90158862ef14cc0eb2c2161c54",
+      "validation_indices_sha256": "22224bbff028b6d69f42a7e0e3b22ee7218361df9ecbfe0a18a6b9c777846b3d",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "synthetic_seed_2048",
+      "dataset": "Synthetic",
+      "seed": 2048,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "702884cb9d559f4abfb032b0ee6b55538d26a7e93eaa958a62578ed9a1c147a6",
+      "validation_indices_sha256": "a9bfe0063a186520aa7286e33c67cc4c8f05ee001e13c02938df54fe45466019",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "synthetic_seed_3072",
+      "dataset": "Synthetic",
+      "seed": 3072,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "53f54a79e1ba8a2ab62283b9679e22f319ed6c041eb52a005df44dde51a4a1b0",
+      "validation_indices_sha256": "cc3d0e1901e10caabda9783a97b4fb64274742ad31b72c8f11a146a26a664556",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "synthetic_seed_4096",
+      "dataset": "Synthetic",
+      "seed": 4096,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "5533e12e346faecee9946d114db55f2053ed2dfa691648187cd944db0cbf81f1",
+      "validation_indices_sha256": "7248269201118d51dc633172e6b5813854a095bfb7c691d444904fa51da0b104",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "synthetic_seed_5120",
+      "dataset": "Synthetic",
+      "seed": 5120,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "cfbac604e171e115c88ad02c828bc650bd623afc89e36361f40dcc2c421a09b8",
+      "validation_indices_sha256": "3b39bb840e651112828ec4e387ae72db3e3acc3810f8acc46814a7bf6973d8fb",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "synthetic_seed_6144",
+      "dataset": "Synthetic",
+      "seed": 6144,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "3af66430ad74110db7b1ce10783e073882adec25992275017fc4901a1c5b3b59",
+      "validation_indices_sha256": "dff9d1263a454d178ee8b49fdb03426f696ed61a00903ce210684bb33425a15f",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "grid_network_seed_42",
+      "dataset": "Grid-Network",
+      "seed": 42,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "c1e0cec1a18166f264b73ba07297003d7ee682ca237fa05dfa06e95a23bb4f39",
+      "validation_indices_sha256": "dfcbad8b6e69b8cf55441a14bae51c7bc371da4dd25f23793e53dcdeded9bb0f",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "grid_network_seed_123",
+      "dataset": "Grid-Network",
+      "seed": 123,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "9fe3850a1d3abe8aaab2e6ff982459aae19275f6000d8a0f6b1e1c26decf1aa8",
+      "validation_indices_sha256": "e96229d8169f11f60962df2c83c95014ecbec7c93cc79a12e38ac13c5ec7e341",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "grid_network_seed_456",
+      "dataset": "Grid-Network",
+      "seed": 456,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "82ac00b033789ed5ceeefb49359b933ccc00cffaf560dee2ae7a533ee14afdd6",
+      "validation_indices_sha256": "c223138578b02c1177dcf1fc6165c8a89a8c6d6c4697f63e7fd87b4bab64269d",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "grid_network_seed_789",
+      "dataset": "Grid-Network",
+      "seed": 789,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "b8bd1b1cde27ec09b9a8295434fc63acdbead3e6c08f6cb8bdc4e3d7e1081d8b",
+      "validation_indices_sha256": "189af8f5c04d171934081e88dc10f0dde183e0572a92c030f4ba1e56e671a1c4",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "grid_network_seed_1024",
+      "dataset": "Grid-Network",
+      "seed": 1024,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "409a200b34f304db4a9ef67ec5b97faa24f35e90158862ef14cc0eb2c2161c54",
+      "validation_indices_sha256": "22224bbff028b6d69f42a7e0e3b22ee7218361df9ecbfe0a18a6b9c777846b3d",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "grid_network_seed_2048",
+      "dataset": "Grid-Network",
+      "seed": 2048,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "702884cb9d559f4abfb032b0ee6b55538d26a7e93eaa958a62578ed9a1c147a6",
+      "validation_indices_sha256": "a9bfe0063a186520aa7286e33c67cc4c8f05ee001e13c02938df54fe45466019",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "grid_network_seed_3072",
+      "dataset": "Grid-Network",
+      "seed": 3072,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "53f54a79e1ba8a2ab62283b9679e22f319ed6c041eb52a005df44dde51a4a1b0",
+      "validation_indices_sha256": "cc3d0e1901e10caabda9783a97b4fb64274742ad31b72c8f11a146a26a664556",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "grid_network_seed_4096",
+      "dataset": "Grid-Network",
+      "seed": 4096,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "5533e12e346faecee9946d114db55f2053ed2dfa691648187cd944db0cbf81f1",
+      "validation_indices_sha256": "7248269201118d51dc633172e6b5813854a095bfb7c691d444904fa51da0b104",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "grid_network_seed_5120",
+      "dataset": "Grid-Network",
+      "seed": 5120,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "cfbac604e171e115c88ad02c828bc650bd623afc89e36361f40dcc2c421a09b8",
+      "validation_indices_sha256": "3b39bb840e651112828ec4e387ae72db3e3acc3810f8acc46814a7bf6973d8fb",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "grid_network_seed_6144",
+      "dataset": "Grid-Network",
+      "seed": 6144,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "3af66430ad74110db7b1ce10783e073882adec25992275017fc4901a1c5b3b59",
+      "validation_indices_sha256": "dff9d1263a454d178ee8b49fdb03426f696ed61a00903ce210684bb33425a15f",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "porto_derived_seed_42",
+      "dataset": "Porto-derived",
+      "seed": 42,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "c1e0cec1a18166f264b73ba07297003d7ee682ca237fa05dfa06e95a23bb4f39",
+      "validation_indices_sha256": "dfcbad8b6e69b8cf55441a14bae51c7bc371da4dd25f23793e53dcdeded9bb0f",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "porto_derived_seed_123",
+      "dataset": "Porto-derived",
+      "seed": 123,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "9fe3850a1d3abe8aaab2e6ff982459aae19275f6000d8a0f6b1e1c26decf1aa8",
+      "validation_indices_sha256": "e96229d8169f11f60962df2c83c95014ecbec7c93cc79a12e38ac13c5ec7e341",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "porto_derived_seed_456",
+      "dataset": "Porto-derived",
+      "seed": 456,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "82ac00b033789ed5ceeefb49359b933ccc00cffaf560dee2ae7a533ee14afdd6",
+      "validation_indices_sha256": "c223138578b02c1177dcf1fc6165c8a89a8c6d6c4697f63e7fd87b4bab64269d",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "porto_derived_seed_789",
+      "dataset": "Porto-derived",
+      "seed": 789,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "b8bd1b1cde27ec09b9a8295434fc63acdbead3e6c08f6cb8bdc4e3d7e1081d8b",
+      "validation_indices_sha256": "189af8f5c04d171934081e88dc10f0dde183e0572a92c030f4ba1e56e671a1c4",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "porto_derived_seed_1024",
+      "dataset": "Porto-derived",
+      "seed": 1024,
+      "n_total": 5552,
+      "n_training": 4997,
+      "n_validation": 555,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "409a200b34f304db4a9ef67ec5b97faa24f35e90158862ef14cc0eb2c2161c54",
+      "validation_indices_sha256": "22224bbff028b6d69f42a7e0e3b22ee7218361df9ecbfe0a18a6b9c777846b3d",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "geolife_seed_42",
+      "dataset": "GeoLife",
+      "seed": 42,
+      "n_total": 3332,
+      "n_training": 2999,
+      "n_validation": 333,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "b1ef834530de27fecd21171aaf325b89b0fe0e9416780243fd01e3db57877c76",
+      "validation_indices_sha256": "62db3a257b3e77a0b88c5a1ac579b60d5ca7c0c8a5336ab019987d18a7998525",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "geolife_seed_123",
+      "dataset": "GeoLife",
+      "seed": 123,
+      "n_total": 3332,
+      "n_training": 2999,
+      "n_validation": 333,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "323282633c8b82945d595ddc53b9454845177190994c746fd6488c78f4175d78",
+      "validation_indices_sha256": "7f2f3c54d9602829c6798ebf9bba48787b5e5d1717d2170c2ac79a9bff6e8061",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "geolife_seed_456",
+      "dataset": "GeoLife",
+      "seed": 456,
+      "n_total": 3332,
+      "n_training": 2999,
+      "n_validation": 333,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "6e61511b069d8e5ffe331db24697cc35764651df519bdd478c0d48371c89373a",
+      "validation_indices_sha256": "f94c46d066f9bf8b009412594a6a8a39b853dddf4b0acf19fe8f3f0ec58ca7f4",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "geolife_seed_789",
+      "dataset": "GeoLife",
+      "seed": 789,
+      "n_total": 3332,
+      "n_training": 2999,
+      "n_validation": 333,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "c018d503108fba940fc126013657bfa4e67c98f913cb1d9292263793210958f2",
+      "validation_indices_sha256": "0a56ca09613aee9991a0983a4e351fb84bf5e6e883e34f735580882f20cc93e2",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    },
+    {
+      "split_id": "geolife_seed_1024",
+      "dataset": "GeoLife",
+      "seed": 1024,
+      "n_total": 3332,
+      "n_training": 2999,
+      "n_validation": 333,
+      "validation_fraction": 0.1,
+      "permutation": "numpy RandomState(seed).permutation(n_total)",
+      "assignment": "validation is the first round(0.1*n_total) indices; training is the remainder",
+      "training_indices_sha256": "fe24b84e8bf112d8401063aaaffc528168921f47185e47b76b4f0b4ea7090c7c",
+      "validation_indices_sha256": "eadb4e0f4c5810dcc373a75a481d7e9bdc23e7d79bdcdf9b001e4b0be79f0be9",
+      "applies_to_formal_methods": [
+        "LSTM-AE",
+        "USAD",
+        "LM-TAD"
+      ]
+    }
+  ]
+}

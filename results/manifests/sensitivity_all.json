@@ -1,0 +1,722 @@
+[
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Synthetic",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Synthetic",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Synthetic",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Synthetic",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Synthetic",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Synthetic",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Synthetic",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Synthetic",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Synthetic",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Synthetic",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Synthetic",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Synthetic",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Synthetic",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Synthetic",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Synthetic",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Synthetic",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Synthetic",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Synthetic",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Synthetic",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Synthetic",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Synthetic",
+    "seed": 2048
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Synthetic",
+    "seed": 2048
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Synthetic",
+    "seed": 2048
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Synthetic",
+    "seed": 2048
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Synthetic",
+    "seed": 3072
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Synthetic",
+    "seed": 3072
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Synthetic",
+    "seed": 3072
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Synthetic",
+    "seed": 3072
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Synthetic",
+    "seed": 4096
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Synthetic",
+    "seed": 4096
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Synthetic",
+    "seed": 4096
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Synthetic",
+    "seed": 4096
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Synthetic",
+    "seed": 5120
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Synthetic",
+    "seed": 5120
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Synthetic",
+    "seed": 5120
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Synthetic",
+    "seed": 5120
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Synthetic",
+    "seed": 6144
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Synthetic",
+    "seed": 6144
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Synthetic",
+    "seed": 6144
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Synthetic",
+    "seed": 6144
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Grid-Network",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Grid-Network",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Grid-Network",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Grid-Network",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Grid-Network",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Grid-Network",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Grid-Network",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Grid-Network",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Grid-Network",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Grid-Network",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Grid-Network",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Grid-Network",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Grid-Network",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Grid-Network",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Grid-Network",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Grid-Network",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Grid-Network",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Grid-Network",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Grid-Network",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Grid-Network",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Grid-Network",
+    "seed": 2048
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Grid-Network",
+    "seed": 2048
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Grid-Network",
+    "seed": 2048
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Grid-Network",
+    "seed": 2048
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Grid-Network",
+    "seed": 3072
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Grid-Network",
+    "seed": 3072
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Grid-Network",
+    "seed": 3072
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Grid-Network",
+    "seed": 3072
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Grid-Network",
+    "seed": 4096
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Grid-Network",
+    "seed": 4096
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Grid-Network",
+    "seed": 4096
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Grid-Network",
+    "seed": 4096
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Grid-Network",
+    "seed": 5120
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Grid-Network",
+    "seed": 5120
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Grid-Network",
+    "seed": 5120
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Grid-Network",
+    "seed": 5120
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Grid-Network",
+    "seed": 6144
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Grid-Network",
+    "seed": 6144
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Grid-Network",
+    "seed": 6144
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Grid-Network",
+    "seed": 6144
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Porto-derived",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Porto-derived",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Porto-derived",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Porto-derived",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Porto-derived",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Porto-derived",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Porto-derived",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Porto-derived",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Porto-derived",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Porto-derived",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Porto-derived",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Porto-derived",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Porto-derived",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Porto-derived",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Porto-derived",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Porto-derived",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "Porto-derived",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "Porto-derived",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "Porto-derived",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "Porto-derived",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "GeoLife",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "GeoLife",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "GeoLife",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "GeoLife",
+    "seed": 42
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "GeoLife",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "GeoLife",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "GeoLife",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "GeoLife",
+    "seed": 123
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "GeoLife",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "GeoLife",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "GeoLife",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "GeoLife",
+    "seed": 456
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "GeoLife",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "GeoLife",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "GeoLife",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "GeoLife",
+    "seed": 789
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min4",
+    "dataset": "GeoLife",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min8",
+    "dataset": "GeoLife",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min16",
+    "dataset": "GeoLife",
+    "seed": 1024
+  },
+  {
+    "analysis": "sensitivity",
+    "variant": "min32",
+    "dataset": "GeoLife",
+    "seed": 1024
+  }
+]

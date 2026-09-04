@@ -1,0 +1,893 @@
+{
+  "component": {
+    "AUC": {
+      "metric": "AUC",
+      "n_blocks": 30,
+      "reference": "g1_l1_f1",
+      "friedman_statistic": 10.877777777777851,
+      "friedman_p": 0.14403986275816152,
+      "average_ranks": {
+        "g0_l0_f0": 4.533333333333333,
+        "g0_l0_f1": 4.5,
+        "g0_l1_f0": 5.2,
+        "g0_l1_f1": 4.833333333333333,
+        "g1_l0_f0": 4.033333333333333,
+        "g1_l0_f1": 3.6333333333333333,
+        "g1_l1_f0": 5.166666666666667,
+        "g1_l1_f1": 4.1
+      },
+      "reference_pairwise_wilcoxon_holm": {
+        "g0_l0_f0": {
+          "wilcoxon_statistic": 204.0,
+          "p_raw": 0.5698575973510742,
+          "mean_difference": 0.005280693789651355,
+          "median_difference": 0.005104891304347936,
+          "wins": 18,
+          "ties": 0,
+          "losses": 12,
+          "p_holm": 1.0
+        },
+        "g0_l0_f1": {
+          "wilcoxon_statistic": 170.0,
+          "p_raw": 0.20540969260036945,
+          "mean_difference": 0.0059503650835224875,
+          "median_difference": 0.004527093155229478,
+          "wins": 18,
+          "ties": 0,
+          "losses": 12,
+          "p_holm": 0.6565923504531384
+        },
+        "g0_l1_f0": {
+          "wilcoxon_statistic": 161.0,
+          "p_raw": 0.1459994912147522,
+          "mean_difference": 0.01569822798440136,
+          "median_difference": 0.0035786144578313084,
+          "wins": 15,
+          "ties": 0,
+          "losses": 15,
+          "p_holm": 0.6565923504531384
+        },
+        "g0_l1_f1": {
+          "wilcoxon_statistic": 120.0,
+          "p_raw": 0.019660815596580505,
+          "mean_difference": 0.012527459984866991,
+          "median_difference": 0.013196195652173781,
+          "wins": 19,
+          "ties": 0,
+          "losses": 11,
+          "p_holm": 0.13762570917606354
+        },
+        "g1_l0_f0": {
+          "wilcoxon_statistic": 210.0,
+          "p_raw": 0.6554384250193834,
+          "mean_difference": 0.001215233397357555,
+          "median_difference": 0.006189311594202884,
+          "wins": 18,
+          "ties": 0,
+          "losses": 12,
+          "p_holm": 1.0
+        },
+        "g1_l0_f1": {
+          "wilcoxon_statistic": 157.0,
+          "p_raw": 0.12413446232676506,
+          "mean_difference": -0.0017749748268436228,
+          "median_difference": -0.003944384057971206,
+          "wins": 9,
+          "ties": 0,
+          "losses": 21,
+          "p_holm": 0.6565923504531384
+        },
+        "g1_l1_f0": {
+          "wilcoxon_statistic": 154.0,
+          "p_raw": 0.10943205840885639,
+          "mean_difference": 0.009416918398230596,
+          "median_difference": 0.014513405797101475,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.6565923504531384
+        }
+      },
+      "factorial_contrasts": {
+        "contrast_coding": "high-minus-low marginal contrasts; interactions are differences of simple effects",
+        "holm_family_size": 7,
+        "effects": {
+          "granular_partition": {
+            "mean_paired_effect": 0.007649892468424417,
+            "median_paired_effect": 0.004249592391304333,
+            "positive_blocks": 19,
+            "zero_blocks": 0,
+            "negative_blocks": 11,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 154.0,
+            "p_raw": 0.10943205840885639,
+            "p_holm": 0.547160292044282
+          },
+          "local_metric": {
+            "mean_paired_effect": -0.006742822230952794,
+            "median_paired_effect": -0.0088019927536232,
+            "positive_blocks": 7,
+            "zero_blocks": 0,
+            "negative_blocks": 23,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 57.0,
+            "p_raw": 0.00012333691120147705,
+            "p_holm": 0.0008633583784103394
+          },
+          "entropy_fusion": {
+            "mean_paired_effect": 0.0037270558320237532,
+            "median_paired_effect": 0.014375452898550745,
+            "positive_blocks": 20,
+            "zero_blocks": 0,
+            "negative_blocks": 10,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 227.0,
+            "p_raw": 0.9192965272814035,
+            "p_holm": 1.0
+          },
+          "granular_x_local": {
+            "mean_paired_effect": 0.0035089846341889237,
+            "median_paired_effect": 0.0007103260869564809,
+            "positive_blocks": 15,
+            "zero_blocks": 0,
+            "negative_blocks": 15,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 188.0,
+            "p_raw": 0.370740607380867,
+            "p_holm": 1.0
+          },
+          "granular_x_fusion": {
+            "mean_paired_effect": 0.004953014958384268,
+            "median_paired_effect": 0.0007531702898550818,
+            "positive_blocks": 16,
+            "zero_blocks": 0,
+            "negative_blocks": 14,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 184.0,
+            "p_raw": 0.3284698575735092,
+            "p_holm": 1.0
+          },
+          "local_x_fusion": {
+            "mean_paired_effect": 0.005133574733717461,
+            "median_paired_effect": 0.007538015103893875,
+            "positive_blocks": 19,
+            "zero_blocks": 0,
+            "negative_blocks": 11,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 123.0,
+            "p_raw": 0.023410143330693245,
+            "p_holm": 0.14046085998415947
+          },
+          "granular_x_local_x_fusion": {
+            "mean_paired_effect": 0.002586270880623916,
+            "median_paired_effect": -0.0011677536231884944,
+            "positive_blocks": 14,
+            "zero_blocks": 0,
+            "negative_blocks": 16,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 227.0,
+            "p_raw": 0.9192965272814035,
+            "p_holm": 1.0
+          }
+        }
+      }
+    },
+    "AUPRC": {
+      "metric": "AUPRC",
+      "n_blocks": 30,
+      "reference": "g1_l1_f1",
+      "friedman_statistic": 6.711111111111109,
+      "friedman_p": 0.4595657396591222,
+      "average_ranks": {
+        "g0_l0_f0": 4.5,
+        "g0_l0_f1": 4.733333333333333,
+        "g0_l1_f0": 4.8,
+        "g0_l1_f1": 4.966666666666667,
+        "g1_l0_f0": 3.7,
+        "g1_l0_f1": 4.066666666666666,
+        "g1_l1_f0": 4.866666666666666,
+        "g1_l1_f1": 4.366666666666666
+      },
+      "reference_pairwise_wilcoxon_holm": {
+        "g0_l0_f0": {
+          "wilcoxon_statistic": 199.0,
+          "p_raw": 0.5027610473334789,
+          "mean_difference": -0.040789187454242225,
+          "median_difference": 0.0020503965890861786,
+          "wins": 15,
+          "ties": 0,
+          "losses": 15,
+          "p_holm": 1.0
+        },
+        "g0_l0_f1": {
+          "wilcoxon_statistic": 172.0,
+          "p_raw": 0.22064675763249397,
+          "mean_difference": 0.011384406228382302,
+          "median_difference": 0.009809145432476574,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 1.0
+        },
+        "g0_l1_f0": {
+          "wilcoxon_statistic": 205.0,
+          "p_raw": 0.583757072687149,
+          "mean_difference": -0.023698580620418727,
+          "median_difference": 0.0021753962792925297,
+          "wins": 15,
+          "ties": 0,
+          "losses": 15,
+          "p_holm": 1.0
+        },
+        "g0_l1_f1": {
+          "wilcoxon_statistic": 141.0,
+          "p_raw": 0.06056523136794567,
+          "mean_difference": 0.03439575229017839,
+          "median_difference": 0.018242807703591657,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.4239566195756197
+        },
+        "g1_l0_f0": {
+          "wilcoxon_statistic": 155.0,
+          "p_raw": 0.11417667381465435,
+          "mean_difference": -0.04546630514771545,
+          "median_difference": -0.02708110257265539,
+          "wins": 12,
+          "ties": 0,
+          "losses": 18,
+          "p_holm": 0.6850600428879261
+        },
+        "g1_l0_f1": {
+          "wilcoxon_statistic": 223.0,
+          "p_raw": 0.8552717231214046,
+          "mean_difference": 0.004866614493045653,
+          "median_difference": -0.0054629654648141734,
+          "wins": 14,
+          "ties": 0,
+          "losses": 16,
+          "p_holm": 1.0
+        },
+        "g1_l1_f0": {
+          "wilcoxon_statistic": 209.0,
+          "p_raw": 0.6408254038542509,
+          "mean_difference": -0.01722629540425794,
+          "median_difference": -0.005236108609380841,
+          "wins": 13,
+          "ties": 0,
+          "losses": 17,
+          "p_holm": 1.0
+        }
+      },
+      "factorial_contrasts": {
+        "contrast_coding": "high-minus-low marginal contrasts; interactions are differences of simple effects",
+        "holm_family_size": 7,
+        "effects": {
+          "granular_partition": {
+            "mean_paired_effect": 0.009779594125706866,
+            "median_paired_effect": 0.009734958241927272,
+            "positive_blocks": 18,
+            "zero_blocks": 0,
+            "negative_blocks": 12,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 171.0,
+            "p_raw": 0.21293285302817822,
+            "p_holm": 0.6567363291978836
+          },
+          "local_metric": {
+            "mean_paired_effect": -0.01586883703650786,
+            "median_paired_effect": -0.02020669691876078,
+            "positive_blocks": 8,
+            "zero_blocks": 0,
+            "negative_blocks": 22,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 96.0,
+            "p_raw": 0.004031794145703316,
+            "p_holm": 0.02822255901992321
+          },
+          "entropy_fusion": {
+            "mean_paired_effect": -0.044456785409560155,
+            "median_paired_effect": 0.003781840828571234,
+            "positive_blocks": 15,
+            "zero_blocks": 0,
+            "negative_blocks": 15,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 191.0,
+            "p_raw": 0.40449450351297855,
+            "p_holm": 0.8089890070259571
+          },
+          "granular_x_local": {
+            "mean_paired_effect": 0.008364278822603877,
+            "median_paired_effect": 0.006193519319284482,
+            "positive_blocks": 16,
+            "zero_blocks": 0,
+            "negative_blocks": 14,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 194.0,
+            "p_raw": 0.4399667661637068,
+            "p_holm": 0.8089890070259571
+          },
+          "granular_x_fusion": {
+            "mean_paired_effect": 0.021354355774101306,
+            "median_paired_effect": 0.012788756168730459,
+            "positive_blocks": 19,
+            "zero_blocks": 0,
+            "negative_blocks": 11,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 142.0,
+            "p_raw": 0.0635564886033535,
+            "p_holm": 0.381338931620121
+          },
+          "local_x_fusion": {
+            "mean_paired_effect": 0.013592942504265293,
+            "median_paired_effect": 0.007089776730944172,
+            "positive_blocks": 18,
+            "zero_blocks": 0,
+            "negative_blocks": 12,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 150.0,
+            "p_raw": 0.09194962680339813,
+            "p_holm": 0.45974813401699066
+          },
+          "granular_x_local_x_fusion": {
+            "mean_paired_effect": 0.039027363464475724,
+            "median_paired_effect": 0.01144426285069472,
+            "positive_blocks": 17,
+            "zero_blocks": 0,
+            "negative_blocks": 13,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 164.0,
+            "p_raw": 0.1641840822994709,
+            "p_holm": 0.6567363291978836
+          }
+        }
+      }
+    },
+    "F1": {
+      "metric": "F1",
+      "n_blocks": 30,
+      "reference": "g1_l1_f1",
+      "friedman_statistic": 6.91905901116434,
+      "friedman_p": 0.43735585102218333,
+      "average_ranks": {
+        "g0_l0_f0": 4.466666666666667,
+        "g0_l0_f1": 5.05,
+        "g0_l1_f0": 4.3,
+        "g0_l1_f1": 5.033333333333333,
+        "g1_l0_f0": 3.8,
+        "g1_l0_f1": 4.066666666666666,
+        "g1_l1_f0": 4.766666666666667,
+        "g1_l1_f1": 4.516666666666667
+      },
+      "reference_pairwise_wilcoxon_holm": {
+        "g0_l0_f0": {
+          "wilcoxon_statistic": 186.0,
+          "p_raw": 0.33877951489658165,
+          "mean_difference": -0.0320193818753274,
+          "median_difference": 0.005729439497118849,
+          "wins": 16,
+          "ties": 0,
+          "losses": 14,
+          "p_holm": 1.0
+        },
+        "g0_l0_f1": {
+          "wilcoxon_statistic": 172.0,
+          "p_raw": 0.21334596934465522,
+          "mean_difference": 0.0163836505442058,
+          "median_difference": 0.013586956521739135,
+          "wins": 18,
+          "ties": 0,
+          "losses": 12,
+          "p_holm": 1.0
+        },
+        "g0_l1_f0": {
+          "wilcoxon_statistic": 174.5,
+          "p_raw": 0.352447719781107,
+          "mean_difference": -0.02204906582853152,
+          "median_difference": -0.02264492753623193,
+          "wins": 13,
+          "ties": 1,
+          "losses": 16,
+          "p_holm": 1.0
+        },
+        "g0_l1_f1": {
+          "wilcoxon_statistic": 179.0,
+          "p_raw": 0.2711298534344777,
+          "mean_difference": 0.017375298294627785,
+          "median_difference": 0.018115942028985477,
+          "wins": 18,
+          "ties": 0,
+          "losses": 12,
+          "p_holm": 1.0
+        },
+        "g1_l0_f0": {
+          "wilcoxon_statistic": 177.0,
+          "p_raw": 0.2621222734451294,
+          "mean_difference": -0.033553052790873644,
+          "median_difference": -0.005434782608695676,
+          "wins": 14,
+          "ties": 0,
+          "losses": 16,
+          "p_holm": 1.0
+        },
+        "g1_l0_f1": {
+          "wilcoxon_statistic": 183.0,
+          "p_raw": 0.4556144655039134,
+          "mean_difference": 0.004064082416622996,
+          "median_difference": -0.009952854897852303,
+          "wins": 10,
+          "ties": 1,
+          "losses": 19,
+          "p_holm": 1.0
+        },
+        "g1_l1_f0": {
+          "wilcoxon_statistic": 203.0,
+          "p_raw": 0.7538453134720114,
+          "mean_difference": -0.007506838950002914,
+          "median_difference": -0.0009057971014492794,
+          "wins": 14,
+          "ties": 1,
+          "losses": 15,
+          "p_holm": 1.0
+        }
+      },
+      "factorial_contrasts": {
+        "contrast_coding": "high-minus-low marginal contrasts; interactions are differences of simple effects",
+        "holm_family_size": 7,
+        "effects": {
+          "granular_partition": {
+            "mean_paired_effect": 0.004171577614807056,
+            "median_paired_effect": 0.012001811594202896,
+            "positive_blocks": 18,
+            "zero_blocks": 0,
+            "negative_blocks": 12,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 188.0,
+            "p_raw": 0.36002612742115936,
+            "p_holm": 1.0
+          },
+          "local_metric": {
+            "mean_paired_effect": -0.008236023805366402,
+            "median_paired_effect": -0.012228260869565216,
+            "positive_blocks": 11,
+            "zero_blocks": 0,
+            "negative_blocks": 19,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 139.5,
+            "p_raw": 0.05575359286146855,
+            "p_holm": 0.35482940465932844
+          },
+          "entropy_fusion": {
+            "mean_paired_effect": -0.03323784267504802,
+            "median_paired_effect": -0.00045289855072466745,
+            "positive_blocks": 15,
+            "zero_blocks": 0,
+            "negative_blocks": 15,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 171.5,
+            "p_raw": 0.20957495552209426,
+            "p_holm": 0.8382998220883771
+          },
+          "granular_x_local": {
+            "mean_paired_effect": -0.005510083813514936,
+            "median_paired_effect": -0.008605072463768099,
+            "positive_blocks": 13,
+            "zero_blocks": 1,
+            "negative_blocks": 16,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 202.5,
+            "p_raw": 0.5371801036920489,
+            "p_holm": 1.0
+          },
+          "granular_x_fusion": {
+            "mean_paired_effect": 0.021351711192596472,
+            "median_paired_effect": 0.012681159420289884,
+            "positive_blocks": 19,
+            "zero_blocks": 0,
+            "negative_blocks": 11,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 137.5,
+            "p_raw": 0.05068991495133263,
+            "p_holm": 0.35482940465932844
+          },
+          "local_x_fusion": {
+            "mean_paired_effect": 0.019544482276933818,
+            "median_paired_effect": 0.008605072463768154,
+            "positive_blocks": 18,
+            "zero_blocks": 0,
+            "negative_blocks": 12,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 158.0,
+            "p_raw": 0.12542824591441906,
+            "p_holm": 0.6271412295720953
+          },
+          "granular_x_local_x_fusion": {
+            "mean_paired_effect": 0.021131627961119833,
+            "median_paired_effect": 0.002717391304347727,
+            "positive_blocks": 15,
+            "zero_blocks": 0,
+            "negative_blocks": 15,
+            "n_blocks": 30,
+            "wilcoxon_statistic": 203.5,
+            "p_raw": 0.5508323134526298,
+            "p_holm": 1.0
+          }
+        }
+      }
+    }
+  },
+  "view": {
+    "AUC": {
+      "metric": "AUC",
+      "n_blocks": 30,
+      "reference": "spatial_path+kinematic+trajectory_shape",
+      "friedman_statistic": 57.17331745086363,
+      "friedman_p": 1.6851150282706623e-10,
+      "average_ranks": {
+        "spatial_path": 6.133333333333334,
+        "kinematic": 3.3333333333333335,
+        "trajectory_shape": 5.1,
+        "spatial_path+kinematic": 3.1666666666666665,
+        "spatial_path+trajectory_shape": 4.216666666666667,
+        "kinematic+trajectory_shape": 2.8833333333333333,
+        "spatial_path+kinematic+trajectory_shape": 3.1666666666666665
+      },
+      "reference_pairwise_wilcoxon_holm": {
+        "spatial_path": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.862645149230957e-09,
+          "mean_difference": 0.08008422778068794,
+          "median_difference": 0.05962366640474953,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.1175870895385742e-08
+        },
+        "kinematic": {
+          "wilcoxon_statistic": 187.0,
+          "p_raw": 0.3598779272288084,
+          "mean_difference": 0.019103162214073648,
+          "median_difference": -0.0017320652173912765,
+          "wins": 15,
+          "ties": 0,
+          "losses": 15,
+          "p_holm": 1.0
+        },
+        "trajectory_shape": {
+          "wilcoxon_statistic": 61.0,
+          "p_raw": 0.00018860027194023132,
+          "mean_difference": 0.07652571910831729,
+          "median_difference": 0.0805403985507247,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.0007544010877609253
+        },
+        "spatial_path+kinematic": {
+          "wilcoxon_statistic": 188.0,
+          "p_raw": 0.370740607380867,
+          "mean_difference": 0.014720321139630987,
+          "median_difference": 0.000444202898550794,
+          "wins": 15,
+          "ties": 0,
+          "losses": 15,
+          "p_holm": 1.0
+        },
+        "spatial_path+trajectory_shape": {
+          "wilcoxon_statistic": 35.0,
+          "p_raw": 7.994472980499268e-06,
+          "mean_difference": 0.02507869405156858,
+          "median_difference": 0.02139583333333339,
+          "wins": 24,
+          "ties": 0,
+          "losses": 6,
+          "p_holm": 3.997236490249634e-05
+        },
+        "kinematic+trajectory_shape": {
+          "wilcoxon_statistic": 201.0,
+          "p_raw": 0.5291051845997572,
+          "mean_difference": -0.0011722334264594903,
+          "median_difference": -0.007509420289855018,
+          "wins": 11,
+          "ties": 0,
+          "losses": 19,
+          "p_holm": 1.0
+        }
+      }
+    },
+    "AUPRC": {
+      "metric": "AUPRC",
+      "n_blocks": 30,
+      "reference": "spatial_path+kinematic+trajectory_shape",
+      "friedman_statistic": 63.54285714285709,
+      "friedman_p": 8.55477981731296e-12,
+      "average_ranks": {
+        "spatial_path": 6.3,
+        "kinematic": 2.933333333333333,
+        "trajectory_shape": 4.9,
+        "spatial_path+kinematic": 3.4,
+        "spatial_path+trajectory_shape": 4.366666666666666,
+        "kinematic+trajectory_shape": 2.6333333333333333,
+        "spatial_path+kinematic+trajectory_shape": 3.466666666666667
+      },
+      "reference_pairwise_wilcoxon_holm": {
+        "spatial_path": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.862645149230957e-09,
+          "mean_difference": 0.19392020080853736,
+          "median_difference": 0.22007994037325201,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.1175870895385742e-08
+        },
+        "kinematic": {
+          "wilcoxon_statistic": 218.0,
+          "p_raw": 0.7765688337385654,
+          "mean_difference": -6.856007526082064e-05,
+          "median_difference": -0.0630547194264493,
+          "wins": 11,
+          "ties": 0,
+          "losses": 19,
+          "p_holm": 1.0
+        },
+        "trajectory_shape": {
+          "wilcoxon_statistic": 124.0,
+          "p_raw": 0.024786051362752914,
+          "mean_difference": 0.10728675714244443,
+          "median_difference": 0.16316334536137794,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.09914420545101166
+        },
+        "spatial_path+kinematic": {
+          "wilcoxon_statistic": 208.0,
+          "p_raw": 0.6263462882488966,
+          "mean_difference": 0.02019412050903006,
+          "median_difference": -0.04422458024819714,
+          "wins": 12,
+          "ties": 0,
+          "losses": 18,
+          "p_holm": 1.0
+        },
+        "spatial_path+trajectory_shape": {
+          "wilcoxon_statistic": 98.0,
+          "p_raw": 0.00466480478644371,
+          "mean_difference": 0.06124974538737117,
+          "median_difference": 0.048099328544345954,
+          "wins": 24,
+          "ties": 0,
+          "losses": 6,
+          "p_holm": 0.02332402393221855
+        },
+        "kinematic+trajectory_shape": {
+          "wilcoxon_statistic": 153.0,
+          "p_raw": 0.10483990423381329,
+          "mean_difference": -0.02087297757823537,
+          "median_difference": -0.0345788615443921,
+          "wins": 9,
+          "ties": 0,
+          "losses": 21,
+          "p_holm": 0.31451971270143986
+        }
+      }
+    },
+    "F1": {
+      "metric": "F1",
+      "n_blocks": 30,
+      "reference": "spatial_path+kinematic+trajectory_shape",
+      "friedman_statistic": 63.406082289803166,
+      "friedman_p": 9.12213182556448e-12,
+      "average_ranks": {
+        "spatial_path": 6.233333333333333,
+        "kinematic": 2.9166666666666665,
+        "trajectory_shape": 4.966666666666667,
+        "spatial_path+kinematic": 3.4,
+        "spatial_path+trajectory_shape": 4.416666666666667,
+        "kinematic+trajectory_shape": 2.6166666666666667,
+        "spatial_path+kinematic+trajectory_shape": 3.45
+      },
+      "reference_pairwise_wilcoxon_holm": {
+        "spatial_path": {
+          "wilcoxon_statistic": 0.0,
+          "p_raw": 1.733306644199106e-06,
+          "mean_difference": 0.16018858040859088,
+          "median_difference": 0.1566265060240964,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 1.0399839865194636e-05
+        },
+        "kinematic": {
+          "wilcoxon_statistic": 206.5,
+          "p_raw": 0.592794412175343,
+          "mean_difference": -0.005581019731098304,
+          "median_difference": -0.0496987951807229,
+          "wins": 11,
+          "ties": 0,
+          "losses": 19,
+          "p_holm": 0.9644180900633241
+        },
+        "trajectory_shape": {
+          "wilcoxon_statistic": 93.0,
+          "p_raw": 0.004112057289374649,
+          "mean_difference": 0.11523485245329142,
+          "median_difference": 0.1746114894360049,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.016448229157498596
+        },
+        "spatial_path+kinematic": {
+          "wilcoxon_statistic": 185.0,
+          "p_raw": 0.48220904503166206,
+          "mean_difference": 0.023680228159012866,
+          "median_difference": -0.031364588789942416,
+          "wins": 12,
+          "ties": 1,
+          "losses": 17,
+          "p_holm": 0.9644180900633241
+        },
+        "spatial_path+trajectory_shape": {
+          "wilcoxon_statistic": 73.5,
+          "p_raw": 0.0010730995195506784,
+          "mean_difference": 0.0539636808101973,
+          "median_difference": 0.03260869565217389,
+          "wins": 24,
+          "ties": 0,
+          "losses": 6,
+          "p_holm": 0.005365497597753392
+        },
+        "kinematic+trajectory_shape": {
+          "wilcoxon_statistic": 144.0,
+          "p_raw": 0.06868432863168687,
+          "mean_difference": -0.024997089808509405,
+          "median_difference": -0.03623188405797101,
+          "wins": 9,
+          "ties": 0,
+          "losses": 21,
+          "p_holm": 0.2060529858950606
+        }
+      }
+    }
+  },
+  "sensitivity": {
+    "AUC": {
+      "metric": "AUC",
+      "n_blocks": 30,
+      "reference": "min8",
+      "friedman_statistic": 22.19999999999999,
+      "friedman_p": 5.9269748019427376e-05,
+      "average_ranks": {
+        "min4": 1.9333333333333333,
+        "min8": 2.033333333333333,
+        "min16": 2.7333333333333334,
+        "min32": 3.3
+      },
+      "reference_pairwise_wilcoxon_holm": {
+        "min4": {
+          "wilcoxon_statistic": 206.0,
+          "p_raw": 0.5978077705949545,
+          "mean_difference": 0.001464679442407261,
+          "median_difference": -5.3985507246390174e-05,
+          "wins": 15,
+          "ties": 0,
+          "losses": 15,
+          "p_holm": 0.5978077705949545
+        },
+        "min16": {
+          "wilcoxon_statistic": 112.0,
+          "p_raw": 0.012047622352838516,
+          "mean_difference": 0.00751001178627551,
+          "median_difference": 0.006376268115941941,
+          "wins": 21,
+          "ties": 0,
+          "losses": 9,
+          "p_holm": 0.024095244705677032
+        },
+        "min32": {
+          "wilcoxon_statistic": 59.0,
+          "p_raw": 0.0001528710126876831,
+          "mean_difference": 0.01585373275711541,
+          "median_difference": 0.010715760869565327,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7,
+          "p_holm": 0.0004586130380630493
+        }
+      }
+    },
+    "AUPRC": {
+      "metric": "AUPRC",
+      "n_blocks": 30,
+      "reference": "min8",
+      "friedman_statistic": 25.400000000000034,
+      "friedman_p": 1.2735139409743148e-05,
+      "average_ranks": {
+        "min4": 1.9666666666666666,
+        "min8": 1.9333333333333333,
+        "min16": 2.7333333333333334,
+        "min32": 3.3666666666666667
+      },
+      "reference_pairwise_wilcoxon_holm": {
+        "min4": {
+          "wilcoxon_statistic": 232.0,
+          "p_raw": 1.0,
+          "mean_difference": 0.0060242401025634796,
+          "median_difference": -0.002871387448130258,
+          "wins": 14,
+          "ties": 0,
+          "losses": 16,
+          "p_holm": 1.0
+        },
+        "min16": {
+          "wilcoxon_statistic": 135.0,
+          "p_raw": 0.044907208532094955,
+          "mean_difference": 0.01451685840762864,
+          "median_difference": 0.018930808380777292,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7,
+          "p_holm": 0.08981441706418991
+        },
+        "min32": {
+          "wilcoxon_statistic": 56.0,
+          "p_raw": 0.00011058151721954346,
+          "mean_difference": 0.03935180036306974,
+          "median_difference": 0.02637073264808648,
+          "wins": 25,
+          "ties": 0,
+          "losses": 5,
+          "p_holm": 0.00033174455165863037
+        }
+      }
+    },
+    "F1": {
+      "metric": "F1",
+      "n_blocks": 30,
+      "reference": "min8",
+      "friedman_statistic": 15.780405405405398,
+      "friedman_p": 0.00125779909153246,
+      "average_ranks": {
+        "min4": 1.95,
+        "min8": 2.1666666666666665,
+        "min16": 2.7666666666666666,
+        "min32": 3.1166666666666667
+      },
+      "reference_pairwise_wilcoxon_holm": {
+        "min4": {
+          "wilcoxon_statistic": 188.0,
+          "p_raw": 0.7326318308573071,
+          "mean_difference": 0.00589313776846516,
+          "median_difference": -0.0033176182992841197,
+          "wins": 11,
+          "ties": 2,
+          "losses": 17,
+          "p_holm": 0.7326318308573071
+        },
+        "min16": {
+          "wilcoxon_statistic": 172.0,
+          "p_raw": 0.2132612280227013,
+          "mean_difference": 0.009698213142424757,
+          "median_difference": 0.0063405797101449,
+          "wins": 20,
+          "ties": 0,
+          "losses": 10,
+          "p_holm": 0.4265224560454026
+        },
+        "min32": {
+          "wilcoxon_statistic": 101.5,
+          "p_raw": 0.007042904348327037,
+          "mean_difference": 0.025072754787264992,
+          "median_difference": 0.013586956521739135,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7,
+          "p_holm": 0.021128713044981113
+        }
+      }
+    }
+  }
+}

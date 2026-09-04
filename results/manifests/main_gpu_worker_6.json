@@ -1,0 +1,92 @@
+[
+  {
+    "dataset": "Synthetic",
+    "method": "LM-TAD",
+    "seed": 3072
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "LM-TAD",
+    "seed": 1024
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "LM-TAD",
+    "seed": 456
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "MST-OATD",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "MST-OATD",
+    "seed": 456
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "MST-OATD",
+    "seed": 1024
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "MST-OATD",
+    "seed": 3072
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "MST-OATD",
+    "seed": 5120
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "MST-OATD",
+    "seed": 42
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "MST-OATD",
+    "seed": 456
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "MST-OATD",
+    "seed": 42
+  },
+  {
+    "dataset": "GeoLife",
+    "method": "MST-OATD",
+    "seed": 789
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "USAD",
+    "seed": 456
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "USAD",
+    "seed": 42
+  },
+  {
+    "dataset": "GeoLife",
+    "method": "USAD",
+    "seed": 789
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "LSTM-AE",
+    "seed": 3072
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "LSTM-AE",
+    "seed": 1024
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "LSTM-AE",
+    "seed": 456
+  }
+]

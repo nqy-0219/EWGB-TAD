@@ -1,0 +1,8 @@
+{
+  "completed_jobs": 30,
+  "expected_jobs": 30,
+  "all_scores_exactly_match_main": true,
+  "max_abs_score_difference": 0.0,
+  "labels_consumed_during_fit": false,
+  "cpu_processes": 8
+}
