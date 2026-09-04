@@ -1,0 +1,9 @@
+batch_size,best_epoch,best_validation_loss,candidate_count,dataset,dropout,early_stopped,epochs_completed,hidden_dim,latent_dim,learning_rate,method,num_layers,tuning_seed
+128,64,0.010622880421578884,12,GeoLife,0.1,True,72,128,32,0.001,LSTM-AE,1,42
+128,80,0.029248731210827827,12,GeoLife,,False,80,128,32,0.001,USAD,,42
+128,46,0.002405745442956686,12,Grid-Network,0.1,True,54,128,32,0.001,LSTM-AE,1,42
+128,80,0.00807262398302555,12,Grid-Network,,False,80,128,32,0.001,USAD,,42
+128,54,0.003654656233265996,12,Porto-derived,0.1,True,62,64,16,0.001,LSTM-AE,1,42
+128,80,0.010839530266821384,12,Porto-derived,,False,80,128,32,0.001,USAD,,42
+128,72,0.016220275312662125,12,Synthetic,0.0,False,80,64,16,0.0003,LSTM-AE,2,42
+128,80,0.021656326949596405,12,Synthetic,,False,80,128,32,0.001,USAD,,42

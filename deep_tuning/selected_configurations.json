@@ -1,0 +1,202 @@
+{
+  "GeoLife": {
+    "LSTM-AE": {
+      "dataset": "GeoLife",
+      "method": "LSTM-AE",
+      "tuning_seed": 42,
+      "candidate_id": 7,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "num_layers": 1,
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.010622880421578884,
+      "best_epoch": 64,
+      "epochs_completed": 72,
+      "early_stopped": true,
+      "training_seconds": 8.867198846768588,
+      "elapsed_seconds": 8.90134659409523,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    "USAD": {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 10,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.029248731210827827,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 18.104827736970037,
+      "elapsed_seconds": 18.11582437576726,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    }
+  },
+  "Grid-Network": {
+    "LSTM-AE": {
+      "dataset": "Grid-Network",
+      "method": "LSTM-AE",
+      "tuning_seed": 42,
+      "candidate_id": 7,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "num_layers": 1,
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.002405745442956686,
+      "best_epoch": 46,
+      "epochs_completed": 54,
+      "early_stopped": true,
+      "training_seconds": 11.746074130292982,
+      "elapsed_seconds": 11.800018051173538,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    "USAD": {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 10,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.00807262398302555,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 29.148973751813173,
+      "elapsed_seconds": 29.158108097035438,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    }
+  },
+  "Porto-derived": {
+    "LSTM-AE": {
+      "dataset": "Porto-derived",
+      "method": "LSTM-AE",
+      "tuning_seed": 42,
+      "candidate_id": 3,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 16,
+        "num_layers": 1,
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.003654656233265996,
+      "best_epoch": 54,
+      "epochs_completed": 62,
+      "early_stopped": true,
+      "training_seconds": 14.570233175996691,
+      "elapsed_seconds": 14.609328095335513,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    "USAD": {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 10,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.010839530266821384,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.277712603099644,
+      "elapsed_seconds": 27.292317242827266,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    }
+  },
+  "Synthetic": {
+    "LSTM-AE": {
+      "dataset": "Synthetic",
+      "method": "LSTM-AE",
+      "tuning_seed": 42,
+      "candidate_id": 10,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 16,
+        "num_layers": 2,
+        "dropout": 0.0,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.016220275312662125,
+      "best_epoch": 72,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 20.58086137380451,
+      "elapsed_seconds": 20.632496181875467,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    "USAD": {
+      "dataset": "Synthetic",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 10,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.021656326949596405,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.29906533891335,
+      "elapsed_seconds": 27.307454984169453,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    }
+  }
+}

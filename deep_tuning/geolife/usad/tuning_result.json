@@ -1,0 +1,341 @@
+{
+  "status": "complete",
+  "selection_rule": "minimum inner validation reconstruction loss; tie-break by candidate id",
+  "dataset": "GeoLife",
+  "method": "USAD",
+  "tuning_seed": 42,
+  "cache_metadata": {
+    "dataset": "GeoLife",
+    "seed": 42,
+    "n_total": 3332,
+    "n_normal": 3000,
+    "n_anomaly": 332,
+    "trajectory_shape": [
+      3332,
+      32,
+      2
+    ],
+    "canonical_feature_shape": [
+      3332,
+      34
+    ],
+    "labels_used_for_feature_construction": false,
+    "generation_seconds": 4.002900166902691,
+    "sha256": "95b49470e26e8aa44b7bfa34274b640d2eb3ba2fadf6919330e8972756de5846"
+  },
+  "cache_sha256": "95b49470e26e8aa44b7bfa34274b640d2eb3ba2fadf6919330e8972756de5846",
+  "labels_loaded": false,
+  "validation_split": {
+    "fraction": 0.1,
+    "source": "deterministic permutation from numpy RandomState(seed=42)",
+    "fit_scaler_on": "inner training partition only"
+  },
+  "budget": {
+    "candidate_count": 12,
+    "max_epochs": 80,
+    "patience": 8,
+    "min_epochs": 10,
+    "min_delta": 1e-05
+  },
+  "candidate_records_sorted_by_validation_loss": [
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 10,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.029248731210827827,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 18.104827736970037,
+      "elapsed_seconds": 18.11582437576726,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 9,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.07429521530866623,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 17.877564827911556,
+      "elapsed_seconds": 17.88712359732017,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 6,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 16,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.09189888834953308,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 16.517510206904262,
+      "elapsed_seconds": 16.52537241904065,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 11,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.10673661530017853,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 17.162167369853705,
+      "elapsed_seconds": 17.171413379255682,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 8,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 16,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.1412440538406372,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 17.53653523698449,
+      "elapsed_seconds": 17.547389490995556,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 7,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 32,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.1533440202474594,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 17.197609710972756,
+      "elapsed_seconds": 17.206141185946763,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 3,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 16,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.15582944452762604,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 17.331942264921963,
+      "elapsed_seconds": 17.342471283860505,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 4,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 8,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.23315608501434326,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 16.571251997724175,
+      "elapsed_seconds": 16.581176056992263,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 5,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 16,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.23809997737407684,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 17.680718596093357,
+      "elapsed_seconds": 17.689062510617077,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 1,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 8,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.2870539426803589,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 18.329357214737684,
+      "elapsed_seconds": 19.902887721080333,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 12,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 8,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.33706316351890564,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 17.08388195000589,
+      "elapsed_seconds": 17.091003285720944,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "GeoLife",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 2,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 8,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.4062695801258087,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 15.818532496225089,
+      "elapsed_seconds": 15.829765400849283,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    }
+  ],
+  "selected_configuration": {
+    "dataset": "GeoLife",
+    "method": "USAD",
+    "tuning_seed": 42,
+    "candidate_id": 10,
+    "configuration": {
+      "hidden_dim": 128,
+      "latent_dim": 32,
+      "learning_rate": 0.001,
+      "batch_size": 128
+    },
+    "best_validation_loss": 0.029248731210827827,
+    "best_epoch": 80,
+    "epochs_completed": 80,
+    "early_stopped": false,
+    "training_seconds": 18.104827736970037,
+    "elapsed_seconds": 18.11582437576726,
+    "validation_fraction": 0.1,
+    "patience": 8,
+    "min_epochs": 10,
+    "min_delta": 1e-05,
+    "labels_loaded": false
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "status": "complete",
+  "selection_rule": "minimum inner validation reconstruction loss; tie-break by candidate id",
+  "dataset": "Porto-derived",
+  "method": "USAD",
+  "tuning_seed": 42,
+  "cache_metadata": {
+    "dataset": "Porto-derived",
+    "seed": 42,
+    "n_total": 5552,
+    "n_normal": 5000,
+    "n_anomaly": 552,
+    "trajectory_shape": [
+      5552,
+      32,
+      2
+    ],
+    "canonical_feature_shape": [
+      5552,
+      34
+    ],
+    "labels_used_for_feature_construction": false,
+    "generation_seconds": 7.966970135923475,
+    "sha256": "5801bd5efe0fe8498958f68bcc2b7043f38386e0453014f6eff9714c5c1c781b"
+  },
+  "cache_sha256": "5801bd5efe0fe8498958f68bcc2b7043f38386e0453014f6eff9714c5c1c781b",
+  "labels_loaded": false,
+  "validation_split": {
+    "fraction": 0.1,
+    "source": "deterministic permutation from numpy RandomState(seed=42)",
+    "fit_scaler_on": "inner training partition only"
+  },
+  "budget": {
+    "candidate_count": 12,
+    "max_epochs": 80,
+    "patience": 8,
+    "min_epochs": 10,
+    "min_delta": 1e-05
+  },
+  "candidate_records_sorted_by_validation_loss": [
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 10,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.010839530266821384,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.277712603099644,
+      "elapsed_seconds": 27.292317242827266,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 9,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.028618039563298225,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.574704901780933,
+      "elapsed_seconds": 27.58843269897625,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 6,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 16,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.0386146679520607,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 28.432965766172856,
+      "elapsed_seconds": 28.443526678718626,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 8,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 16,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.04591227322816849,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.098402250092477,
+      "elapsed_seconds": 27.11299877986312,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 11,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.049068838357925415,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.55530136777088,
+      "elapsed_seconds": 27.564851323142648,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 7,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 32,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.05607390031218529,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 29.06031022174284,
+      "elapsed_seconds": 29.072843758855015,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 3,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 16,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.06775664538145065,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.863246564753354,
+      "elapsed_seconds": 27.874571592081338,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 4,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 8,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.07336956262588501,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 28.01343281613663,
+      "elapsed_seconds": 28.02476384723559,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 5,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 16,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.08372116833925247,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 30.418102107942104,
+      "elapsed_seconds": 30.42966759810224,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 1,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 8,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.134173184633255,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 29.665032619144768,
+      "elapsed_seconds": 31.13575507281348,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 12,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 8,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.14447201788425446,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.404323077760637,
+      "elapsed_seconds": 27.414524466730654,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Porto-derived",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 2,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 8,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.2371201515197754,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 29.56151748681441,
+      "elapsed_seconds": 29.575227013789117,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    }
+  ],
+  "selected_configuration": {
+    "dataset": "Porto-derived",
+    "method": "USAD",
+    "tuning_seed": 42,
+    "candidate_id": 10,
+    "configuration": {
+      "hidden_dim": 128,
+      "latent_dim": 32,
+      "learning_rate": 0.001,
+      "batch_size": 128
+    },
+    "best_validation_loss": 0.010839530266821384,
+    "best_epoch": 80,
+    "epochs_completed": 80,
+    "early_stopped": false,
+    "training_seconds": 27.277712603099644,
+    "elapsed_seconds": 27.292317242827266,
+    "validation_fraction": 0.1,
+    "patience": 8,
+    "min_epochs": 10,
+    "min_delta": 1e-05,
+    "labels_loaded": false
+  }
+}

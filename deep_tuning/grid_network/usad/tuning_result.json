@@ -1,0 +1,341 @@
+{
+  "status": "complete",
+  "selection_rule": "minimum inner validation reconstruction loss; tie-break by candidate id",
+  "dataset": "Grid-Network",
+  "method": "USAD",
+  "tuning_seed": 42,
+  "cache_metadata": {
+    "dataset": "Grid-Network",
+    "seed": 42,
+    "n_total": 5552,
+    "n_normal": 5000,
+    "n_anomaly": 552,
+    "trajectory_shape": [
+      5552,
+      32,
+      2
+    ],
+    "canonical_feature_shape": [
+      5552,
+      34
+    ],
+    "labels_used_for_feature_construction": false,
+    "generation_seconds": 7.801294992212206,
+    "sha256": "f185cbb826278886f2b24a9ee12049f6129332f9c36fabc569a932613bd1bbe7"
+  },
+  "cache_sha256": "f185cbb826278886f2b24a9ee12049f6129332f9c36fabc569a932613bd1bbe7",
+  "labels_loaded": false,
+  "validation_split": {
+    "fraction": 0.1,
+    "source": "deterministic permutation from numpy RandomState(seed=42)",
+    "fit_scaler_on": "inner training partition only"
+  },
+  "budget": {
+    "candidate_count": 12,
+    "max_epochs": 80,
+    "patience": 8,
+    "min_epochs": 10,
+    "min_delta": 1e-05
+  },
+  "candidate_records_sorted_by_validation_loss": [
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 10,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.00807262398302555,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 29.148973751813173,
+      "elapsed_seconds": 29.158108097035438,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 9,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.030075235292315483,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.774016852956265,
+      "elapsed_seconds": 27.783656066283584,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 6,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 16,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.038998283445835114,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 25.988251921720803,
+      "elapsed_seconds": 25.99888123292476,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 8,
+      "configuration": {
+        "hidden_dim": 128,
+        "latent_dim": 16,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.04798777401447296,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 28.18347225524485,
+      "elapsed_seconds": 28.195397831033915,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 11,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.05097595974802971,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 28.146352803800255,
+      "elapsed_seconds": 28.15762036992237,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 7,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 32,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.05458280071616173,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 29.49498612433672,
+      "elapsed_seconds": 29.504551101010293,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 3,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 16,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.06635305285453796,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 28.265560825821012,
+      "elapsed_seconds": 28.277282057795674,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 5,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 16,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.08048246055841446,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 25.847549308091402,
+      "elapsed_seconds": 25.85589827084914,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 4,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 8,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.08615879714488983,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.03978799423203,
+      "elapsed_seconds": 27.050703418906778,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 1,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 8,
+        "learning_rate": 0.001,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.13670048117637634,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 29.408160235267133,
+      "elapsed_seconds": 30.93809428019449,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 12,
+      "configuration": {
+        "hidden_dim": 64,
+        "latent_dim": 8,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.16039584577083588,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.987275710795075,
+      "elapsed_seconds": 27.99953559692949,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    },
+    {
+      "dataset": "Grid-Network",
+      "method": "USAD",
+      "tuning_seed": 42,
+      "candidate_id": 2,
+      "configuration": {
+        "hidden_dim": 32,
+        "latent_dim": 8,
+        "learning_rate": 0.0003,
+        "batch_size": 128
+      },
+      "best_validation_loss": 0.22704054415225983,
+      "best_epoch": 80,
+      "epochs_completed": 80,
+      "early_stopped": false,
+      "training_seconds": 27.107867485377938,
+      "elapsed_seconds": 27.120636971201748,
+      "validation_fraction": 0.1,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "labels_loaded": false
+    }
+  ],
+  "selected_configuration": {
+    "dataset": "Grid-Network",
+    "method": "USAD",
+    "tuning_seed": 42,
+    "candidate_id": 10,
+    "configuration": {
+      "hidden_dim": 128,
+      "latent_dim": 32,
+      "learning_rate": 0.001,
+      "batch_size": 128
+    },
+    "best_validation_loss": 0.00807262398302555,
+    "best_epoch": 80,
+    "epochs_completed": 80,
+    "early_stopped": false,
+    "training_seconds": 29.148973751813173,
+    "elapsed_seconds": 29.158108097035438,
+    "validation_fraction": 0.1,
+    "patience": 8,
+    "min_epochs": 10,
+    "min_delta": 1e-05,
+    "labels_loaded": false
+  }
+}
