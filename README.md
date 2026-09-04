@@ -1,117 +1,132 @@
-# EWGB-TAD
+# EWGB-TAD: Reproducible Release
 
-**Entropy-Weighted Multi-View Granular-Ball Framework for Trajectory Anomaly Detection**
+This repository contains the EWGB-TAD implementation and the predefined
+experiment protocol used for this release. EWGB-TAD is an unsupervised
+trajectory-level anomaly detector with three complementary views:
 
-EWGB-TAD is a lightweight, **CPU-only** trajectory anomaly detector that applies granular-ball computing to GPS trajectory data for the first time. It decomposes each trajectory into four complementary feature views — spatial-path, kinematic, entropy, and trajectory-shape — builds adaptive granular balls per view, and fuses view-level anomaly scores through an entropy-weighted mechanism.
+- `spatial_path`: 16 dimensions combining spatial-shape and path-deviation features;
+- `kinematic`: 8 speed, acceleration, stopping, and turning features;
+- `trajectory_shape`: 10 PCA dimensions learned from flattened, length-32 trajectories.
 
-On four datasets (two synthetic, Porto Taxi, GeoLife) with 17 baselines including seven GPU-based deep learning methods, EWGB-TAD consistently ranks in the top 4 while running **10–45× faster** without any GPU.
+Each view is standardized, partitioned into adaptive granular balls, and scored
+with locally adapted feature weights. This release uses a
+sample-size-adaptive histogram entropy estimator. For a terminal ball with
+`n_ball` samples, its local histogram uses
+`max(2, ceil(log2(n_ball) + 1))` bins over the observed range of each active
+feature. Empty bins are omitted from the Shannon sum. Globally constant
+features are excluded from the active set; a feature that is constant only
+within a terminal ball has zero local entropy and is treated as locally
+reliable. If all active reliabilities vanish, uniform active-feature weights
+are used; if no active features remain, a finite uniform all-feature fallback
+is used. The three normalized view scores are fused with the fixed 20-bin
+full-pool score-entropy rule.
 
----
+## Repository contents
 
-## Highlights
+`src/` contains the detector, feature extraction, data construction, baselines,
+evaluation, deep-model tuning, phase timing, and experiment runners. `configs/`
+contains the predefined protocol, selected dataset-specific LSTM-AE/USAD settings,
+and anomaly-injection manifest. `results/` contains the latest summary tables,
+statistical analyses, runtime records, protocol cards, and smoke-test artifacts.
+The official third-party implementations included for recent trajectory
+baselines are in `external_baselines_phase3/LMTAD` and
+`external_baselines_phase3/MST-OATD`.
 
-- **CPU-only, real-time.** ~0.4–0.9 s per 1k trajectories on a single i7 core.
-- **Granular-ball computing meets trajectories.** First application of GBC to trajectory / spatiotemporal anomaly detection.
-- **Four-view fusion.** Spatial-path (16D) + kinematic (8D) + entropy (6D) + trajectory-shape PCA (10D), each with its own adaptive granular-ball structure.
-- **Entropy-weighted scoring.** Automatic per-feature and per-view weighting — no manual tuning of fusion weights.
-- **Strong cross-dataset stability.** The only method that maintains top-4 ranking on all four datasets.
+`results/phase4/protocol_cards/BASELINE_PROTOCOL_INDEX.md` maps all 12
+comparison methods to complete protocol records. The records distinguish
+verified official repositories from local reproducible implementations and
+paper-guided local adaptations. They specify source hashes, inputs,
+normalization, objectives or scoring rules, initialization, fixed parameters or
+search spaces, selection and stopping rules, seeds, hardware records, and
+failure handling.
+Exact label-free training/validation index arrays and their SHA-256 values are
+stored in `results/phase4/protocol/unlabeled_inner_splits.npz` and
+`unlabeled_inner_split_manifest.json`.
 
----
+To keep the public package compact and free of private/raw trajectory data,
+the 30 generated dataset caches and the main/analysis per-job raw result
+directories are not included. They are rebuilt by the commands in
+`REPRODUCE.md`; the included summary files and representative deep-baseline
+phase-timing records are the latest result snapshot.
 
-## Main Results
+`results/phase4/metadata/CURRENT_RESULT_SET.json` is the sole result-set lock.
+It records the selected attempt, result hash, and score hash for every included
+job, together with hashes of all dataset caches and manuscript summaries. Do
+not combine this snapshot with files from another result directory.
 
-AUC at 10% contamination. Best in **bold**, second <ins>underlined</ins>.
+The cached `trajectory_shape` matrix is used only for the shared
+34-dimensional input used by generic baselines. Every EWGB-TAD main,
+component, sensitivity, stability, timing, and figure path fits the
+trajectory-shape PCA again from the fixed length-32 `trajectories` array via
+`canonical_shape_view` or the fitted `ThreeViewEWGBDetector`.
 
-| Method | Synthetic | Grid | Porto Taxi | GeoLife | GPU |
-|---|---|---|---|---|---|
-| **EWGB-TAD (ours)** | <ins>0.882</ins> | 0.923 | <ins>0.965</ins> | 0.829 | No |
-| DTW-KNN | **0.931** | **0.961** | 0.600 | 0.574 | No |
-| KNN | 0.826 | 0.955 | **0.973** | <ins>0.867</ins> | No |
-| KMeans-Prototype | 0.801 | 0.881 | 0.958 | 0.796 | No |
-| IsolationForest | 0.779 | 0.848 | 0.945 | 0.799 | No |
-| USAD | 0.753 | 0.853 | 0.944 | **0.959** | Yes |
-| LSTM-AE | 0.922 | 0.823 | 0.817 | 0.855 | Yes |
-| DCdetector | 0.731 | 0.671 | 0.715 | 0.712 | Yes |
-| TranAD | 0.706 | 0.684 | 0.562 | 0.566 | Yes |
-| Transformer-AE | 0.645 | 0.650 | 0.535 | 0.518 | Yes |
-| DeepSVDD | 0.670 | 0.656 | 0.598 | 0.584 | Yes |
-| Anomaly Transformer | 0.462 | 0.519 | 0.501 | 0.495 | Yes |
+The released benchmark includes 30 matched dataset-seed blocks:
 
-Full tables (including AUPRC, F1, runtime, robustness, ablations) are in the paper.
+| Dataset | Normal | Injected anomalies | Seeds |
+|---|---:|---:|---:|
+| Synthetic | 5,000 | 552 | 10 |
+| Grid-Network | 5,000 | 552 | 10 |
+| Porto-derived | 5,000 | 552 | 5 |
+| GeoLife | 3,000 | 332 | 5 |
 
----
+The four anomaly types are detour, loop, speed, and route deviation. Labels
+are used only by the evaluation code; no labels are used for fitting or model
+selection.
 
-## Installation
+The main-table baselines are IForest, ECOD, iBoost-ODE, CoMadOut, Shape-KNN,
+SegmentOD, TADS, Profile-TAD, LSTM-AE, USAD, LM-TAD, and MST-OATD. Baselines
+outside this list are outside the release protocol.
 
-```bash
-git clone https://github.com/Limijia/EWGB-TAD.git
-cd EWGB-TAD
+## Quick start
 
+Use Python 3.10 or newer in a clean virtual environment:
 
-Python 3.9+ is recommended. The core package only requires NumPy, SciPy, and scikit-learn.
-PyTorch is only needed if you want to reproduce the deep-learning baselines.
-
----
-
-## Quick Start
-
-```python
-import numpy as np
-from ewgb_tad import EWGBTAD, evaluate_detector
-from ewgb_tad.data_generator import generate_synthetic_trajectories
-from ewgb_tad.feature_extraction_v2 import extract_all_features_v2
-
-# 1. Generate (or load) trajectories
-trajs, labels, _, _ = generate_synthetic_trajectories
-
-# 2. Extract per-view features (spatial / kinematic / entropy / path-deviation)
-spatial, kinematic, entropy, path, _ = extract_all_features_v2(trajs)
-spatial_path = np.hstack([spatial, path]) 
-
-# 3. Fit the 4-view detector — trajectories are passed in for the PCA-based shape view
-detector = EWGBTAD
-detector.fit(spatial_path, kinematic, entropy, trajs)
-
-# 4. Score and evaluate
-scores = detector.score(spatial_path, kinematic, entropy, trajs)
-metrics = evaluate_detector(labels, scores, contamination=0.10)
-print(metrics)  
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
 ```
 
-See `experiments/run_synthetic.py` for the full pipeline with multiple seeds, all baselines, and view-level entropy fusion.
+Run the deterministic unit tests and compile check:
 
----
-
-## Reproducing Paper Results
-
-All experiments are single-script and reproducible from scratch (synthetic datasets are generated by seed; Porto Taxi and GeoLife are loaded from their original public datasets).
-
-```bash
-# Synthetic dataset (main table + ablation)
-python experiments/run_synthetic.py
-
-# Grid-network dataset
-python experiments/run_grid.py
-
-# Real-world datasets (download Porto Taxi / GeoLife separately)
-python experiments/run_porto.py   --data-path /path/to/porto_taxi.csv
-python experiments/run_geolife.py --data-path /path/to/Geolife
-
-# Robustness study (GPS jitter, missing points, resampling length)
-python experiments/run_robustness.py
-
-# Deep-learning baselines (requires GPU)
-python experiments/run_dl_baselines.py         
-python experiments/run_dl_baselines_recent.py  
+```powershell
+python -m compileall src tests
+python -m unittest discover -s tests -v
 ```
 
----
+Run the included official SOTA adapter smoke tests:
 
-## Datasets
+```powershell
+python src/run_phase3_sota_smoke.py --baseline all
+```
 
-The code ships with synthetic data generators (six-route synthetic, grid-network). The two real-world datasets used in the paper are **not** included in this repository; please download them from their original sources.
+The smoke tests use a small synthetic pool and are not the manuscript
+benchmark. For the complete protocol, follow [REPRODUCE.md](REPRODUCE.md).
 
----
+## Result snapshot
 
+The included summary uses the sample-adaptive-histogram configuration. Across
+the 30 matched dataset-seed blocks, the reported EWGB-TAD
+macro means are AUC `0.8972`, AUPRC `0.6780`, and F1 `0.6283`; its AUC average
+rank is `3.300`. The exact seed-level values and uncertainty estimates are in
+`results/phase4/summary/main_seed_level.csv` and
+`results/phase4/summary/main_aggregate.json`. These numbers are provided as a
+traceable snapshot, not as a replacement for rerunning the protocol.
 
+The release contains 390/390 main jobs, 570/570 component/view/local-
+sensitivity jobs, 210/210 extended-sensitivity jobs, 120/120 fixed local
+entropy-bin diagnostic jobs, 16/16 deep-baseline phase-
+timing jobs, and 30/30 EWGB-TAD phase-timing jobs. All status files report zero
+missing jobs, and the phase-timing score checks match the main benchmark.
 
+## Data and scope
+
+Synthetic and Grid-Network data are generated locally. Porto-derived and
+GeoLife experiments require external raw trajectory files that are not
+redistributed in this repository. See [DATA.md](DATA.md) for the expected
+files and environment variables. The released Porto and GeoLife benchmark
+labels are controlled anomaly injections, not natural-anomaly ground truth.
+
+See [VERSION.md](VERSION.md) for the release boundary and [NOTICE.md](NOTICE.md)
+for third-party attribution and license notes. Exact CPU/GPU software and
+hardware records are documented in [ENVIRONMENT.md](ENVIRONMENT.md).
