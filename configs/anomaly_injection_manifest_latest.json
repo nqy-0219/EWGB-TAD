@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "revision_date": "2026-08-29",
+  "trajectory_length": 32,
+  "primary_nominal_contamination": 0.1,
+  "allocation_rule": "n_requested=floor(n_normal*c/(1-c)); n_per_type=floor(n_requested/4); n_injected=4*n_per_type",
+  "type_order": [
+    "detour",
+    "loop",
+    "speed",
+    "route_deviation"
+  ],
+  "datasets": {
+    "Synthetic": {
+      "source": "src/data_generator.py::generate_synthetic_trajectories",
+      "normal_generation": {
+        "route_patterns": 6,
+        "coordinate_noise_std": 0.02,
+        "curvature_midpoint_offset_std": 0.04
+      },
+      "primary_counts": {
+        "normal": 5000,
+        "per_type": 138,
+        "injected": 552,
+        "total": 5552,
+        "realized_contamination": 0.09942363112391931
+      },
+      "perturbations": {
+        "detour": {
+          "start_fraction_uniform": [0.3, 0.4],
+          "end_fraction_uniform": [0.6, 0.7],
+          "perpendicular_offset_as_od_fraction_uniform": [0.1, 0.25],
+          "profile": "half-sine"
+        },
+        "loop": {
+          "center_fraction_uniform": [0.4, 0.6],
+          "radius_as_od_fraction_uniform": [0.05, 0.15],
+          "points": 8
+        },
+        "speed": {
+          "start_fraction_uniform": [0.2, 0.5],
+          "points": 6,
+          "replacement_jitter_std": 0.005,
+          "jitter_unit": "normalized coordinate"
+        },
+        "route_deviation": {
+          "start_fraction_uniform": [0.5, 0.7],
+          "initial_angle_degrees_uniform": [30.0, 60.0],
+          "random_sign": true,
+          "per_step_angle_decay": 0.95,
+          "step_length_multiplier": 1.0
+        }
+      }
+    },
+    "Grid-Network": {
+      "source": "src/data_generator_real.py::generate_grid_network_trajectories",
+      "normal_generation": {
+        "grid_size": [10, 10],
+        "od_pairs": 50,
+        "node_irregularity_std": 0.01,
+        "gps_jitter_std": 0.005,
+        "diagonal_edge_probability": 0.3
+      },
+      "primary_counts": {
+        "normal": 5000,
+        "per_type": 138,
+        "injected": 552,
+        "total": 5552,
+        "realized_contamination": 0.09942363112391931
+      },
+      "perturbations": {
+        "detour": {
+          "start_fraction": 0.3,
+          "end_fraction": 0.7,
+          "perpendicular_offset_uniform": [0.08, 0.2],
+          "offset_reference": "max(OD distance, 0.1)",
+          "profile": "half-sine"
+        },
+        "loop": {
+          "center_fraction": 0.5,
+          "radius_uniform": [0.03, 0.1],
+          "radius_reference": "max(OD distance, 0.1)",
+          "points": 8
+        },
+        "speed": {
+          "start_fraction_uniform": [0.2, 0.5],
+          "points": 6,
+          "replacement_jitter_std": 0.003,
+          "jitter_unit": "normalized coordinate"
+        },
+        "route_deviation": {
+          "start_fraction_uniform": [0.5, 0.7],
+          "initial_angle_degrees_uniform": [20.0, 50.0],
+          "random_sign": true,
+          "per_step_angle_decay": 0.95,
+          "step_length_multiplier": 1.0
+        }
+      }
+    },
+    "Porto-derived": {
+      "source": "src/porto_data.py::inject_anomalies_porto",
+      "normal_source": "real Porto taxi OD endpoints with generated route geometry",
+      "natural_anomaly_labels": false,
+      "normal_sampling": {
+        "rule": "exact balanced allocation over sorted non-empty OD clusters",
+        "undersized_cluster": "sample with replacement",
+        "post_sampling": "seed-specific shuffle",
+        "implementation": "src/run_cross_dataset_ablation.py::_balanced_cluster_samples"
+      },
+      "primary_counts": {
+        "normal": 5000,
+        "per_type": 138,
+        "injected": 552,
+        "total": 5552,
+        "realized_contamination": 0.09942363112391931
+      },
+      "perturbations": {
+        "detour": {
+          "start_fraction": 0.3,
+          "end_fraction": 0.7,
+          "perpendicular_offset_as_od_fraction_uniform": [0.15, 0.35],
+          "profile": "half-sine"
+        },
+        "loop": {
+          "center_fraction": 0.5,
+          "radius_as_od_fraction_uniform": [0.08, 0.2],
+          "maximum_points": 10,
+          "points_at_length_32": 10
+        },
+        "speed": {
+          "start_fraction_uniform": [0.2, 0.5],
+          "maximum_points": 8,
+          "points_at_length_32": 8,
+          "replacement_jitter_std_as_od_fraction": 0.003
+        },
+        "route_deviation": {
+          "start_fraction_uniform": [0.4, 0.6],
+          "initial_angle_degrees_uniform": [40.0, 80.0],
+          "random_sign": true,
+          "per_step_angle_decay": 0.92,
+          "step_length_multiplier": 1.3
+        }
+      }
+    },
+    "GeoLife": {
+      "source": "src/geolife_data.py::inject_anomalies_geolife",
+      "normal_source": "real GeoLife GPS trajectory segments",
+      "natural_anomaly_labels": false,
+      "normal_sampling": {
+        "rule": "exact balanced allocation over sorted non-empty route clusters",
+        "undersized_cluster": "sample with replacement",
+        "post_sampling": "seed-specific shuffle",
+        "implementation": "src/run_cross_dataset_ablation.py::_balanced_cluster_samples"
+      },
+      "primary_counts": {
+        "normal": 3000,
+        "per_type": 83,
+        "injected": 332,
+        "total": 3332,
+        "realized_contamination": 0.09963985594237695
+      },
+      "perturbations": {
+        "detour": {
+          "start_fraction": 0.2,
+          "end_fraction": 0.8,
+          "perpendicular_offset_as_od_fraction_uniform": [0.4, 0.7],
+          "profile": "half-sine"
+        },
+        "loop": {
+          "center_fraction": 0.5,
+          "radius_as_od_fraction_uniform": [0.2, 0.4],
+          "maximum_points": 12,
+          "points_at_length_32": 10
+        },
+        "speed": {
+          "start_fraction_uniform": [0.2, 0.5],
+          "maximum_points": 10,
+          "points_at_length_32": 10,
+          "replacement_jitter_std_as_od_fraction": 0.003
+        },
+        "route_deviation": {
+          "start_fraction_uniform": [0.35, 0.55],
+          "initial_angle_degrees_uniform": [50.0, 90.0],
+          "random_sign": true,
+          "per_step_angle_decay": 0.9,
+          "step_length_multiplier": 1.5
+        }
+      }
+    }
+  }
+}

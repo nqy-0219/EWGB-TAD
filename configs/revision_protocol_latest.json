@@ -1,0 +1,89 @@
+{
+  "revision_date": "2026-08-31",
+  "protocol_status": "predefined_neurocomputing_protocol",
+  "task": "unsupervised trajectory-level anomaly scoring under controlled anomaly construction",
+  "primary_contamination": 0.1,
+  "contamination_rule": "n_anomaly = floor(n_normal * contamination / (1 - contamination)); n_per_type = floor(n_anomaly / 4); four anomaly types",
+  "labels_used_for": ["AUC", "AUPRC", "oracle_top_k_F1_using_realized_injected_count"],
+  "labels_used_for_training_or_selection": false,
+  "f1_evaluation": {
+    "name": "oracle_top_k",
+    "n_predicted_positive": "sum(labels)",
+    "ranking": "descending_anomaly_score",
+    "tie_handling": "stable_mergesort_preserving_input_order",
+    "nominal_contamination_used_for_threshold": false,
+    "interpretation": "evaluation-only oracle threshold using the realized injected anomaly count after fitting and scoring"
+  },
+  "trajectory_length": 32,
+  "anomaly_injection_manifest": "anomaly_injection_manifest_latest.json",
+  "canonical_views": {
+    "spatial_path": {"dimension": 16, "components": ["spatial_shape_7D", "path_deviation_9D"]},
+    "kinematic": {"dimension": 8},
+    "trajectory_shape": {"dimension": 10, "transform": "PCA on flattened coordinate sequences"}
+  },
+  "excluded_view": "entropy_features",
+  "datasets": {
+    "Synthetic": {
+      "n_normal": 5000,
+      "n_anomaly_per_type": 138,
+      "n_anomaly": 552,
+      "n_total": 5552,
+      "seeds": [42, 123, 456, 789, 1024, 2048, 3072, 4096, 5120, 6144],
+      "source_function": "src/data_generator.py::generate_synthetic_trajectories"
+    },
+    "Grid-Network": {
+      "n_normal": 5000,
+      "n_anomaly_per_type": 138,
+      "n_anomaly": 552,
+      "n_total": 5552,
+      "seeds": [42, 123, 456, 789, 1024, 2048, 3072, 4096, 5120, 6144],
+      "source_function": "src/data_generator_real.py::generate_grid_network_trajectories"
+    },
+    "Porto-derived": {
+      "n_normal": 5000,
+      "n_anomaly_per_type": 138,
+      "n_anomaly": 552,
+      "n_total": 5552,
+      "seeds": [42, 123, 456, 789, 1024],
+      "context_seed": 42,
+      "source_function": "src/porto_data.py::inject_anomalies_porto",
+      "natural_anomaly_labels": false
+    },
+    "GeoLife": {
+      "n_normal": 3000,
+      "n_anomaly_per_type": 83,
+      "n_anomaly": 332,
+      "n_total": 3332,
+      "seeds": [42, 123, 456, 789, 1024],
+      "context_seed": 42,
+      "source_function": "src/geolife_data.py::inject_anomalies_geolife",
+      "natural_anomaly_labels": false
+    }
+  },
+  "anomaly_types": ["detour", "loop", "speed", "route_deviation"],
+  "method_config": {
+    "min_samples": 8,
+    "purity_threshold": 0.85,
+    "shape_pca_components": 10,
+    "local_entropy_method": "sample-adaptive-histogram",
+    "local_entropy_bin_rule": "max(2, ceil(log2(n_ball) + 1))",
+    "local_entropy_bin_boundaries": "equal-width between the within-ball feature minimum and maximum after view-level standardization",
+    "constant_tolerance": 0.0000000001,
+    "view_fusion_score_histogram_bins": 20,
+    "view_fusion_base_weight": 0.1
+  },
+  "data_locations": {
+    "porto_csv": "data/porto_trajectories_all.csv",
+    "geolife_zip": "data/eight_datasets_for_EWGB_TAD_20260603 (2)/eight_datasets_for_EWGB_TAD_20260603/04_GeoLife/geolife.zip"
+  },
+  "notes": [
+    "Porto and GeoLife are real trajectory sources, but labels are controlled injections.",
+    "The 20-bin histogram is not used for terminal-ball feature weights; it is used only for full-pool view-fusion entropy.",
+    "Realized contamination is reported because integer anomaly allocation does not equal exactly 10 percent.",
+    "All 30 predefined dataset seeds satisfy the declared counts and trajectory length.",
+    "Porto and GeoLife normal pools use exact balanced allocation over non-empty clusters, sampling with replacement only when a cluster is undersized, followed by seed-specific shuffling.",
+    "Input paths and focused numerical edge-case checks have been verified.",
+    "The sample-size-adaptive histogram implementation is used for all 30 EWGB-TAD dataset-seed jobs.",
+    "The result set contains 390 main jobs, 570 component-view-sensitivity jobs, 16 deep-baseline phase-timing jobs, and 30 EWGB-TAD phase-timing jobs."
+  ]
+}

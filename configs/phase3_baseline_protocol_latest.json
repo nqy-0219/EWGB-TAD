@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "protocol_date": "2026-08-29",
+  "status": "complete",
+  "scope": "recent unsupervised deep trajectory-anomaly baselines for the predefined four-dataset EWGB-TAD protocol",
+  "labels_used_for_training_validation_or_model_selection": false,
+  "common_rules": {
+    "fit_population": "the complete unlabeled trajectory pool for each dataset and seed",
+    "evaluation": "revision_protocol_latest.json",
+    "score_direction": "higher_is_more_anomalous",
+    "trajectory_length": 32,
+    "coordinate_tokenization": {
+      "grid_side": 18,
+      "fit_scope": "one global bounding box per dataset and seed using coordinates only",
+      "out_of_range_handling": "clip to boundary cells",
+      "label_access": false
+    },
+    "hyperparameter_selection": "official paper or repository settings are fixed a priori; no label-based tuning",
+    "seed_policy": "use every dataset seed in revision_protocol_latest.json",
+    "failure_policy": [
+      "preserve the model, loss, score definition, and random seed",
+      "for memory pressure, reduce only the micro-batch size and record the change",
+      "do not replace a failed official method with a custom approximation",
+      "store failures with command, environment, traceback, and partial artifacts"
+    ]
+  },
+  "recent_sota": {
+    "LM-TAD": {
+      "paper": "Trajectory Anomaly Detection with Language Models",
+      "venue_year": "ACM SIGSPATIAL 2024",
+      "doi": "10.1145/3678717.3691257",
+      "repository": "https://github.com/jonathankabala/LMTAD",
+      "commit": "80bb89a8ea108db8f13cb9959826424e9c45f41c",
+      "license": "MIT",
+      "local_repository": "external_baselines_phase3/LMTAD",
+      "adapter": "src/phase3_lmtad_adapter.py",
+      "input": "SOT + 18x18 global-grid tokens + EOT",
+      "objective": "official autoregressive next-token cross-entropy",
+      "full_benchmark_configuration": {
+        "n_layer": 8,
+        "n_head": 12,
+        "n_embd": 768,
+        "dropout": 0.2,
+        "batch_size": 32,
+        "epochs": 50,
+        "validation_fraction": 0.1,
+        "checkpoint_rule": "minimum unlabeled validation cross-entropy",
+        "early_stopping": "disabled; fixed 50 epochs",
+        "optimizer": "AdamW",
+        "learning_rate": 0.0003,
+        "weight_decay": 0.1,
+        "betas": [0.9, 0.99],
+        "gradient_clip": 1.0,
+        "scheduler": "official linear warmup for 5000 steps then cosine decay",
+        "lr_decay_steps": 60000,
+        "minimum_learning_rate": 0.00003
+      },
+      "score": "official mean negative log next-token probability (log perplexity)",
+      "smoke_test": {
+        "status": "pass",
+        "result": "results/phase3_sota_smoke/lmtad_smoke_result.json",
+        "model_reduction": "2 layers, 4 heads, 64 embedding dimensions, 3 epochs; smoke only"
+      }
+    },
+    "MST-OATD": {
+      "paper": "Multi-Scale Detection of Anomalous Spatio-Temporal Trajectories in Evolving Trajectory Datasets",
+      "venue_year": "ACM KDD 2024",
+      "doi": "10.1145/3637528.3671874",
+      "repository": "https://github.com/chwang0721/MST-OATD",
+      "commit": "db94b41c1b6fd333d6776ef2dcbbbeec39d16c02",
+      "license": "MIT",
+      "local_repository": "external_baselines_phase3/MST-OATD",
+      "adapter": "src/phase3_mstoatd_adapter.py",
+      "input": "18x18 global-grid tokens, grid adjacency, and deterministic position-derived 15-second pseudo-time vectors",
+      "input_limitation": "the coordinate protocol lacks comparable timestamps, so the temporal covariate is a shared sequence-position encoding rather than observed clock time",
+      "objective": "official spatial and temporal reconstruction losses plus categorical and Gaussian KL terms",
+      "full_benchmark_configuration": {
+        "embedding_size": 128,
+        "hidden_size": 512,
+        "n_cluster": 20,
+        "scale_sizes": [2, 4],
+        "batch_size": 1600,
+        "pretrain_epochs": 8,
+        "training_epochs": 10,
+        "early_stopping": "disabled; official fixed epoch counts",
+        "pretrain_learning_rates": {"spatial": 0.002, "temporal": 0.002},
+        "training_learning_rates": {"spatial": 0.0003, "temporal": 0.0003},
+        "optimizer": "official AdamW for model parameters and Adam for mixture-prior parameters",
+        "scheduler": "official StepLR with step size 2 and gamma 0.9",
+        "temporal_embedding_checkpoint_sha256": "0CB1A9DAF3C0DAC2331381384B9782B7A8458E6952F05745756268CDB8471B8F"
+      },
+      "score": "official 1 - maximum-cluster spatial likelihood multiplied by maximum-cluster temporal likelihood",
+      "smoke_test": {
+        "status": "pass",
+        "result": "results/phase3_sota_smoke/mstoatd_smoke_result.json",
+        "model_reduction": "hidden size 32, 3 clusters, 1 pretraining epoch and 1 training epoch; smoke only"
+      }
+    }
+  },
+  "full_main_table_baseline_set": {
+    "general_cpu": ["IForest", "ECOD", "iBoost-ODE", "CoMadOut"],
+    "trajectory_structured_cpu": ["Shape-KNN", "SegmentOD", "TADS", "Profile-TAD"],
+    "general_neural_references": ["LSTM-AE", "USAD"],
+    "recent_official_trajectory_sota": ["LM-TAD", "MST-OATD"],
+    "proposed": ["EWGB-TAD"],
+    "removed_from_main_table": ["AnomalyTrans", "DCdetector"]
+  },
+  "excluded_recent_candidates": {
+    "GETAD": "No public official implementation was located; the method also requires road-graph topology, segment semantics, graph positional encoding, and a link-prediction setup not available consistently across the four datasets.",
+    "CausalTAD": "The official repository states that the original method requires road-network-matched trajectories and road-network information, which are unavailable consistently across the four datasets.",
+    "DiffTAD": "The official implementation targets interacting multi-vehicle or video trajectories and relies on unavailable domain datasets; its sample structure is not the independent route-level task used here.",
+    "Context-Aware-TAD": "The public repository contains only a minimal README and the method requires agent identity and POI context absent from the protocol.",
+    "FOTraj": "No official repository was located and the LLM plus spatio-temporal graph input contract could not be reproduced under the coordinate-only protocol.",
+    "Anomaly-Transformer": "Official code exists, but it is a pointwise multivariate time-series detector; the existing local trajectory version is a custom simplification rather than a verified official trajectory-level implementation.",
+    "DCdetector": "Official code exists, but it is a pointwise multivariate time-series detector; the existing local trajectory version is a custom simplification rather than a verified official trajectory-level implementation."
+  }
+}

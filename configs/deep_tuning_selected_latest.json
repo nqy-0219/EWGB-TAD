@@ -1,0 +1,143 @@
+{
+  "protocol_version": "deep-baseline-tuning-2026-08-30",
+  "status": "label-free-dataset-specific-selection",
+  "labels_used_for_selection": false,
+  "selection_rule": "minimum inner validation reconstruction loss; tie-break by candidate id",
+  "tuning_seed": 42,
+  "validation_fraction": 0.1,
+  "max_epochs": 80,
+  "patience": 8,
+  "min_epochs": 10,
+  "min_delta": 0.00001,
+  "inner_split": "numpy RandomState(seed=42) permutation; scaler fitted on the 90% inner training partition only",
+  "datasets": {
+    "Synthetic": {
+      "LSTM-AE": {
+        "hidden_dim": 64,
+        "latent_dim": 16,
+        "num_layers": 2,
+        "dropout": 0.0,
+        "learning_rate": 0.0003,
+        "batch_size": 128,
+        "max_epochs": 80,
+        "patience": 8,
+        "min_epochs": 10,
+        "min_delta": 0.00001,
+        "validation_fraction": 0.1,
+        "selected_candidate_id": 10,
+        "selection_validation_loss": 0.016220275312662125,
+        "selection_best_epoch": 72
+      },
+      "USAD": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128,
+        "max_epochs": 80,
+        "patience": 8,
+        "min_epochs": 10,
+        "min_delta": 0.00001,
+        "validation_fraction": 0.1,
+        "selected_candidate_id": 10,
+        "selection_validation_loss": 0.021656326949596405,
+        "selection_best_epoch": 80
+      }
+    },
+    "Grid-Network": {
+      "LSTM-AE": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "num_layers": 1,
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "batch_size": 128,
+        "max_epochs": 80,
+        "patience": 8,
+        "min_epochs": 10,
+        "min_delta": 0.00001,
+        "validation_fraction": 0.1,
+        "selected_candidate_id": 7,
+        "selection_validation_loss": 0.002405745442956686,
+        "selection_best_epoch": 46
+      },
+      "USAD": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128,
+        "max_epochs": 80,
+        "patience": 8,
+        "min_epochs": 10,
+        "min_delta": 0.00001,
+        "validation_fraction": 0.1,
+        "selected_candidate_id": 10,
+        "selection_validation_loss": 0.00807262398302555,
+        "selection_best_epoch": 80
+      }
+    },
+    "Porto-derived": {
+      "LSTM-AE": {
+        "hidden_dim": 64,
+        "latent_dim": 16,
+        "num_layers": 1,
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "batch_size": 128,
+        "max_epochs": 80,
+        "patience": 8,
+        "min_epochs": 10,
+        "min_delta": 0.00001,
+        "validation_fraction": 0.1,
+        "selected_candidate_id": 3,
+        "selection_validation_loss": 0.003654656233265996,
+        "selection_best_epoch": 54
+      },
+      "USAD": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128,
+        "max_epochs": 80,
+        "patience": 8,
+        "min_epochs": 10,
+        "min_delta": 0.00001,
+        "validation_fraction": 0.1,
+        "selected_candidate_id": 10,
+        "selection_validation_loss": 0.010839530266821384,
+        "selection_best_epoch": 80
+      }
+    },
+    "GeoLife": {
+      "LSTM-AE": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "num_layers": 1,
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "batch_size": 128,
+        "max_epochs": 80,
+        "patience": 8,
+        "min_epochs": 10,
+        "min_delta": 0.00001,
+        "validation_fraction": 0.1,
+        "selected_candidate_id": 7,
+        "selection_validation_loss": 0.010622880421578884,
+        "selection_best_epoch": 64
+      },
+      "USAD": {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "learning_rate": 0.001,
+        "batch_size": 128,
+        "max_epochs": 80,
+        "patience": 8,
+        "min_epochs": 10,
+        "min_delta": 0.00001,
+        "validation_fraction": 0.1,
+        "selected_candidate_id": 10,
+        "selection_validation_loss": 0.029248731210827827,
+        "selection_best_epoch": 80
+      }
+    }
+  }
+}
