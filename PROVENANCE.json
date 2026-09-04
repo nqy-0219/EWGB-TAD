@@ -1,0 +1,24 @@
+{
+  "release": "EWGB-TAD Neurocomputing revision",
+  "generated_utc": "2026-09-04T04:40:05.838637+00:00",
+  "source": "current development source plus the canonical result lock",
+  "canonical_result_lock": "results/phase4/metadata/CURRENT_RESULT_SET.json",
+  "canonical_result_lock_sha256": "edf80265aad8b0a4375b5c00eba7a8e581a353ffc577f9315238873cbb9f597d",
+  "counts": {
+    "main_jobs": 390,
+    "component_view_nmin_jobs": 570,
+    "deep_timing_jobs": 16,
+    "local_entropy_bin_jobs": 120,
+    "extended_sensitivity_rows": 210,
+    "weight_stability_run_view_rows": 360,
+    "weight_stability_seed_rows": 48
+  },
+  "shape_view_policy": "Every EWGB-TAD main, component, sensitivity, stability, timing, and figure path fits the trajectory-shape PCA from the predefined trajectories through canonical_shape_view or the fitted ThreeViewEWGBDetector. The cached trajectory_shape array belongs only to the shared 34-dimensional generic-baseline representation.",
+  "omitted_from_public_release": [
+    "private Porto and GeoLife source data",
+    "generated dataset caches",
+    "main and analysis per-job raw outputs",
+    "local-bin per-job raw outputs",
+    "unreferenced attempts"
+  ]
+}
