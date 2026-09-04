@@ -1,0 +1,67 @@
+[
+  {
+    "dataset": "Synthetic",
+    "method": "EWGB-TAD",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "IForest",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "ECOD",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "iBoost-ODE",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "CoMadOut",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "Shape-KNN",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "SegmentOD",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "TADS",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "Profile-TAD",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "LSTM-AE",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "USAD",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "LM-TAD",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "MST-OATD",
+    "seed": 42
+  }
+]

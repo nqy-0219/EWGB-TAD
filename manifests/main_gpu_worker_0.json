@@ -1,0 +1,72 @@
+[
+  {
+    "dataset": "Synthetic",
+    "method": "LM-TAD",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "LM-TAD",
+    "seed": 5120
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "LM-TAD",
+    "seed": 3072
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "LM-TAD",
+    "seed": 1024
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "MST-OATD",
+    "seed": 1024
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "MST-OATD",
+    "seed": 456
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "USAD",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "USAD",
+    "seed": 3072
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "USAD",
+    "seed": 1024
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "USAD",
+    "seed": 456
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "LSTM-AE",
+    "seed": 42
+  },
+  {
+    "dataset": "Synthetic",
+    "method": "LSTM-AE",
+    "seed": 5120
+  },
+  {
+    "dataset": "Grid-Network",
+    "method": "LSTM-AE",
+    "seed": 3072
+  },
+  {
+    "dataset": "Porto-derived",
+    "method": "LSTM-AE",
+    "seed": 1024
+  }
+]
