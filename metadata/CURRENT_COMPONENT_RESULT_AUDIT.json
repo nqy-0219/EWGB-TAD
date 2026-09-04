@@ -1,0 +1,97 @@
+{
+  "generated_utc": "2026-09-04T04:24:24.681158+00:00",
+  "canonical_result_root": "results/phase4",
+  "expected_jobs": 240,
+  "validated_jobs": 240,
+  "source_hashes_sha256": {
+    "granular_ball.py": "86ab3d9af3f0d1eb420be6ca35594fe528597f482fc9cbc56991cdae3b4cb427",
+    "phase4_analysis_models.py": "0eedb5a2729735d8206f3a2574bfdca655932afb8c496e018eb3aec7c96cd8b0",
+    "phase4_common.py": "a656169eae96f095b79d1d4c745ea622825fa197f31e1dc6ccddffa838f91c19",
+    "phase4_run_analysis_job.py": "564a438c6d73a4c1031ec26e36bd7ec45bbcf10f950a3572bdf1d033b53b6944"
+  },
+  "all_selected_results_record_current_hashes": true,
+  "all_scores_finite_and_metrics_reproduced": true,
+  "complete_variant_matches_main_scores": true,
+  "direct_variant_summary": {
+    "g0_l1_f1": {
+      "name": "KMeans-Prototype",
+      "n_dataset_seed_blocks": 30,
+      "macro_across_four_dataset_means": {
+        "AUC": {
+          "mean": 0.8898155885498515,
+          "std": 0.06207651044368007
+        },
+        "AUPRC": {
+          "mean": 0.6599757955001353,
+          "std": 0.15621508509235027
+        },
+        "F1": {
+          "mean": 0.6278576261568011,
+          "std": 0.10893945095942868
+        }
+      }
+    },
+    "g1_l0_f1": {
+      "name": "Global entropy weighting",
+      "n_dataset_seed_blocks": 30,
+      "macro_across_four_dataset_means": {
+        "AUC": {
+          "mean": 0.89965765562249,
+          "std": 0.06155655352447918
+        },
+        "AUPRC": {
+          "mean": 0.6703508803095952,
+          "std": 0.16102847347070984
+        },
+        "F1": {
+          "mean": 0.6259041601187358,
+          "std": 0.12279371329188467
+        }
+      }
+    },
+    "g1_l1_f0": {
+      "name": "Average fusion",
+      "n_dataset_seed_blocks": 30,
+      "macro_across_four_dataset_means": {
+        "AUC": {
+          "mean": 0.8807528502051685,
+          "std": 0.08343248908861096
+        },
+        "AUPRC": {
+          "mean": 0.6697851622726801,
+          "std": 0.2197502675753587
+        },
+        "F1": {
+          "mean": 0.6164942378208487,
+          "std": 0.1914791386232148
+        }
+      }
+    },
+    "g1_l1_f1": {
+      "name": "EWGB-TAD",
+      "n_dataset_seed_blocks": 30,
+      "macro_across_four_dataset_means": {
+        "AUC": {
+          "mean": 0.89718801041121,
+          "std": 0.06126769113520959
+        },
+        "AUPRC": {
+          "mean": 0.6779625935565206,
+          "std": 0.13594651992194706
+        },
+        "F1": {
+          "mean": 0.6282865156277283,
+          "std": 0.10847615487313558
+        }
+      }
+    }
+  },
+  "selected_result_time_range_utc": {
+    "earliest": "2026-09-02T11:23:05.129004+00:00",
+    "latest": "2026-09-02T11:32:46.202740+00:00"
+  },
+  "obsolete_attempt_count": 0,
+  "obsolete_attempts": [],
+  "errors": [],
+  "ok": true
+}
