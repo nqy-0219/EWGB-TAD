@@ -1,0 +1,379 @@
+{
+  "status": "complete",
+  "purpose": "representative_phase_timing",
+  "dataset": "Grid-Network",
+  "method": "LSTM-AE",
+  "seed": 42,
+  "metrics": {
+    "AUC": 0.8496724637681159,
+    "AUPRC": 0.6507847422914411,
+    "F1": 0.5942028985507246,
+    "Precision": 0.5942028985507246,
+    "Recall": 0.5942028985507246
+  },
+  "end_to_end_seconds": 14.017216289881617,
+  "model_metadata": {
+    "dataset_specific_selection": {
+      "hidden_dim": 128,
+      "latent_dim": 32,
+      "num_layers": 1,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "max_epochs": 80,
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "validation_fraction": 0.1,
+      "selected_candidate_id": 7,
+      "selection_validation_loss": 0.002405745442956686,
+      "selection_best_epoch": 46
+    },
+    "data_preparation_seconds": 1.6794006540440023,
+    "training_seconds": 12.086051867809147,
+    "scoring_seconds": 0.030028628651052713,
+    "fit_score_seconds": 13.795484453905374,
+    "epochs_completed": 54,
+    "max_epochs": 80,
+    "best_epoch": 46,
+    "best_validation_loss": 0.002405745442956686,
+    "early_stopped": true,
+    "validation_fraction": 0.1,
+    "training_samples": 4997,
+    "validation_samples": 555,
+    "model_selection": "minimum unlabeled validation reconstruction MSE",
+    "early_stopping": {
+      "patience": 8,
+      "min_epochs": 10,
+      "min_delta": 1e-05,
+      "restore_best_weights": true
+    },
+    "initialization": "PyTorch default Linear/LSTM initialization after deterministic seed",
+    "input_shape": [
+      5552,
+      32,
+      2
+    ],
+    "normalization": "StandardScaler fitted on the inner training trajectories, then applied to all trajectories",
+    "configuration": {
+      "hidden_dim": 128,
+      "latent_dim": 32,
+      "num_layers": 1,
+      "dropout": 0.1,
+      "batch_size": 128,
+      "learning_rate": 0.001
+    },
+    "parameter_count": 208290,
+    "training_history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.6020541306386024,
+        "validation_loss": 0.35975512862205505
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.3284636088877123,
+        "validation_loss": 0.28435397148132324
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.2806310014341124,
+        "validation_loss": 0.254377156496048
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.2349512505070887,
+        "validation_loss": 0.2854616641998291
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.18686584326292674,
+        "validation_loss": 0.12979978322982788
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.1176085504133844,
+        "validation_loss": 0.13823434710502625
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.08068441972360149,
+        "validation_loss": 0.06078731268644333
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.04705929703755524,
+        "validation_loss": 0.046077657490968704
+      },
+      {
+        "epoch": 9,
+        "train_loss": 0.03677885964354778,
+        "validation_loss": 0.029687274247407913
+      },
+      {
+        "epoch": 10,
+        "train_loss": 0.024895132398532884,
+        "validation_loss": 0.04046522453427315
+      },
+      {
+        "epoch": 11,
+        "train_loss": 0.026786264036598506,
+        "validation_loss": 0.026791131123900414
+      },
+      {
+        "epoch": 12,
+        "train_loss": 0.018242576713260947,
+        "validation_loss": 0.019317232072353363
+      },
+      {
+        "epoch": 13,
+        "train_loss": 0.013580255925525647,
+        "validation_loss": 0.023166457191109657
+      },
+      {
+        "epoch": 14,
+        "train_loss": 0.08325594079591093,
+        "validation_loss": 0.05000078305602074
+      },
+      {
+        "epoch": 15,
+        "train_loss": 0.027349370466506085,
+        "validation_loss": 0.01991179585456848
+      },
+      {
+        "epoch": 16,
+        "train_loss": 0.013108431443621248,
+        "validation_loss": 0.01062278263270855
+      },
+      {
+        "epoch": 17,
+        "train_loss": 0.009416887011436408,
+        "validation_loss": 0.009695051237940788
+      },
+      {
+        "epoch": 18,
+        "train_loss": 0.00825102481521757,
+        "validation_loss": 0.010476609691977501
+      },
+      {
+        "epoch": 19,
+        "train_loss": 0.008205277580702266,
+        "validation_loss": 0.009152465499937534
+      },
+      {
+        "epoch": 20,
+        "train_loss": 0.008634708635490377,
+        "validation_loss": 0.017455078661441803
+      },
+      {
+        "epoch": 21,
+        "train_loss": 0.008636426427363396,
+        "validation_loss": 0.008156543597579002
+      },
+      {
+        "epoch": 22,
+        "train_loss": 0.006271245310573947,
+        "validation_loss": 0.0071020349860191345
+      },
+      {
+        "epoch": 23,
+        "train_loss": 0.005198128166395484,
+        "validation_loss": 0.005756714381277561
+      },
+      {
+        "epoch": 24,
+        "train_loss": 0.004870393419515641,
+        "validation_loss": 0.011242174543440342
+      },
+      {
+        "epoch": 25,
+        "train_loss": 0.006339402050918651,
+        "validation_loss": 0.007411768659949303
+      },
+      {
+        "epoch": 26,
+        "train_loss": 0.004737815780634847,
+        "validation_loss": 0.005705729126930237
+      },
+      {
+        "epoch": 27,
+        "train_loss": 0.004158275819661076,
+        "validation_loss": 0.004934476688504219
+      },
+      {
+        "epoch": 28,
+        "train_loss": 0.003944280471787682,
+        "validation_loss": 0.004170363303273916
+      },
+      {
+        "epoch": 29,
+        "train_loss": 0.003712618005496843,
+        "validation_loss": 0.011825705878436565
+      },
+      {
+        "epoch": 30,
+        "train_loss": 0.006007102403049099,
+        "validation_loss": 0.0067426590248942375
+      },
+      {
+        "epoch": 31,
+        "train_loss": 0.005228365632855051,
+        "validation_loss": 0.00749236810952425
+      },
+      {
+        "epoch": 32,
+        "train_loss": 0.0050929805603268236,
+        "validation_loss": 0.010042120702564716
+      },
+      {
+        "epoch": 33,
+        "train_loss": 0.004796444188513806,
+        "validation_loss": 0.0036702887155115604
+      },
+      {
+        "epoch": 34,
+        "train_loss": 0.0030494069531051137,
+        "validation_loss": 0.0031244505662471056
+      },
+      {
+        "epoch": 35,
+        "train_loss": 0.002662504752749368,
+        "validation_loss": 0.004069268237799406
+      },
+      {
+        "epoch": 36,
+        "train_loss": 0.003891540211849981,
+        "validation_loss": 0.008008051663637161
+      },
+      {
+        "epoch": 37,
+        "train_loss": 0.005017093182048464,
+        "validation_loss": 0.016991540789604187
+      },
+      {
+        "epoch": 38,
+        "train_loss": 0.007807332680215666,
+        "validation_loss": 0.005163856316357851
+      },
+      {
+        "epoch": 39,
+        "train_loss": 0.003343664228987737,
+        "validation_loss": 0.0045311180874705315
+      },
+      {
+        "epoch": 40,
+        "train_loss": 0.003404053382289238,
+        "validation_loss": 0.002942478284239769
+      },
+      {
+        "epoch": 41,
+        "train_loss": 0.002455995582049343,
+        "validation_loss": 0.003979446366429329
+      },
+      {
+        "epoch": 42,
+        "train_loss": 0.003475193225161547,
+        "validation_loss": 0.004521032329648733
+      },
+      {
+        "epoch": 43,
+        "train_loss": 0.003940002886840858,
+        "validation_loss": 0.003354261629283428
+      },
+      {
+        "epoch": 44,
+        "train_loss": 0.0029148793158237708,
+        "validation_loss": 0.0040109846740961075
+      },
+      {
+        "epoch": 45,
+        "train_loss": 0.002789779432852821,
+        "validation_loss": 0.004065903834998608
+      },
+      {
+        "epoch": 46,
+        "train_loss": 0.0024971692130811647,
+        "validation_loss": 0.002405745442956686
+      },
+      {
+        "epoch": 47,
+        "train_loss": 0.001961325906816857,
+        "validation_loss": 0.0025877768639475107
+      },
+      {
+        "epoch": 48,
+        "train_loss": 0.0020495644357133333,
+        "validation_loss": 0.002660856582224369
+      },
+      {
+        "epoch": 49,
+        "train_loss": 0.0020576841937123085,
+        "validation_loss": 0.003027375554665923
+      },
+      {
+        "epoch": 50,
+        "train_loss": 0.003369643869048459,
+        "validation_loss": 0.016929995268583298
+      },
+      {
+        "epoch": 51,
+        "train_loss": 0.004425696889227429,
+        "validation_loss": 0.0030819063540548086
+      },
+      {
+        "epoch": 52,
+        "train_loss": 0.002120881997256105,
+        "validation_loss": 0.00252402457408607
+      },
+      {
+        "epoch": 53,
+        "train_loss": 0.0020988514467127797,
+        "validation_loss": 0.003180041443556547
+      },
+      {
+        "epoch": 54,
+        "train_loss": 0.0022644490966079833,
+        "validation_loss": 0.0028519309125840664
+      }
+    ]
+  },
+  "dataset_cache": {
+    "dataset": "Grid-Network",
+    "seed": 42,
+    "n_total": 5552,
+    "n_normal": 5000,
+    "n_anomaly": 552,
+    "trajectory_shape": [
+      5552,
+      32,
+      2
+    ],
+    "canonical_feature_shape": [
+      5552,
+      34
+    ],
+    "labels_used_for_feature_construction": false,
+    "generation_seconds": 7.801294992212206,
+    "sha256": "f185cbb826278886f2b24a9ee12049f6129332f9c36fabc569a932613bd1bbe7"
+  },
+  "score_sha256": "e43da67904e9c14c3ab23c66e458f5503643582eb2d9af8ba32f8c71d27d9859",
+  "main_score_sha256": "e43da67904e9c14c3ab23c66e458f5503643582eb2d9af8ba32f8c71d27d9859",
+  "score_match_main": true,
+  "max_abs_score_difference": 0.0,
+  "metric_match_main": true,
+  "labels_consumed_during_fit": false,
+  "environment": {
+    "python": "3.10.8",
+    "platform": "Linux-3.10.0-1160.119.1.el7.x86_64-x86_64-with-glibc2.17",
+    "numpy": "2.2.6",
+    "torch": "2.6.0+cu118",
+    "torch_cuda_version": "11.8",
+    "cuda_available": true,
+    "device_requested": "cuda:0",
+    "gpu_index": 0,
+    "gpu_name": "NVIDIA GeForce RTX 3090",
+    "gpu_count_visible": 1
+  },
+  "peak_gpu_memory_bytes": 2488819712,
+  "timing_device": "cuda:0"
+}

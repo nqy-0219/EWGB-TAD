@@ -1,0 +1,371 @@
+{
+  "status": "complete",
+  "purpose": "representative_phase_timing",
+  "dataset": "GeoLife",
+  "method": "LM-TAD",
+  "seed": 42,
+  "metrics": {
+    "AUC": 0.6316470883534137,
+    "AUPRC": 0.20318716877992474,
+    "F1": 0.25903614457831325,
+    "Precision": 0.25903614457831325,
+    "Recall": 0.25903614457831325
+  },
+  "end_to_end_seconds": 529.4786273501813,
+  "model_metadata": {
+    "method": "LM-TAD",
+    "official_repository": "/root/ewgb_timing/external_baselines_phase3/LMTAD",
+    "official_model_file": "/root/ewgb_timing/external_baselines_phase3/LMTAD/code/models/LMTAD.py",
+    "official_scoring_file": "/root/ewgb_timing/external_baselines_phase3/LMTAD/code/eval_lm.py",
+    "labels_consumed_during_fit": false,
+    "score_direction": "higher_is_more_anomalous",
+    "score_definition": "official mean negative log next-token probability (log perplexity)",
+    "n_samples": 3332,
+    "sequence_length": 32,
+    "train_size": 2999,
+    "validation_size": 333,
+    "epochs_completed": 50,
+    "best_validation_loss": 0.5698779638823088,
+    "runtime_seconds": 526.8011751668528,
+    "data_preparation_seconds": 2.5486832596361637,
+    "training_seconds": 510.35555504169315,
+    "validation_seconds": 12.908936345484108,
+    "training_validation_seconds": 526.0848503778689,
+    "checkpoint_restore_seconds": 0.13783471891656518,
+    "scoring_seconds": 0.5783131578937173,
+    "total_fit_score_seconds": 529.350236244034,
+    "parameter_count": 56913408,
+    "device": "cuda:3",
+    "mixed_precision": true,
+    "adapter_config": {
+      "seed": 42,
+      "grid_side": 18,
+      "validation_fraction": 0.1,
+      "epochs": 50,
+      "patience": null,
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.1,
+      "beta1": 0.9,
+      "beta2": 0.99,
+      "grad_clip": 1.0,
+      "use_cosine_decay": true,
+      "warmup_steps": 5000,
+      "lr_decay_steps": 60000,
+      "min_learning_rate": 3e-05,
+      "n_layer": 8,
+      "n_head": 12,
+      "n_embd": 768,
+      "dropout": 0.2,
+      "torch_threads": 2,
+      "device": "cuda:3",
+      "mixed_precision": true,
+      "score_batch_size": 128
+    },
+    "tokenization": {
+      "grid_side": 18,
+      "token_offset": 3,
+      "coordinate_min": [
+        116.0599594116211,
+        39.73112487792969
+      ],
+      "coordinate_max": [
+        116.68846130371094,
+        40.215938568115234
+      ],
+      "constant_coordinate_axes": [],
+      "n_spatial_tokens": 324
+    },
+    "training_history": [
+      {
+        "epoch": 1,
+        "train_loss": 3.830159404350146,
+        "validation_loss": 2.0602808793385825
+      },
+      {
+        "epoch": 2,
+        "train_loss": 1.628602359961891,
+        "validation_loss": 1.0876962941688102
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.9364400803148448,
+        "validation_loss": 0.8051477991066895
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.736112241269589,
+        "validation_loss": 0.7146769300237432
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.6528479910445396,
+        "validation_loss": 0.6687213450938732
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.6124138132299173,
+        "validation_loss": 0.6455712322000269
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.5864270682452559,
+        "validation_loss": 0.6301010825612523
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.5684952038890244,
+        "validation_loss": 0.6171239947413539
+      },
+      {
+        "epoch": 9,
+        "train_loss": 0.5519107411845042,
+        "validation_loss": 0.6106240650913021
+      },
+      {
+        "epoch": 10,
+        "train_loss": 0.543741315573444,
+        "validation_loss": 0.5983463484603722
+      },
+      {
+        "epoch": 11,
+        "train_loss": 0.5255657629038183,
+        "validation_loss": 0.6080181942329751
+      },
+      {
+        "epoch": 12,
+        "train_loss": 0.5185768076601566,
+        "validation_loss": 0.5812628269195557
+      },
+      {
+        "epoch": 13,
+        "train_loss": 0.5106214897041919,
+        "validation_loss": 0.5876234016260943
+      },
+      {
+        "epoch": 14,
+        "train_loss": 0.5040194203194558,
+        "validation_loss": 0.5760218470662206
+      },
+      {
+        "epoch": 15,
+        "train_loss": 0.4907159435228333,
+        "validation_loss": 0.5711255848586738
+      },
+      {
+        "epoch": 16,
+        "train_loss": 0.480307545571297,
+        "validation_loss": 0.5854100470428352
+      },
+      {
+        "epoch": 17,
+        "train_loss": 0.4720915499906931,
+        "validation_loss": 0.5842148450401811
+      },
+      {
+        "epoch": 18,
+        "train_loss": 0.4631377388414203,
+        "validation_loss": 0.5702005281104697
+      },
+      {
+        "epoch": 19,
+        "train_loss": 0.4600547630018137,
+        "validation_loss": 0.5733034032601136
+      },
+      {
+        "epoch": 20,
+        "train_loss": 0.4467814854181938,
+        "validation_loss": 0.5698779638823088
+      },
+      {
+        "epoch": 21,
+        "train_loss": 0.43861296104168485,
+        "validation_loss": 0.5768792888781688
+      },
+      {
+        "epoch": 22,
+        "train_loss": 0.4321521258962357,
+        "validation_loss": 0.5826388790800765
+      },
+      {
+        "epoch": 23,
+        "train_loss": 0.4256501442374846,
+        "validation_loss": 0.5716702734027896
+      },
+      {
+        "epoch": 24,
+        "train_loss": 0.4216707864973139,
+        "validation_loss": 0.5732654451249956
+      },
+      {
+        "epoch": 25,
+        "train_loss": 0.41612949856085235,
+        "validation_loss": 0.5805792049602704
+      },
+      {
+        "epoch": 26,
+        "train_loss": 0.4110370768571385,
+        "validation_loss": 0.5856927461452313
+      },
+      {
+        "epoch": 27,
+        "train_loss": 0.4055641475579229,
+        "validation_loss": 0.5828290094842424
+      },
+      {
+        "epoch": 28,
+        "train_loss": 0.39995854412289056,
+        "validation_loss": 0.5909571150043705
+      },
+      {
+        "epoch": 29,
+        "train_loss": 0.39988182454794474,
+        "validation_loss": 0.5994331190535972
+      },
+      {
+        "epoch": 30,
+        "train_loss": 0.39065117862233323,
+        "validation_loss": 0.5791943234366339
+      },
+      {
+        "epoch": 31,
+        "train_loss": 0.390205362849571,
+        "validation_loss": 0.6128210377048802
+      },
+      {
+        "epoch": 32,
+        "train_loss": 0.3880414125143428,
+        "validation_loss": 0.6082970218973475
+      },
+      {
+        "epoch": 33,
+        "train_loss": 0.3819134757295375,
+        "validation_loss": 0.6084695515689907
+      },
+      {
+        "epoch": 34,
+        "train_loss": 0.37741157779219786,
+        "validation_loss": 0.5968763599166641
+      },
+      {
+        "epoch": 35,
+        "train_loss": 0.37651235677075806,
+        "validation_loss": 0.6084089225476926
+      },
+      {
+        "epoch": 36,
+        "train_loss": 0.374418057185803,
+        "validation_loss": 0.622957642550941
+      },
+      {
+        "epoch": 37,
+        "train_loss": 0.3709857932485394,
+        "validation_loss": 0.6127058568301501
+      },
+      {
+        "epoch": 38,
+        "train_loss": 0.369387567222178,
+        "validation_loss": 0.5975694670691505
+      },
+      {
+        "epoch": 39,
+        "train_loss": 0.365343681730084,
+        "validation_loss": 0.6324848539836414
+      },
+      {
+        "epoch": 40,
+        "train_loss": 0.36748607790084553,
+        "validation_loss": 0.6136673168019131
+      },
+      {
+        "epoch": 41,
+        "train_loss": 0.36479519663869875,
+        "validation_loss": 0.6142581418469861
+      },
+      {
+        "epoch": 42,
+        "train_loss": 0.36171618226211283,
+        "validation_loss": 0.6098771621515086
+      },
+      {
+        "epoch": 43,
+        "train_loss": 0.35830246695640605,
+        "validation_loss": 0.6059826431689678
+      },
+      {
+        "epoch": 44,
+        "train_loss": 0.3582768448693389,
+        "validation_loss": 0.6163669334159599
+      },
+      {
+        "epoch": 45,
+        "train_loss": 0.35531431905584915,
+        "validation_loss": 0.6317910421360005
+      },
+      {
+        "epoch": 46,
+        "train_loss": 0.35231147780542416,
+        "validation_loss": 0.6203265120317271
+      },
+      {
+        "epoch": 47,
+        "train_loss": 0.3544528898436771,
+        "validation_loss": 0.6313531593875484
+      },
+      {
+        "epoch": 48,
+        "train_loss": 0.3519574291569346,
+        "validation_loss": 0.6618146903522022
+      },
+      {
+        "epoch": 49,
+        "train_loss": 0.34673138809983195,
+        "validation_loss": 0.6312247797533557
+      },
+      {
+        "epoch": 50,
+        "train_loss": 0.3492932749037029,
+        "validation_loss": 0.6300289274693968
+      }
+    ]
+  },
+  "dataset_cache": {
+    "dataset": "GeoLife",
+    "seed": 42,
+    "n_total": 3332,
+    "n_normal": 3000,
+    "n_anomaly": 332,
+    "trajectory_shape": [
+      3332,
+      32,
+      2
+    ],
+    "canonical_feature_shape": [
+      3332,
+      34
+    ],
+    "labels_used_for_feature_construction": false,
+    "generation_seconds": 4.002900166902691,
+    "sha256": "95b49470e26e8aa44b7bfa34274b640d2eb3ba2fadf6919330e8972756de5846"
+  },
+  "score_sha256": "d1b1931d65bf6a14715cb6eb78da28403622930571ac412863c2e24824fef61e",
+  "main_score_sha256": "d1b1931d65bf6a14715cb6eb78da28403622930571ac412863c2e24824fef61e",
+  "score_match_main": true,
+  "max_abs_score_difference": 0.0,
+  "metric_match_main": true,
+  "labels_consumed_during_fit": false,
+  "environment": {
+    "python": "3.10.8",
+    "platform": "Linux-3.10.0-1160.119.1.el7.x86_64-x86_64-with-glibc2.17",
+    "numpy": "2.2.6",
+    "torch": "2.6.0+cu118",
+    "torch_cuda_version": "11.8",
+    "cuda_available": true,
+    "device_requested": "cuda:3",
+    "gpu_index": 3,
+    "gpu_name": "NVIDIA GeForce RTX 3090",
+    "gpu_count_visible": 8
+  },
+  "peak_gpu_memory_bytes": 1250551296,
+  "timing_device": "cuda:3"
+}

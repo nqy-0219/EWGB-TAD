@@ -1,0 +1,117 @@
+{
+  "status": "complete",
+  "purpose": "representative_phase_timing",
+  "dataset": "GeoLife",
+  "method": "MST-OATD",
+  "seed": 42,
+  "metrics": {
+    "AUC": 0.5981641566265061,
+    "AUPRC": 0.24948638618704147,
+    "F1": 0.27710843373493976,
+    "Precision": 0.27710843373493976,
+    "Recall": 0.27710843373493976
+  },
+  "end_to_end_seconds": 26.59204081306234,
+  "model_metadata": {
+    "method": "MST-OATD",
+    "official_repository": "/root/ewgb_timing/external_baselines_phase3/MST-OATD",
+    "official_model_file": "/root/ewgb_timing/external_baselines_phase3/MST-OATD/mst_oatd.py",
+    "official_training_file": "/root/ewgb_timing/external_baselines_phase3/MST-OATD/mst_oatd_trainer.py",
+    "labels_consumed_during_fit": false,
+    "score_direction": "higher_is_more_anomalous",
+    "score_definition": "official 1 - max-cluster spatial likelihood * max-cluster temporal likelihood",
+    "n_samples": 3332,
+    "sequence_length": 32,
+    "pretrain_epochs_completed": 8,
+    "epochs_completed": 10,
+    "runtime_seconds": 25.80308596882969,
+    "data_preparation_seconds": 0.6279056225903332,
+    "model_setup_seconds": 1.4647421347908676,
+    "pretraining_seconds": 7.593892693985254,
+    "checkpoint_restore_seconds": 0.05906743882223964,
+    "training_seconds": 14.312332950998098,
+    "scoring_seconds": 2.3509321911260486,
+    "total_fit_score_seconds": 26.431164108682424,
+    "parameter_count": 11840659,
+    "device": "cuda:7",
+    "adapter_config": {
+      "seed": 42,
+      "grid_side": 18,
+      "pretrain_epochs": 8,
+      "epochs": 10,
+      "batch_size": 1600,
+      "embedding_size": 128,
+      "hidden_size": 512,
+      "n_cluster": 20,
+      "pretrain_lr_s": 0.002,
+      "pretrain_lr_t": 0.002,
+      "lr_s": 0.0003,
+      "lr_t": 0.0003,
+      "s1_size": 2,
+      "s2_size": 4,
+      "sampling_interval_seconds": 15,
+      "torch_threads": 2,
+      "device": "cuda:7",
+      "runtime_parent": null
+    },
+    "tokenization": {
+      "grid_side": 18,
+      "token_offset": 1,
+      "coordinate_min": [
+        116.0599594116211,
+        39.73112487792969
+      ],
+      "coordinate_max": [
+        116.68846130371094,
+        40.215938568115234
+      ],
+      "constant_coordinate_axes": [],
+      "n_spatial_tokens": 324
+    },
+    "temporal_input": {
+      "type": "position-derived pseudo-time",
+      "sampling_interval_seconds": 15,
+      "shared_across_trajectories": true,
+      "reason": "the predefined four-dataset coordinate protocol does not expose comparable timestamps"
+    }
+  },
+  "dataset_cache": {
+    "dataset": "GeoLife",
+    "seed": 42,
+    "n_total": 3332,
+    "n_normal": 3000,
+    "n_anomaly": 332,
+    "trajectory_shape": [
+      3332,
+      32,
+      2
+    ],
+    "canonical_feature_shape": [
+      3332,
+      34
+    ],
+    "labels_used_for_feature_construction": false,
+    "generation_seconds": 4.002900166902691,
+    "sha256": "95b49470e26e8aa44b7bfa34274b640d2eb3ba2fadf6919330e8972756de5846"
+  },
+  "score_sha256": "3e3ce7028af165c931f5a2404dbf649ace25506d59840805fd70eeec45d4e2a9",
+  "main_score_sha256": "3e3ce7028af165c931f5a2404dbf649ace25506d59840805fd70eeec45d4e2a9",
+  "score_match_main": true,
+  "max_abs_score_difference": 0.0,
+  "metric_match_main": true,
+  "labels_consumed_during_fit": false,
+  "environment": {
+    "python": "3.10.8",
+    "platform": "Linux-3.10.0-1160.119.1.el7.x86_64-x86_64-with-glibc2.17",
+    "numpy": "2.2.6",
+    "torch": "2.6.0+cu118",
+    "torch_cuda_version": "11.8",
+    "cuda_available": true,
+    "device_requested": "cuda:7",
+    "gpu_index": 7,
+    "gpu_name": "NVIDIA GeForce RTX 3090",
+    "gpu_count_visible": 8
+  },
+  "peak_gpu_memory_bytes": 6965044224,
+  "timing_device": "cuda:7"
+}
